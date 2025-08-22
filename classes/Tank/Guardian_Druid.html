@@ -28,7 +28,7 @@
   <!-- Primary SEO -->
   <title>Guardian Druid Mythic+ Build & Gear Guide - MythiStone</title>
   <meta name="description"
-    content="Discover the most popular Mythic+ build for Guardian Druid, with top talents, gear, enchants, gems, Embelishments & more—based on 285.9 K runs. Updated 20/08/2025, 07:16:41.">
+    content="Discover the most popular Mythic+ build for Guardian Druid, with top talents, gear, enchants, gems, Embelishments & more—based on 371.4 K runs. Updated 22/08/2025, 19:33:56.">
   <link rel="canonical" href="https://mythistone.github.io/classes/Tank/Guardian_Druid">
 
   <!-- Robots -->
@@ -40,7 +40,7 @@
   <meta property="og:url" content="https://mythistone.github.io/classes/Tank/Guardian_Druid">
   <meta property="og:title" content="Guardian Druid Mythic+ Build & Gear Guide">
   <meta property="og:description"
-    content="See the top talents, gear, enchants and socket setup for Guardian Druid Mythic+ players, sourced from 285.9 K runs.">
+    content="See the top talents, gear, enchants and socket setup for Guardian Druid Mythic+ players, sourced from 371.4 K runs.">
   <meta property="og:image" content="https://mythistone.github.io/assets/img/favicon/favicon-96x96.png">
   <meta property="og:image:alt" content="Guardian icon">
   <meta property="og:locale" content="en_US">
@@ -51,7 +51,7 @@
   <meta name="twitter:creator" content="@MythiStone">
   <meta name="twitter:title" content="Guardian Druid Mythic+ Build & Gear Guide">
   <meta name="twitter:description"
-    content="Break down the best Mythic+ build for Guardian Druid—talents, gear, enchants, gems—based on real data from 285.9 K runs.">
+    content="Break down the best Mythic+ build for Guardian Druid—talents, gear, enchants, gems—based on real data from 371.4 K runs.">
   <meta name="twitter:image" content="https://mythistone.github.io/assets/img/favicon/favicon-96x96.png">
 
   <!-- Mobile / Theme -->
@@ -95,7 +95,7 @@
     "url": "https://mythistone.github.io"
   },
   "datePublished": "01/07/2025",
-  "dateModified": "20/08/2025, 07:16:41"
+  "dateModified": "22/08/2025, 19:33:56"
 }
 </script>
 
@@ -117,6 +117,7 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
+
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-radius-lg fixed-start ms-2  bg-white my-2"
     id="sidenav-main">
     <div class="sidenav-header">
@@ -768,7 +769,26 @@
         </div>
       </div>
     </nav>
+    
     <!-- End Navbar -->
+    
+    
+      
+        <div class="container-fluid">
+          <div id="page-notification"
+              class="alert alert-warning alert-dismissible text-white d-flex align-items-center mx-3 my-2"
+              role="alert">
+            <span class="material-symbols-rounded me-2" aria-hidden="true">announcement</span>
+            <div class="flex-fill">Since patch 11.2, the Blizzard Armory has returned incorrect talent data. As a result, some talent information may be missing or shown inaccurately.</div>
+
+            
+              <button type="button" class="btn-close ms-3" data-bs-dismiss="alert" aria-label="Close"><span class="material-symbols-rounded me-2" aria-hidden="true">close</span></button>
+            
+          </div>
+        </div>
+      
+    
+
     <div class="container-fluid py-2">
       <h3> <span style="color: rgb(255, 124, 10)">Guardian Druid </span> Mythic + build</h6>
         <div class="row justify-content-center text-start gx-4 align-items-stretch">
@@ -792,8 +812,8 @@
               </div>
               <div class="card-body">
                 <h4 class="mb-0 px-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="20.6 K seen in 285.9 K total runs">Overall
-                  Played: 7.000000000000001%</h4>
+                  title="24 K seen in 371.4 K total runs">Overall
+                  Played: 6.0%</h4>
                 <div class="px-2" style="height: 4rem;">
                   <span>Key Upgrades:</span>
                   <canvas id="runsBarChart"></canvas>
@@ -803,7 +823,7 @@
               <div class="card-footer p-2 ps-3">
                 <p class="mb-0 text-sm">
                   <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-timestamp=1755674201.934536>Last Update:</span>
+                    data-timestamp=1755891236.376869>Last Update:</span>
                 </p>
               </div>
             </div>
@@ -927,11 +947,7 @@
 
     <div class="container-fluid py-2 w-95 mx-auto my-4">
       <div class="row">
-        <div class="ratio ratio-16x9" id="sim-iframe-wrapper">
-          <iframe id="sim-iframe" style="pointer-events:none;"
-            data-base-src="https://www.raidbots.com/simbot/render/talents/?hideHeader=true&hideExport=true"
-            scrolling="no"></iframe>
-        </div>
+        
         <div class="row align-items-center justify-content-center">
           <div class="col-md-auto">
             <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
@@ -939,13 +955,7 @@
               Routes for every Dungeon
             </button>
           </div>
-          <div class="col-md-auto">
-            <button id="copyBtn" class="btn btn-primary d-flex align-items-center">
-              <i class="fas fa-copy me-2"></i>
-              <span id="btnText" data-loadout="" data-text="Export Talent String">Export Talent
-                String</span>
-            </button>
-          </div>
+          
           <div class="col-md-auto">
             <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal"
               data-bs-target="#talentModal">
@@ -960,8 +970,8 @@
               +
               dungeons. The popularity percentage is based on the number of times an item was seen in comparison to the
               total amount of items.
-              Popularity of 100% indicates that the average Guardian Druid is wearing atleast 1.
-              You can hover over the percentage to see how many were used in how many runs.</p>
+              Popularity of 50% indicates that every 2. item of this type is used by Guardian Druids.
+              You can hover over the percentage to see more details.</p>
             <div class="d-flex flex-column flex-md-row gap-3">
               <div class="flex-fill" style="flex: 1 1 0 !important; min-width: 0;">
                 <!-- Header for this pane -->
@@ -1056,9 +1066,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="9203 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="9806 seen out of 18626 items"
       class="mb-0">
-       56 % </p>
+       53 % </p>
   </div>
 </button>
                       
@@ -1123,9 +1133,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3975 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5139 seen out of 18626 items"
       class="mb-0">
-       24 % </p>
+       28 % </p>
   </div>
 </div>
                         
@@ -1184,9 +1194,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="878 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1025 seen out of 18626 items"
       class="mb-0">
-       5 % </p>
+       6 % </p>
   </div>
 </div>
                         
@@ -1245,7 +1255,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="670 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="771 seen out of 18626 items"
       class="mb-0">
        4 % </p>
   </div>
@@ -1306,7 +1316,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="429 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="497 seen out of 18626 items"
       class="mb-0">
        3 % </p>
   </div>
@@ -1387,9 +1397,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="420 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="455 seen out of 18626 items"
       class="mb-0">
-       3 % </p>
+       2 % </p>
   </div>
 </div>
                         
@@ -1448,7 +1458,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="277 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="339 seen out of 18626 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -1545,7 +1555,68 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="216 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="231 seen out of 18626 items"
+      class="mb-0">
+       1 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=211017?bonus=3270:6652:10255:12239:12293:12921&spec=104&ench=7933"
+      data-wowhead="bonus=3270:6652:10255:12239:12293:12921&spec=104&ench=7933"
+      >
+      <img src="/data/icons/inv_helm_leather_undergroundquest_b_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=211017?bonus=3270:6652:10255:12239:12293:12921&spec=104&ench=7933"
+      data-wowhead="bonus=3270:6652:10255:12239:12293:12921&spec=104&ench=7933"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Treasure-Seeker&#39;s Helm</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=239095&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_inscription_majorglyph20.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-4 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+        </div>
+      </a>
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="186 seen out of 18626 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -1606,68 +1677,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="155 seen out of 16364 items"
-      class="mb-0">
-       1 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=211017?bonus=3263:6652:10255:12239:12291:12921&spec=104&ench=7933"
-      data-wowhead="bonus=3263:6652:10255:12239:12291:12921&spec=104&ench=7933"
-      >
-      <img src="/data/icons/inv_helm_leather_undergroundquest_b_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=211017?bonus=3263:6652:10255:12239:12291:12921&spec=104&ench=7933"
-      data-wowhead="bonus=3263:6652:10255:12239:12291:12921&spec=104&ench=7933"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Treasure-Seeker&#39;s Helm</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=239095&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_inscription_majorglyph20.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-4 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-        </div>
-      </a>
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="141 seen out of 16364 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="177 seen out of 18626 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -1781,9 +1791,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4971 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5402 seen out of 17290 items"
       class="mb-0">
-       33 % </p>
+       31 % </p>
   </div>
 </button>
                       
@@ -1811,8 +1821,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=178827?bonus=6652:10000:10255:10383:10389:10396:10879:12293&spec=104&gems=213743:213485"
-      data-wowhead="bonus=6652:10000:10255:10383:10389:10396:10879:12293&spec=104&gems=213743:213485"
+      href="https://www.wowhead.com/item=178827?bonus=6652:10010:10255:10383:10390:10396:10879:12352&spec=104&gems=213743:213485"
+      data-wowhead="bonus=6652:10010:10255:10383:10390:10396:10879:12352&spec=104&gems=213743:213485"
       >
       <img src="/data/icons/inv_7_0raid_necklace_03a.png" />
     </a>
@@ -1820,8 +1830,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=178827?bonus=6652:10000:10255:10383:10389:10396:10879:12293&spec=104&gems=213743:213485 "
-      data-wowhead="bonus=6652:10000:10255:10383:10389:10396:10879:12293&spec=104&gems=213743:213485"
+      href="https://www.wowhead.com/item=178827?bonus=6652:10010:10255:10383:10390:10396:10879:12352&spec=104&gems=213743:213485 "
+      data-wowhead="bonus=6652:10010:10255:10383:10390:10396:10879:12352&spec=104&gems=213743:213485"
       data-wh-rename-link="true" >
       <p class="mb-1">Sin Stained Pendant</p>
     </a>
@@ -1873,95 +1883,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2084 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2401 seen out of 17290 items"
       class="mb-0">
        14 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221060?bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485"
-      data-wowhead="bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485"
-      >
-      <img src="/data/icons/inv_11_0_earthen_earthennecklace01_color2.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221060?bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485 "
-      data-wowhead="bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Strapped Rescue-Keg</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      
-      <div class="d-flex align-items-center gap-1 flex-nowrap">
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-      </div>
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1953 seen out of 15198 items"
-      class="mb-0">
-       13 % </p>
   </div>
 </div>
                         
@@ -2045,7 +1969,93 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1768 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2312 seen out of 17290 items"
+      class="mb-0">
+       13 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221060?bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485"
+      data-wowhead="bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485"
+      >
+      <img src="/data/icons/inv_11_0_earthen_earthennecklace01_color2.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221060?bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485 "
+      data-wowhead="bonus=3176:6652:10255:10383:10390:10396:10879:12376&spec=104&gems=213485:213485"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Strapped Rescue-Keg</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      
+      <div class="d-flex align-items-center gap-1 flex-nowrap">
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+      </div>
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2065 seen out of 17290 items"
       class="mb-0">
        12 % </p>
   </div>
@@ -2131,7 +2141,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1678 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1956 seen out of 17290 items"
       class="mb-0">
        11 % </p>
   </div>
@@ -2217,7 +2227,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1053 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1220 seen out of 17290 items"
       class="mb-0">
        7 % </p>
   </div>
@@ -2303,7 +2313,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="598 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="733 seen out of 17290 items"
       class="mb-0">
        4 % </p>
   </div>
@@ -2389,7 +2399,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="488 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="510 seen out of 17290 items"
       class="mb-0">
        3 % </p>
   </div>
@@ -2475,7 +2485,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="328 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="396 seen out of 17290 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -2561,7 +2571,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="277 seen out of 15198 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="295 seen out of 17290 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -2623,9 +2633,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="8150 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="8615 seen out of 18399 items"
       class="mb-0">
-       50 % </p>
+       47 % </p>
   </div>
 </button>
                       
@@ -2679,9 +2689,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4251 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5522 seen out of 18399 items"
       class="mb-0">
-       26 % </p>
+       30 % </p>
   </div>
 </div>
                         
@@ -2703,8 +2713,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=234500?bonus=1540:6652:10255:10383:10389:12239:12293&spec=104"
-      data-wowhead="bonus=1540:6652:10255:10383:10389:12239:12293&spec=104"
+      href="https://www.wowhead.com/item=234500?bonus=1550:6652:10255:10383:10390:12239:12352&spec=104"
+      data-wowhead="bonus=1550:6652:10255:10383:10390:12239:12352&spec=104"
       >
       <img src="/data/icons/inv_leather_outdoorundermine_c_01_shoulder.png" />
     </a>
@@ -2712,8 +2722,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=234500?bonus=1540:6652:10255:10383:10389:12239:12293&spec=104"
-      data-wowhead="bonus=1540:6652:10255:10383:10389:12239:12293&spec=104"
+      href="https://www.wowhead.com/item=234500?bonus=1550:6652:10255:10383:10390:12239:12352&spec=104"
+      data-wowhead="bonus=1550:6652:10255:10383:10390:12239:12352&spec=104"
       data-wh-rename-link="true" >
       <p class="mb-1">Mechanized Junkpads</p>
     </a>
@@ -2729,7 +2739,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1231 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1390 seen out of 18399 items"
       class="mb-0">
        8 % </p>
   </div>
@@ -2779,7 +2789,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1124 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1250 seen out of 18399 items"
       class="mb-0">
        7 % </p>
   </div>
@@ -2829,7 +2839,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="631 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="736 seen out of 18399 items"
       class="mb-0">
        4 % </p>
   </div>
@@ -2879,7 +2889,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="233 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="266 seen out of 18399 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -2961,7 +2971,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="194 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="207 seen out of 18399 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -3011,7 +3021,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="122 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="153 seen out of 18399 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -3035,19 +3045,19 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=221201?bonus=3176:6652:10255:10383:10390:11964:12376&spec=104"
-      data-wowhead="bonus=3176:6652:10255:10383:10390:11964:12376&spec=104"
+      href="https://www.wowhead.com/item=211038?bonus=3263:6652:10255:12239:12291&spec=104"
+      data-wowhead="bonus=3263:6652:10255:12239:12291&spec=104"
       >
-      <img src="/data/icons/inv_leather_earthendungeon_c_01_shoulder.png" />
+      <img src="/data/icons/inv_shoulder_leather_undergroundquest_b_01.png" />
     </a>
   </div>
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=221201?bonus=3176:6652:10255:10383:10390:11964:12376&spec=104"
-      data-wowhead="bonus=3176:6652:10255:10383:10390:11964:12376&spec=104"
+      href="https://www.wowhead.com/item=211038?bonus=3263:6652:10255:12239:12291&spec=104"
+      data-wowhead="bonus=3263:6652:10255:12239:12291&spec=104"
       data-wh-rename-link="true" >
-      <p class="mb-1">Fireproof Cinderbee Perch</p>
+      <p class="mb-1">Treasure-Seeker&#39;s Epaulets</p>
     </a>
     <div class="d-flex align-items-center gap-1 flex-nowrap">
       
@@ -3061,7 +3071,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="113 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="131 seen out of 18399 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -3085,8 +3095,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=243513?bonus=3220:6652:10255:12239:12289&spec=104"
-      data-wowhead="bonus=3220:6652:10255:12239:12289&spec=104"
+      href="https://www.wowhead.com/item=237978?bonus=6652:9888:10255:12239:12293&spec=104"
+      data-wowhead="bonus=6652:9888:10255:12239:12293&spec=104"
       >
       <img src="/data/icons/inv_shoulder_leather_outdoorethereal_c_01.png" />
     </a>
@@ -3094,10 +3104,10 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=243513?bonus=3220:6652:10255:12239:12289&spec=104"
-      data-wowhead="bonus=3220:6652:10255:12239:12289&spec=104"
+      href="https://www.wowhead.com/item=237978?bonus=6652:9888:10255:12239:12293&spec=104"
+      data-wowhead="bonus=6652:9888:10255:12239:12293&spec=104"
       data-wh-rename-link="true" >
-      <p class="mb-1">Wastelander Scout&#39;s Shoulderpads</p>
+      <p class="mb-1">Void-Scarred Blade&#39;s Shoulderpads</p>
     </a>
     <div class="d-flex align-items-center gap-1 flex-nowrap">
       
@@ -3111,7 +3121,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="111 seen out of 16160 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="129 seen out of 18399 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -3204,7 +3214,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="16731 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="19048 seen out of 19150 items"
       class="mb-0">
        99 % </p>
   </div>
@@ -3291,7 +3301,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="29 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="29 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3356,7 +3366,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="29 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="29 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3421,7 +3431,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="16 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="16 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3471,7 +3481,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="7 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="7 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3536,7 +3546,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="6 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="6 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3601,7 +3611,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3666,7 +3676,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3731,7 +3741,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3796,7 +3806,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3 seen out of 16833 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3 seen out of 19150 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -3873,9 +3883,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="7633 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="8079 seen out of 18306 items"
       class="mb-0">
-       47 % </p>
+       44 % </p>
   </div>
 </button>
                       
@@ -3944,9 +3954,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4231 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5484 seen out of 18306 items"
       class="mb-0">
-       26 % </p>
+       30 % </p>
   </div>
 </div>
                         
@@ -4009,7 +4019,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1557 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1763 seen out of 18306 items"
       class="mb-0">
        10 % </p>
   </div>
@@ -4074,9 +4084,74 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="640 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="728 seen out of 18306 items"
       class="mb-0">
        4 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=246273?bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
+      data-wowhead="bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
+      >
+      <img src="/data/icons/inv_chest_leather_oribosdungeon_c_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=246273?bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
+      data-wowhead="bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Vest of Refracted Shadows</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223692&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="543 seen out of 18306 items"
+      class="mb-0">
+       3 % </p>
   </div>
 </div>
                         
@@ -4171,72 +4246,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="518 seen out of 16070 items"
-      class="mb-0">
-       3 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=246273?bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
-      data-wowhead="bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
-      >
-      <img src="/data/icons/inv_chest_leather_oribosdungeon_c_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=246273?bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
-      data-wowhead="bonus=6652:10000:10255:10383:10389:12239:12293&spec=104&ench=7364"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Vest of Refracted Shadows</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223692&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="476 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="536 seen out of 18306 items"
       class="mb-0">
        3 % </p>
   </div>
@@ -4301,7 +4311,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="468 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="531 seen out of 18306 items"
       class="mb-0">
        3 % </p>
   </div>
@@ -4366,7 +4376,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="300 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="357 seen out of 18306 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -4431,7 +4441,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="135 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="157 seen out of 18306 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -4496,7 +4506,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="112 seen out of 16070 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="128 seen out of 18306 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -4625,7 +4635,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="6902 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="7887 seen out of 17235 items"
       class="mb-0">
        46 % </p>
   </div>
@@ -4696,7 +4706,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2633 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3011 seen out of 17235 items"
       class="mb-0">
        17 % </p>
   </div>
@@ -4720,8 +4730,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=221157?bonus=3189:6652:10255:10383:10390:12239:12351:12921&spec=104&ench=7391"
-      data-wowhead="bonus=3189:6652:10255:10383:10390:12239:12351:12921&spec=104&ench=7391"
+      href="https://www.wowhead.com/item=221157?bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104&ench=7391"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104&ench=7391"
       >
       <img src="/data/icons/inv_leather_earthendungeon_c_01_bracer.png" />
     </a>
@@ -4729,8 +4739,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=221157?bonus=3189:6652:10255:10383:10390:12239:12351:12921&spec=104&ench=7391"
-      data-wowhead="bonus=3189:6652:10255:10383:10390:12239:12351:12921&spec=104&ench=7391"
+      href="https://www.wowhead.com/item=221157?bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104&ench=7391"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104&ench=7391"
       data-wh-rename-link="true" >
       <p class="mb-1">Unbreakable Beetlebane Bindings</p>
     </a>
@@ -4761,7 +4771,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1532 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1730 seen out of 17235 items"
       class="mb-0">
        10 % </p>
   </div>
@@ -4826,94 +4836,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1053 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1216 seen out of 17235 items"
       class="mb-0">
        7 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=229303?bonus=1533:6652:10390:12055:12376&spec=104&ench=7391&gems=213485"
-      data-wowhead="bonus=1533:6652:10390:12055:12376&spec=104&ench=7391&gems=213485"
-      >
-      <img src="/data/icons/inv_bracer_leather_raiddruidgoblin_d_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=229303?bonus=1533:6652:10390:12055:12376&spec=104&ench=7391&gems=213485 "
-      data-wowhead="bonus=1533:6652:10390:12055:12376&spec=104&ench=7391&gems=213485"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Knots of Reclaiming Blight</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223719&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-      <div class="d-flex align-items-center gap-1 flex-nowrap">
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-      </div>
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="790 seen out of 15111 items"
-      class="mb-0">
-       5 % </p>
   </div>
 </div>
                         
@@ -4976,9 +4901,159 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="782 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="930 seen out of 17235 items"
       class="mb-0">
        5 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=229303?bonus=1533:6652:10255:10390:12055:12376&spec=104&ench=7391&gems=213485"
+      data-wowhead="bonus=1533:6652:10255:10390:12055:12376&spec=104&ench=7391&gems=213485"
+      >
+      <img src="/data/icons/inv_bracer_leather_raiddruidgoblin_d_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=229303?bonus=1533:6652:10255:10390:12055:12376&spec=104&ench=7391&gems=213485 "
+      data-wowhead="bonus=1533:6652:10255:10390:12055:12376&spec=104&ench=7391&gems=213485"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Knots of Reclaiming Blight</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223719&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+      <div class="d-flex align-items-center gap-1 flex-nowrap">
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+      </div>
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="849 seen out of 17235 items"
+      class="mb-0">
+       5 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=237980?bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
+      data-wowhead="bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
+      >
+      <img src="/data/icons/inv_bracer_leather_outdoorethereal_c_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=237980?bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
+      data-wowhead="bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Void-Scarred Blade&#39;s Bracers</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223719&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="451 seen out of 17235 items"
+      class="mb-0">
+       3 % </p>
   </div>
 </div>
                         
@@ -5061,72 +5136,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="405 seen out of 15111 items"
-      class="mb-0">
-       3 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=237980?bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
-      data-wowhead="bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
-      >
-      <img src="/data/icons/inv_bracer_leather_outdoorethereal_c_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=237980?bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
-      data-wowhead="bonus=6652:9888:10255:12239:12293:12921&spec=104&ench=7391"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Void-Scarred Blade&#39;s Bracers</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223719&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="362 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="428 seen out of 17235 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -5191,7 +5201,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="343 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="407 seen out of 17235 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -5276,7 +5286,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="309 seen out of 15111 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="326 seen out of 17235 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -5352,9 +5362,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="10097 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="10834 seen out of 18435 items"
       class="mb-0">
-       62 % </p>
+       59 % </p>
   </div>
 </button>
                       
@@ -5408,9 +5418,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2915 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3765 seen out of 18435 items"
       class="mb-0">
-       18 % </p>
+       20 % </p>
   </div>
 </div>
                         
@@ -5458,7 +5468,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1430 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1727 seen out of 18435 items"
       class="mb-0">
        9 % </p>
   </div>
@@ -5482,8 +5492,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=185791?bonus=6652:10006:10255:10383:10390:12239:12350&spec=104"
-      data-wowhead="bonus=6652:10006:10255:10383:10390:12239:12350&spec=104"
+      href="https://www.wowhead.com/item=185791?bonus=6652:10013:10255:10383:10390:12239:12352&spec=104"
+      data-wowhead="bonus=6652:10013:10255:10383:10390:12239:12352&spec=104"
       >
       <img src="/data/icons/inv_glove_leather_oribosdungeon_c_01.png" />
     </a>
@@ -5491,8 +5501,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=185791?bonus=6652:10006:10255:10383:10390:12239:12350&spec=104"
-      data-wowhead="bonus=6652:10006:10255:10383:10390:12239:12350&spec=104"
+      href="https://www.wowhead.com/item=185791?bonus=6652:10013:10255:10383:10390:12239:12352&spec=104"
+      data-wowhead="bonus=6652:10013:10255:10383:10390:12239:12352&spec=104"
       data-wh-rename-link="true" >
       <p class="mb-1">Knuckle-Dusting Handwraps</p>
     </a>
@@ -5508,9 +5518,59 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="434 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="522 seen out of 18435 items"
       class="mb-0">
        3 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=237975?bonus=6652:9888:10255:12239:12293&spec=104"
+      data-wowhead="bonus=6652:9888:10255:12239:12293&spec=104"
+      >
+      <img src="/data/icons/inv_glove_leather_outdoorethereal_c_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=237975?bonus=6652:9888:10255:12239:12293&spec=104"
+      data-wowhead="bonus=6652:9888:10255:12239:12293&spec=104"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Void-Scarred Blade&#39;s Grips</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="363 seen out of 18435 items"
+      class="mb-0">
+       2 % </p>
   </div>
 </div>
                         
@@ -5590,57 +5650,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="333 seen out of 16199 items"
-      class="mb-0">
-       2 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=237975?bonus=6652:9888:10255:12239:12293&spec=104"
-      data-wowhead="bonus=6652:9888:10255:12239:12293&spec=104"
-      >
-      <img src="/data/icons/inv_glove_leather_outdoorethereal_c_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=237975?bonus=6652:9888:10255:12239:12293&spec=104"
-      data-wowhead="bonus=6652:9888:10255:12239:12293&spec=104"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Void-Scarred Blade&#39;s Grips</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="287 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="361 seen out of 18435 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -5690,57 +5700,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="218 seen out of 16199 items"
-      class="mb-0">
-       1 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=243510?bonus=3197:6652:10255:12239:12282&spec=104"
-      data-wowhead="bonus=3197:6652:10255:12239:12282&spec=104"
-      >
-      <img src="/data/icons/inv_glove_leather_outdoorethereal_c_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=243510?bonus=3197:6652:10255:12239:12282&spec=104"
-      data-wowhead="bonus=3197:6652:10255:12239:12282&spec=104"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Wastelander Scout&#39;s Grips</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="183 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="264 seen out of 18435 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -5790,7 +5750,57 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="163 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="250 seen out of 18435 items"
+      class="mb-0">
+       1 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=243510?bonus=3220:6652:10255:12239:12289&spec=104"
+      data-wowhead="bonus=3220:6652:10255:12239:12289&spec=104"
+      >
+      <img src="/data/icons/inv_glove_leather_outdoorethereal_c_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=243510?bonus=3220:6652:10255:12239:12289&spec=104"
+      data-wowhead="bonus=3220:6652:10255:12239:12289&spec=104"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Wastelander Scout&#39;s Grips</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="202 seen out of 18435 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -5840,7 +5850,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="139 seen out of 16199 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="147 seen out of 18435 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -5922,9 +5932,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="15347 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="17230 seen out of 18887 items"
       class="mb-0">
-       92 % </p>
+       91 % </p>
   </div>
 </button>
                       
@@ -5978,9 +5988,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="485 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="665 seen out of 18887 items"
       class="mb-0">
-       3 % </p>
+       4 % </p>
   </div>
 </div>
                         
@@ -6028,9 +6038,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="225 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="290 seen out of 18887 items"
       class="mb-0">
-       1 % </p>
+       2 % </p>
   </div>
 </div>
                         
@@ -6052,8 +6062,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=219331?bonus=8791:8902:8960:9627:9633:10421:11303:12050:12053:12921&spec=104"
-      data-wowhead="bonus=8791:8902:8960:9627:9633:10421:11303:12050:12053:12921&spec=104"
+      href="https://www.wowhead.com/item=219331?bonus=8792:8902:8960:9627:9633:10421:11304:12050:12053:12921&spec=104"
+      data-wowhead="bonus=8792:8902:8960:9627:9633:10421:11304:12050:12053:12921&spec=104"
       >
       <img src="/data/icons/inv_leather_outdoorarathor_d_01_belt.png" />
     </a>
@@ -6061,8 +6071,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=219331?bonus=8791:8902:8960:9627:9633:10421:11303:12050:12053:12921&spec=104"
-      data-wowhead="bonus=8791:8902:8960:9627:9633:10421:11303:12050:12053:12921&spec=104"
+      href="https://www.wowhead.com/item=219331?bonus=8792:8902:8960:9627:9633:10421:11304:12050:12053:12921&spec=104"
+      data-wowhead="bonus=8792:8902:8960:9627:9633:10421:11304:12050:12053:12921&spec=104"
       data-wh-rename-link="true" >
       <p class="mb-1">Rune-Branded Waistband</p>
     </a>
@@ -6110,7 +6120,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="149 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="233 seen out of 18887 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -6134,8 +6144,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=185809?bonus=42:10013:10255:10383:10390:12239:12296:12921&spec=104"
-      data-wowhead="bonus=42:10013:10255:10383:10390:12239:12296:12921&spec=104"
+      href="https://www.wowhead.com/item=185809?bonus=6652:10013:10255:10383:10390:12239:12352:12921&spec=104"
+      data-wowhead="bonus=6652:10013:10255:10383:10390:12239:12352:12921&spec=104"
       >
       <img src="/data/icons/inv_belt_leather_oribosdungeon_c_01.png" />
     </a>
@@ -6143,8 +6153,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=185809?bonus=42:10013:10255:10383:10390:12239:12296:12921&spec=104"
-      data-wowhead="bonus=42:10013:10255:10383:10390:12239:12296:12921&spec=104"
+      href="https://www.wowhead.com/item=185809?bonus=6652:10013:10255:10383:10390:12239:12352:12921&spec=104"
+      data-wowhead="bonus=6652:10013:10255:10383:10390:12239:12352:12921&spec=104"
       data-wh-rename-link="true" >
       <p class="mb-1">Venza&#39;s Powderbelt</p>
     </a>
@@ -6160,7 +6170,57 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="123 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="149 seen out of 18887 items"
+      class="mb-0">
+       1 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221134?bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
+      >
+      <img src="/data/icons/inv_leather_earthendungeon_c_01_belt.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221134?bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Shadow Congregant&#39;s Belt</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="101 seen out of 18887 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -6210,57 +6270,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="82 seen out of 16607 items"
-      class="mb-0">
-       0 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221134?bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
-      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
-      >
-      <img src="/data/icons/inv_leather_earthendungeon_c_01_belt.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221134?bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
-      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352:12921&spec=104"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Shadow Congregant&#39;s Belt</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="79 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="88 seen out of 18887 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -6330,7 +6340,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="53 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="55 seen out of 18887 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -6400,7 +6410,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="37 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="44 seen out of 18887 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -6424,19 +6434,19 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=156208?bonus=7756:10255:10383:11415:12239:12355:12921&spec=104"
-      data-wowhead="bonus=7756:10255:10383:11415:12239:12355:12921&spec=104"
+      href="https://www.wowhead.com/item=237979?bonus=6652:9922:10255:12239:12352:12921&spec=104"
+      data-wowhead="bonus=6652:9922:10255:12239:12352:12921&spec=104"
       >
-      <img src="/data/icons/inv_belt_15.png" />
+      <img src="/data/icons/inv_belt_leather_outdoorethereal_c_01.png" />
     </a>
   </div>
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=156208?bonus=7756:10255:10383:11415:12239:12355:12921&spec=104"
-      data-wowhead="bonus=7756:10255:10383:11415:12239:12355:12921&spec=104"
+      href="https://www.wowhead.com/item=237979?bonus=6652:9922:10255:12239:12352:12921&spec=104"
+      data-wowhead="bonus=6652:9922:10255:12239:12352:12921&spec=104"
       data-wh-rename-link="true" >
-      <p class="mb-1">Waistguard of the Creator</p>
+      <p class="mb-1">Void-Scarred Blade&#39;s Belt</p>
     </a>
     <div class="d-flex align-items-center gap-1 flex-nowrap">
       
@@ -6450,7 +6460,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="27 seen out of 16607 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="32 seen out of 18887 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -6527,9 +6537,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="8959 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="9533 seen out of 18510 items"
       class="mb-0">
-       55 % </p>
+       52 % </p>
   </div>
 </button>
                       
@@ -6598,9 +6608,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3865 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4951 seen out of 18510 items"
       class="mb-0">
-       24 % </p>
+       27 % </p>
   </div>
 </div>
                         
@@ -6622,8 +6632,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=242473?bonus=3183:6652:10255:10383:10389:12239:12293&spec=104&ench=7601"
-      data-wowhead="bonus=3183:6652:10255:10383:10389:12239:12293&spec=104&ench=7601"
+      href="https://www.wowhead.com/item=242473?bonus=3193:6652:10255:10383:10390:12239:12352&spec=104&ench=7601"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352&spec=104&ench=7601"
       >
       <img src="/data/icons/inv_pants_leather_outdoorethereal_c_01.png" />
     </a>
@@ -6631,8 +6641,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=242473?bonus=3183:6652:10255:10383:10389:12239:12293&spec=104&ench=7601"
-      data-wowhead="bonus=3183:6652:10255:10383:10389:12239:12293&spec=104&ench=7601"
+      href="https://www.wowhead.com/item=242473?bonus=3193:6652:10255:10383:10390:12239:12352&spec=104&ench=7601"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:12239:12352&spec=104&ench=7601"
       data-wh-rename-link="true" >
       <p class="mb-1">Spittle-Stained Trousers</p>
     </a>
@@ -6663,7 +6673,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="899 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1104 seen out of 18510 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -6728,7 +6738,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="891 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1004 seen out of 18510 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -6793,7 +6803,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="499 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="577 seen out of 18510 items"
       class="mb-0">
        3 % </p>
   </div>
@@ -6858,7 +6868,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="372 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="415 seen out of 18510 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -6882,8 +6892,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=185801?bonus=6652:10006:10255:10383:10390:12239:12350&spec=104&ench=7601"
-      data-wowhead="bonus=6652:10006:10255:10383:10390:12239:12350&spec=104&ench=7601"
+      href="https://www.wowhead.com/item=185801?bonus=6652:10013:10255:10383:10390:12239:12352&spec=104&ench=7601"
+      data-wowhead="bonus=6652:10013:10255:10383:10390:12239:12352&spec=104&ench=7601"
       >
       <img src="/data/icons/inv_pant_leather_oribosdungeon_c_01.png" />
     </a>
@@ -6891,8 +6901,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=185801?bonus=6652:10006:10255:10383:10390:12239:12350&spec=104&ench=7601"
-      data-wowhead="bonus=6652:10006:10255:10383:10390:12239:12350&spec=104&ench=7601"
+      href="https://www.wowhead.com/item=185801?bonus=6652:10013:10255:10383:10390:12239:12352&spec=104&ench=7601"
+      data-wowhead="bonus=6652:10013:10255:10383:10390:12239:12352&spec=104&ench=7601"
       data-wh-rename-link="true" >
       <p class="mb-1">Anomalous Starlit Breeches</p>
     </a>
@@ -6923,7 +6933,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="306 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="364 seen out of 18510 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -6988,7 +6998,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="187 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="244 seen out of 18510 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -7053,7 +7063,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="158 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="176 seen out of 18510 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -7150,7 +7160,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="120 seen out of 16256 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="142 seen out of 18510 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -7227,7 +7237,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2713 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3118 seen out of 16218 items"
       class="mb-0">
        19 % </p>
   </div>
@@ -7238,6 +7248,71 @@
                       aria-labelledby="heading-FEET" data-bs-parent="#accordion-FEET">
                       <div class="accordion-body">
                         
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=246274?bonus=1550:6652:10255:10383:10390:12239:12352&spec=104&ench=7424"
+      data-wowhead="bonus=1550:6652:10255:10383:10390:12239:12352&spec=104&ench=7424"
+      >
+      <img src="/data/icons/inv_leather_outdoorundermine_c_01_boot.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=246274?bonus=1550:6652:10255:10383:10390:12239:12352&spec=104&ench=7424"
+      data-wowhead="bonus=1550:6652:10255:10383:10390:12239:12352&spec=104&ench=7424"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Geezle&#39;s Zapstep Boots</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223656&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2850 seen out of 16218 items"
+      class="mb-0">
+       18 % </p>
+  </div>
+</div>
                         
                         
 
@@ -7330,72 +7405,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2588 seen out of 14314 items"
-      class="mb-0">
-       18 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=246274?bonus=1540:6652:10255:10383:10389:12239:12293&spec=104&ench=7424"
-      data-wowhead="bonus=1540:6652:10255:10383:10389:12239:12293&spec=104&ench=7424"
-      >
-      <img src="/data/icons/inv_leather_outdoorundermine_c_01_boot.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=246274?bonus=1540:6652:10255:10383:10389:12239:12293&spec=104&ench=7424"
-      data-wowhead="bonus=1540:6652:10255:10383:10389:12239:12293&spec=104&ench=7424"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Geezle&#39;s Zapstep Boots</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223656&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2437 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2833 seen out of 16218 items"
       class="mb-0">
        17 % </p>
   </div>
@@ -7460,9 +7470,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1529 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1654 seen out of 16218 items"
       class="mb-0">
-       11 % </p>
+       10 % </p>
   </div>
 </div>
                         
@@ -7525,74 +7535,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1100 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1405 seen out of 16218 items"
       class="mb-0">
-       8 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=228876?bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
-      data-wowhead="bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
-      >
-      <img src="/data/icons/inv_boot_leather_raidroguegoblin_d_01.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=228876?bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
-      data-wowhead="bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Dragster&#39;s Last Stride</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223656&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="914 seen out of 14314 items"
-      class="mb-0">
-       6 % </p>
+       9 % </p>
   </div>
 </div>
                         
@@ -7655,9 +7600,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="910 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1111 seen out of 16218 items"
       class="mb-0">
-       6 % </p>
+       7 % </p>
   </div>
 </div>
                         
@@ -7720,7 +7665,72 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="891 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="963 seen out of 16218 items"
+      class="mb-0">
+       6 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=228876?bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
+      data-wowhead="bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
+      >
+      <img src="/data/icons/inv_boot_leather_raidroguegoblin_d_01.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=228876?bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
+      data-wowhead="bonus=1533:6652:10255:10356:11998:12376&spec=104&ench=7424"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Dragster&#39;s Last Stride</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223656&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="937 seen out of 16218 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -7785,7 +7795,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="742 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="818 seen out of 16218 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -7850,7 +7860,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="490 seen out of 14314 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="529 seen out of 16218 items"
       class="mb-0">
        3 % </p>
   </div>
@@ -7963,9 +7973,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3947 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4217 seen out of 22592 items"
       class="mb-0">
-       20 % </p>
+       19 % </p>
   </div>
 </button>
                       
@@ -8070,9 +8080,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3062 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3401 seen out of 22592 items"
       class="mb-0">
-       16 % </p>
+       15 % </p>
   </div>
 </div>
                         
@@ -8171,7 +8181,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2541 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3018 seen out of 22592 items"
       class="mb-0">
        13 % </p>
   </div>
@@ -8272,7 +8282,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2301 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2648 seen out of 22592 items"
       class="mb-0">
        12 % </p>
   </div>
@@ -8373,7 +8383,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2291 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2618 seen out of 22592 items"
       class="mb-0">
        12 % </p>
   </div>
@@ -8474,9 +8484,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1609 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2152 seen out of 22592 items"
       class="mb-0">
-       8 % </p>
+       10 % </p>
   </div>
 </div>
                         
@@ -8575,110 +8585,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1364 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1693 seen out of 22592 items"
       class="mb-0">
        7 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
-      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
-      >
-      <img src="/data/icons/inv_11_0_nerubian_ring_01_color4.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485 "
-      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Devout Zealot&#39;s Ring</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223674&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-      <div class="d-flex align-items-center gap-1 flex-nowrap">
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-      </div>
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1208 seen out of 19509 items"
-      class="mb-0">
-       6 % </p>
   </div>
 </div>
                         
@@ -8777,7 +8686,108 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1186 seen out of 19509 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1441 seen out of 22592 items"
+      class="mb-0">
+       6 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
+      >
+      <img src="/data/icons/inv_11_0_nerubian_ring_01_color4.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485 "
+      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Devout Zealot&#39;s Ring</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223674&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+      <div class="d-flex align-items-center gap-1 flex-nowrap">
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+      </div>
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1404 seen out of 22592 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -8906,9 +8916,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5404 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5917 seen out of 24292 items"
       class="mb-0">
-       26 % </p>
+       24 % </p>
   </div>
 </button>
                       
@@ -9013,9 +9023,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3062 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3401 seen out of 24292 items"
       class="mb-0">
-       15 % </p>
+       14 % </p>
   </div>
 </div>
                         
@@ -9114,7 +9124,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2541 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3018 seen out of 24292 items"
       class="mb-0">
        12 % </p>
   </div>
@@ -9215,7 +9225,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2301 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2648 seen out of 24292 items"
       class="mb-0">
        11 % </p>
   </div>
@@ -9316,7 +9326,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2291 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2618 seen out of 24292 items"
       class="mb-0">
        11 % </p>
   </div>
@@ -9417,9 +9427,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1609 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2152 seen out of 24292 items"
       class="mb-0">
-       8 % </p>
+       9 % </p>
   </div>
 </div>
                         
@@ -9518,110 +9528,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1364 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1693 seen out of 24292 items"
       class="mb-0">
        7 % </p>
-  </div>
-</div>
-                        
-                        
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
-      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
-      >
-      <img src="/data/icons/inv_11_0_nerubian_ring_01_color4.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485 "
-      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Devout Zealot&#39;s Ring</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      <a target="_blank"
-        href="https://www.wowhead.com/item=223674&spec=104" >
-        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-          <!-- Base icon -->
-          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
-            class="position-absolute top-0 start-0 border border-quality-3 "
-            style="width:100%; height:100%; object-fit:contain;">
-          
-          <!-- Overlay icon -->
-          <img src="/data/icons/crafting-quality-3.png" alt=""
-            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-          
-        </div>
-      </a>
-      
-      
-      <div class="d-flex align-items-center gap-1 flex-nowrap">
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
-          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
-            <!-- Base icon -->
-            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
-              class="position-absolute top-0 start-0 border border-quality-3 "
-              style="width:100%; height:100%; object-fit:contain;">
-
-            
-            <!-- Overlay icon -->
-            <img src="/data/icons/crafting-quality-3.png" alt=""
-              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
-            
-          </div>
-
-        </a>
-        
-      </div>
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1208 seen out of 20966 items"
-      class="mb-0">
-       6 % </p>
   </div>
 </div>
                         
@@ -9720,7 +9629,108 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1186 seen out of 20966 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1441 seen out of 24292 items"
+      class="mb-0">
+       6 % </p>
+  </div>
+</div>
+                        
+                        
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
+      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
+      >
+      <img src="/data/icons/inv_11_0_nerubian_ring_01_color4.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=221136?bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485 "
+      data-wowhead="bonus=3193:6652:10255:10383:10390:10396:10879:12352&spec=104&ench=7340&gems=213485:213485"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Devout Zealot&#39;s Ring</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      <a target="_blank"
+        href="https://www.wowhead.com/item=223674&spec=104" >
+        <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+          <!-- Base icon -->
+          <img src="/data/icons/inv_misc_enchantedscroll.png" alt=""
+            class="position-absolute top-0 start-0 border border-quality-3 "
+            style="width:100%; height:100%; object-fit:contain;">
+          
+          <!-- Overlay icon -->
+          <img src="/data/icons/crafting-quality-3.png" alt=""
+            class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+          
+        </div>
+      </a>
+      
+      
+      <div class="d-flex align-items-center gap-1 flex-nowrap">
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+        <a target="_blank" href="https://www.wowhead.com/item=213485&spec=104" >
+          <div class="position-relative" style="width:16px; height:16px; display:inline-block;">
+            <!-- Base icon -->
+            <img src="/data/icons/inv_jewelcrafting_cut_standart_gem_hybrid_color1_1.png" alt=""
+              class="position-absolute top-0 start-0 border border-quality-3 "
+              style="width:100%; height:100%; object-fit:contain;">
+
+            
+            <!-- Overlay icon -->
+            <img src="/data/icons/crafting-quality-3.png" alt=""
+              class="position-absolute top-0 start-0" style="width:100%; height:100%; object-fit:contain; z-index:1;">
+            
+          </div>
+
+        </a>
+        
+      </div>
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1404 seen out of 24292 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -9790,7 +9800,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2403 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2801 seen out of 12797 items"
       class="mb-0">
        22 % </p>
   </div>
@@ -9801,56 +9811,6 @@
                         aria-labelledby="heading-MAIN_HAND" data-bs-parent="#accordion-MAIN_HAND">
                         <div class="accordion-body">
                           
-                          
-                          
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=234494?bonus=1550:6652:10255:10384:10390:12352&spec=104"
-      data-wowhead="bonus=1550:6652:10255:10384:10390:12352&spec=104"
-      >
-      <img src="/data/icons/inv_polearm_2h_outdoorundermine_c_01_purple.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=234494?bonus=1550:6652:10255:10384:10390:12352&spec=104"
-      data-wowhead="bonus=1550:6652:10255:10384:10390:12352&spec=104"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Gallytech Turbo-Tiller</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1542 seen out of 11091 items"
-      class="mb-0">
-       14 % </p>
-  </div>
-</div>
                           
                           
 
@@ -9928,9 +9888,59 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1512 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1967 seen out of 12797 items"
       class="mb-0">
-       14 % </p>
+       15 % </p>
+  </div>
+</div>
+                          
+                          
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=234494?bonus=1550:6652:10255:10384:10390:12352&spec=104"
+      data-wowhead="bonus=1550:6652:10255:10384:10390:12352&spec=104"
+      >
+      <img src="/data/icons/inv_polearm_2h_outdoorundermine_c_01_purple.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=234494?bonus=1550:6652:10255:10384:10390:12352&spec=104"
+      data-wowhead="bonus=1550:6652:10255:10384:10390:12352&spec=104"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Gallytech Turbo-Tiller</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1702 seen out of 12797 items"
+      class="mb-0">
+       13 % </p>
   </div>
 </div>
                           
@@ -9978,7 +9988,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1328 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1562 seen out of 12797 items"
       class="mb-0">
        12 % </p>
   </div>
@@ -10028,9 +10038,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="952 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1056 seen out of 12797 items"
       class="mb-0">
-       9 % </p>
+       8 % </p>
   </div>
 </div>
                           
@@ -10078,59 +10088,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="881 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1041 seen out of 12797 items"
       class="mb-0">
        8 % </p>
-  </div>
-</div>
-                          
-                          
-
-
-
-
-
-
-
-
-<div  class="row align-items-center border
-            
-            border-quality-4
-            
-            my-2 mx-2
-            ">
-  <!-- Item icon & link -->
-  <div class="col-auto px-0">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=228892?bonus=1533:6652:10255:10356:12376&spec=104"
-      data-wowhead="bonus=1533:6652:10255:10356:12376&spec=104"
-      >
-      <img src="/data/icons/inv_staff_2h_goblinraid_d_02.png" />
-    </a>
-  </div>
-  <!-- Name & secondary icons -->
-  <div class="col">
-    <a target="_blank"
-      href="https://www.wowhead.com/item=228892?bonus=1533:6652:10255:10356:12376&spec=104"
-      data-wowhead="bonus=1533:6652:10255:10356:12376&spec=104"
-      data-wh-rename-link="true" >
-      <p class="mb-1">Greasemonkey&#39;s Shift-Stick</p>
-    </a>
-    <div class="d-flex align-items-center gap-1 flex-nowrap">
-      
-      
-      
-      
-    </div>
-    <div>
-
-    </div>
-  </div>
-  <!-- Popularity % -->
-  <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="685 seen out of 11091 items"
-      class="mb-0">
-       6 % </p>
   </div>
 </div>
                           
@@ -10178,7 +10138,57 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="623 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="739 seen out of 12797 items"
+      class="mb-0">
+       6 % </p>
+  </div>
+</div>
+                          
+                          
+
+
+
+
+
+
+
+
+<div  class="row align-items-center border
+            
+            border-quality-4
+            
+            my-2 mx-2
+            ">
+  <!-- Item icon & link -->
+  <div class="col-auto px-0">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=228892?bonus=1533:6652:10255:10356:12376&spec=104"
+      data-wowhead="bonus=1533:6652:10255:10356:12376&spec=104"
+      >
+      <img src="/data/icons/inv_staff_2h_goblinraid_d_02.png" />
+    </a>
+  </div>
+  <!-- Name & secondary icons -->
+  <div class="col">
+    <a target="_blank"
+      href="https://www.wowhead.com/item=228892?bonus=1533:6652:10255:10356:12376&spec=104"
+      data-wowhead="bonus=1533:6652:10255:10356:12376&spec=104"
+      data-wh-rename-link="true" >
+      <p class="mb-1">Greasemonkey&#39;s Shift-Stick</p>
+    </a>
+    <div class="d-flex align-items-center gap-1 flex-nowrap">
+      
+      
+      
+      
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <!-- Popularity % -->
+  <div class="col-auto text-end">
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="709 seen out of 12797 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -10228,9 +10238,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="611 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="633 seen out of 12797 items"
       class="mb-0">
-       6 % </p>
+       5 % </p>
   </div>
 </div>
                           
@@ -10278,7 +10288,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="554 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="587 seen out of 12797 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -10302,8 +10312,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=222566?bonus=8793:8902:8960:9627:9633:10421:11300:12040:12043:12373&spec=104"
-      data-wowhead="bonus=8793:8902:8960:9627:9633:10421:11300:12040:12043:12373&spec=104"
+      href="https://www.wowhead.com/item=222566?bonus=8793:8902:8960:9627:9633:10421:11300:12050:12053&spec=104"
+      data-wowhead="bonus=8793:8902:8960:9627:9633:10421:11300:12050:12053&spec=104"
       >
       <img src="/data/icons/inv_offhand_1h_arathoroutdoor_d_01.png" />
     </a>
@@ -10311,8 +10321,8 @@
   <!-- Name & secondary icons -->
   <div class="col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=222566?bonus=8793:8902:8960:9627:9633:10421:11300:12040:12043:12373&spec=104"
-      data-wowhead="bonus=8793:8902:8960:9627:9633:10421:11300:12040:12043:12373&spec=104"
+      href="https://www.wowhead.com/item=222566?bonus=8793:8902:8960:9627:9633:10421:11300:12050:12053&spec=104"
+      data-wowhead="bonus=8793:8902:8960:9627:9633:10421:11300:12050:12053&spec=104"
       data-wh-rename-link="true" >
       <p class="mb-1">Vagabond&#39;s Torch</p>
     </a>
@@ -10360,7 +10370,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="244 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="278 seen out of 12797 items"
       class="mb-0">
        2 % </p>
   </div>
@@ -10410,7 +10420,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="74 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="78 seen out of 12797 items"
       class="mb-0">
        1 % </p>
   </div>
@@ -10460,9 +10470,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="56 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="57 seen out of 12797 items"
       class="mb-0">
-       1 % </p>
+       0 % </p>
   </div>
 </div>
                           
@@ -10510,7 +10520,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="52 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="57 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10560,7 +10570,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="39 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="43 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10610,7 +10620,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="30 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="33 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10660,7 +10670,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="29 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="30 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10710,7 +10720,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="19 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="19 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10760,7 +10770,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="16 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="17 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10810,7 +10820,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="15 seen out of 11091 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="15 seen out of 12797 items"
       class="mb-0">
        0 % </p>
   </div>
@@ -10881,7 +10891,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="4928 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="5574 seen out of 20021 items"
       class="mb-0">
        28 % </p>
   </div>
@@ -10937,9 +10947,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2653 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3143 seen out of 20021 items"
       class="mb-0">
-       15 % </p>
+       16 % </p>
   </div>
 </div>
                           
@@ -10987,7 +10997,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2634 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2993 seen out of 20021 items"
       class="mb-0">
        15 % </p>
   </div>
@@ -11037,7 +11047,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2463 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2710 seen out of 20021 items"
       class="mb-0">
        14 % </p>
   </div>
@@ -11087,7 +11097,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1065 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1233 seen out of 20021 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -11137,7 +11147,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1037 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1218 seen out of 20021 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -11187,9 +11197,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="999 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1093 seen out of 20021 items"
       class="mb-0">
-       6 % </p>
+       5 % </p>
   </div>
 </div>
                           
@@ -11237,7 +11247,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="890 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1036 seen out of 20021 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -11287,7 +11297,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="842 seen out of 17511 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1021 seen out of 20021 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -11351,9 +11361,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="6738 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="7547 seen out of 21994 items"
       class="mb-0">
-       35 % </p>
+       34 % </p>
   </div>
 </button>
                         
@@ -11407,7 +11417,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2653 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="3143 seen out of 21994 items"
       class="mb-0">
        14 % </p>
   </div>
@@ -11457,7 +11467,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2634 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2993 seen out of 21994 items"
       class="mb-0">
        14 % </p>
   </div>
@@ -11507,9 +11517,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2463 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="2710 seen out of 21994 items"
       class="mb-0">
-       13 % </p>
+       12 % </p>
   </div>
 </div>
                           
@@ -11557,7 +11567,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1065 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1233 seen out of 21994 items"
       class="mb-0">
        6 % </p>
   </div>
@@ -11607,9 +11617,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1037 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1218 seen out of 21994 items"
       class="mb-0">
-       5 % </p>
+       6 % </p>
   </div>
 </div>
                           
@@ -11657,7 +11667,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="999 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1093 seen out of 21994 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -11707,7 +11717,7 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="890 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1036 seen out of 21994 items"
       class="mb-0">
        5 % </p>
   </div>
@@ -11757,9 +11767,9 @@
   </div>
   <!-- Popularity % -->
   <div class="col-auto text-end">
-    <p data-bs-toggle="tooltip" data-bs-placement="top" title="842 seen out of 19321 items"
+    <p data-bs-toggle="tooltip" data-bs-placement="top" title="1021 seen out of 21994 items"
       class="mb-0">
-       4 % </p>
+       5 % </p>
   </div>
 </div>
                           
@@ -17340,8 +17350,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="17812 out of 68073 gems" class="mb-0">
-                                   26 % </p>
+                                  title="20923 out of 76350 gems" class="mb-0">
+                                   27 % </p>
                               </div>
                             </div>
                             
@@ -17401,7 +17411,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="11494 out of 68073 gems" class="mb-0">
+                                  title="12987 out of 76350 gems" class="mb-0">
                                    17 % </p>
                               </div>
                             </div>
@@ -17462,8 +17472,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="9192 out of 68073 gems" class="mb-0">
-                                   14 % </p>
+                                  title="9817 out of 76350 gems" class="mb-0">
+                                   13 % </p>
                               </div>
                             </div>
                             
@@ -17523,8 +17533,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="7005 out of 68073 gems" class="mb-0">
-                                   10 % </p>
+                                  title="7071 out of 76350 gems" class="mb-0">
+                                   9 % </p>
                               </div>
                             </div>
                             
@@ -17561,7 +17571,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="5143 out of 68073 gems" class="mb-0">
+                                  title="6132 out of 76350 gems" class="mb-0">
                                    8 % </p>
                               </div>
                             </div>
@@ -17615,7 +17625,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="5137 out of 68073 gems" class="mb-0">
+                                  title="5877 out of 76350 gems" class="mb-0">
                                    8 % </p>
                               </div>
                             </div>
@@ -17676,7 +17686,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="3412 out of 68073 gems" class="mb-0">
+                                  title="3738 out of 76350 gems" class="mb-0">
                                    5 % </p>
                               </div>
                             </div>
@@ -17730,7 +17740,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="3160 out of 68073 gems" class="mb-0">
+                                  title="3668 out of 76350 gems" class="mb-0">
                                    5 % </p>
                               </div>
                             </div>
@@ -17791,8 +17801,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="3129 out of 68073 gems" class="mb-0">
-                                   5 % </p>
+                                  title="3238 out of 76350 gems" class="mb-0">
+                                   4 % </p>
                               </div>
                             </div>
                             
@@ -17852,7 +17862,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="2589 out of 68073 gems" class="mb-0">
+                                  title="2899 out of 76350 gems" class="mb-0">
                                    4 % </p>
                               </div>
                             </div>
@@ -17929,7 +17939,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="6529 seen in 17481 runs" class="mb-0">
+                                  title="7308 seen in 19733 runs" class="mb-0">
                                    37 % </p>
                               </div>
                             </div>
@@ -17979,8 +17989,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="3129 seen in 17481 runs" class="mb-0">
-                                   18 % </p>
+                                  title="3357 seen in 19733 runs" class="mb-0">
+                                   17 % </p>
                               </div>
                             </div>
                             
@@ -18029,8 +18039,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="2292 seen in 17481 runs" class="mb-0">
-                                   13 % </p>
+                                  title="2840 seen in 19733 runs" class="mb-0">
+                                   14 % </p>
                               </div>
                             </div>
                             
@@ -18079,7 +18089,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="2102 seen in 17481 runs" class="mb-0">
+                                  title="2443 seen in 19733 runs" class="mb-0">
                                    12 % </p>
                               </div>
                             </div>
@@ -18123,7 +18133,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="1478 seen in 17481 runs" class="mb-0">
+                                  title="1597 seen in 19733 runs" class="mb-0">
                                    8 % </p>
                               </div>
                             </div>
@@ -18173,7 +18183,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="1375 seen in 17481 runs" class="mb-0">
+                                  title="1502 seen in 19733 runs" class="mb-0">
                                    8 % </p>
                               </div>
                             </div>
@@ -18223,8 +18233,8 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="257 seen in 17481 runs" class="mb-0">
-                                   1 % </p>
+                                  title="316 seen in 19733 runs" class="mb-0">
+                                   2 % </p>
                               </div>
                             </div>
                             
@@ -18273,57 +18283,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="77 seen in 17481 runs" class="mb-0">
-                                   0 % </p>
-                              </div>
-                            </div>
-                            
-                            
-                            
-
-                            <div class="row align-items-center mb-2">
-                              <!-- Item icon & link -->
-                              <div class="col-auto">
-                                <a target="_blank"
-                                  href="https://www.wowhead.com/item=213773&spec=104">
-                                  <div class="position-relative" style="width:24px; height:24px; display:inline-block;">
-                                    <!-- Base icon -->
-                                    <img src="/data/icons/inv_enchant_prismaticsphere.png" alt=""
-                                      class="position-absolute top-0 start-0 border border-quality-3 "
-                                      style="width:100%; height:100%; object-fit:contain;">
-                                    
-                                    <!-- Overlay icon -->
-                                    <img
-                                      src="/data/icons/crafting-quality-3.png"
-                                      alt="" class="position-absolute top-0 start-0"
-                                      style="width:100%; height:100%; object-fit:contain; z-index:1;">
-                                    
-                                  </div>
-                                </a>
-                              </div>
-                              <!-- Name -->
-                              <div class="col">
-                                <a target="_blank"
-                                  href="https://www.wowhead.com/item=213773&spec=104">
-                                  <p class="mb-1">Prismatic Null Stone</p>
-                                </a>
-                              </div>
-                              <!-- Stats -->
-                              <div class="col-md-3 d-none d-md-block">
-                                
-                              </div>
-                              <!-- Price -->
-                              <div class="col-md-2 d-none d-md-block text-start">
-                                
-                                <a target="_blank" href="https://undermine.exchange/#eu-blackmoore/213773">
-                                  <span class="buyout-gold">958 <img src="/data/icons/gold_coin.png" alt="Gold" style="width:16px;vertical-align:middle;"></span>
-                                </a>
-                                
-                              </div>
-                              <!-- Popularity % -->
-                              <div class="col-md-2 text-end">
-                                <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="56 seen in 17481 runs" class="mb-0">
+                                  title="85 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18373,7 +18333,57 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="53 seen in 17481 runs" class="mb-0">
+                                  title="72 seen in 19733 runs" class="mb-0">
+                                   0 % </p>
+                              </div>
+                            </div>
+                            
+                            
+                            
+
+                            <div class="row align-items-center mb-2">
+                              <!-- Item icon & link -->
+                              <div class="col-auto">
+                                <a target="_blank"
+                                  href="https://www.wowhead.com/item=213773&spec=104">
+                                  <div class="position-relative" style="width:24px; height:24px; display:inline-block;">
+                                    <!-- Base icon -->
+                                    <img src="/data/icons/inv_enchant_prismaticsphere.png" alt=""
+                                      class="position-absolute top-0 start-0 border border-quality-3 "
+                                      style="width:100%; height:100%; object-fit:contain;">
+                                    
+                                    <!-- Overlay icon -->
+                                    <img
+                                      src="/data/icons/crafting-quality-3.png"
+                                      alt="" class="position-absolute top-0 start-0"
+                                      style="width:100%; height:100%; object-fit:contain; z-index:1;">
+                                    
+                                  </div>
+                                </a>
+                              </div>
+                              <!-- Name -->
+                              <div class="col">
+                                <a target="_blank"
+                                  href="https://www.wowhead.com/item=213773&spec=104">
+                                  <p class="mb-1">Prismatic Null Stone</p>
+                                </a>
+                              </div>
+                              <!-- Stats -->
+                              <div class="col-md-3 d-none d-md-block">
+                                
+                              </div>
+                              <!-- Price -->
+                              <div class="col-md-2 d-none d-md-block text-start">
+                                
+                                <a target="_blank" href="https://undermine.exchange/#eu-blackmoore/213773">
+                                  <span class="buyout-gold">958 <img src="/data/icons/gold_coin.png" alt="Gold" style="width:16px;vertical-align:middle;"></span>
+                                </a>
+                                
+                              </div>
+                              <!-- Popularity % -->
+                              <div class="col-md-2 text-end">
+                                <p data-bs-toggle="tooltip" data-bs-placement="top"
+                                  title="59 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18423,7 +18433,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="40 seen in 17481 runs" class="mb-0">
+                                  title="48 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18473,7 +18483,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="37 seen in 17481 runs" class="mb-0">
+                                  title="41 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18523,7 +18533,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="28 seen in 17481 runs" class="mb-0">
+                                  title="32 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18573,7 +18583,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="19 seen in 17481 runs" class="mb-0">
+                                  title="24 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18623,7 +18633,7 @@
                               <!-- Popularity % -->
                               <div class="col-md-2 text-end">
                                 <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                  title="9 seen in 17481 runs" class="mb-0">
+                                  title="9 seen in 19733 runs" class="mb-0">
                                    0 % </p>
                               </div>
                             </div>
@@ -18699,8 +18709,8 @@
                                 <!-- Popularity % -->
                                 <div class="col-md-2 text-end">
                                   <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="15928 seen in 24410 runs" class="mb-0">
-                                     65 % </p>
+                                    title="18478 seen in 28034 runs" class="mb-0">
+                                     66 % </p>
                                 </div>
                               </div>
                               
@@ -18749,8 +18759,8 @@
                                 <!-- Popularity % -->
                                 <div class="col-md-2 text-end">
                                   <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="5860 seen in 24410 runs" class="mb-0">
-                                     24 % </p>
+                                    title="6519 seen in 28034 runs" class="mb-0">
+                                     23 % </p>
                                 </div>
                               </div>
                               
@@ -18799,8 +18809,8 @@
                                 <!-- Popularity % -->
                                 <div class="col-md-2 text-end">
                                   <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="1097 seen in 24410 runs" class="mb-0">
-                                     4 % </p>
+                                    title="1280 seen in 28034 runs" class="mb-0">
+                                     5 % </p>
                                 </div>
                               </div>
                               
@@ -18849,7 +18859,7 @@
                                 <!-- Popularity % -->
                                 <div class="col-md-2 text-end">
                                   <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="770 seen in 24410 runs" class="mb-0">
+                                    title="888 seen in 28034 runs" class="mb-0">
                                      3 % </p>
                                 </div>
                               </div>
@@ -18899,7 +18909,7 @@
                                 <!-- Popularity % -->
                                 <div class="col-md-2 text-end">
                                   <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="590 seen in 24410 runs" class="mb-0">
+                                    title="679 seen in 28034 runs" class="mb-0">
                                      2 % </p>
                                 </div>
                               </div>
@@ -18949,7 +18959,7 @@
                                 <!-- Popularity % -->
                                 <div class="col-md-2 text-end">
                                   <p data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="165 seen in 24410 runs" class="mb-0">
+                                    title="190 seen in 28034 runs" class="mb-0">
                                      1 % </p>
                                 </div>
                               </div>
@@ -19037,19 +19047,1051 @@
           <div class="accordion" id="routeDungeonAccordion">
             
             
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-arakara-city-of-echoes">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-arakara-city-of-echoes" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-arakara-city-of-echoes" style="
+                            background-image: url('/data/icons/ara-kara-city-of-echoes-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Ara-Kara, City of Echoes</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +15
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      29:57.379
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755301618></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135920.jpg" alt="Holy"
+                        title="Holy" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135932.jpg" alt="Arcane"
+                        title="Arcane" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/236179.jpg" alt="Marksmanship"
+                        title="Marksmanship" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-arakara-city-of-echoes" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-arakara-city-of-echoes" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 15. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/1683316">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/arakara-city-of-echoes/lxOXdPO/arakara-city-of-echoes/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
             
             
             
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-ecodome-aldani">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-ecodome-aldani" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-ecodome-aldani" style="
+                            background-image: url('/data/icons/eco-dome-aldani-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Eco-Dome Al&#39;dani</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +15
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      28:46.257
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755373564></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/608952.jpg" alt="Mistweaver"
+                        title="Mistweaver" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132347.jpg" alt="Fury"
+                        title="Fury" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/236179.jpg" alt="Marksmanship"
+                        title="Marksmanship" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-ecodome-aldani" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-ecodome-aldani" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 15. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/2230227">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/ecodome-aldani/G9LW3Sv/ecodome-aldani/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
             
             
             
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-halls-of-atonement">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-halls-of-atonement" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-halls-of-atonement" style="
+                            background-image: url('/data/icons/halls-of-atonement-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Halls of Atonement</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +14
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      30:10.426
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755382740></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/608952.jpg" alt="Mistweaver"
+                        title="Mistweaver" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132347.jpg" alt="Fury"
+                        title="Fury" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/461112.jpg" alt="Beast Mastery"
+                        title="Beast Mastery" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-halls-of-atonement" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-halls-of-atonement" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 14. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/2328612">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/halls-of-atonement/v9MeW78/halls-of-atonement/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
             
             
             
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-operation-floodgate">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-operation-floodgate" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-operation-floodgate" style="
+                            background-image: url('/data/icons/operation-floodgate-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Operation: Floodgate</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +15
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      32:32.307
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755581996></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136052.jpg" alt="Restoration"
+                        title="Restoration" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132347.jpg" alt="Fury"
+                        title="Fury" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135773.jpg" alt="Frost"
+                        title="Frost" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/236286.jpg" alt="Outlaw"
+                        title="Outlaw" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-operation-floodgate" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-operation-floodgate" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 15. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/3626869">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/operation-floodgate/6XIdAUq/operation-floodgate/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
             
             
             
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-priory-of-the-sacred-flame">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-priory-of-the-sacred-flame" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-priory-of-the-sacred-flame" style="
+                            background-image: url('/data/icons/priory-of-the-sacred-flame-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Priory of the Sacred Flame</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +14
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      31:44.186
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755204589></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/608952.jpg" alt="Mistweaver"
+                        title="Mistweaver" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135773.jpg" alt="Frost"
+                        title="Frost" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/236286.jpg" alt="Outlaw"
+                        title="Outlaw" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-priory-of-the-sacred-flame" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-priory-of-the-sacred-flame" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 14. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/957975">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/priory-of-the-sacred-flame/OllS8A4/priory-of-the-sacred-flame/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
             
+            
+            
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-tazavesh-soleahs-gambit">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-tazavesh-soleahs-gambit" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-tazavesh-soleahs-gambit" style="
+                            background-image: url('/data/icons/tazavesh-the-veiled-market-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Tazavesh: So&#39;leah&#39;s Gambit</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +15
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      27:49.699
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755466954></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/608952.jpg" alt="Mistweaver"
+                        title="Mistweaver" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132347.jpg" alt="Fury"
+                        title="Fury" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/236179.jpg" alt="Marksmanship"
+                        title="Marksmanship" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-tazavesh-soleahs-gambit" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-tazavesh-soleahs-gambit" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 15. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/3050953">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/tazavesh-soleahs-gambit/WiEE0NS/tazavesh-soleahs-gambit/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
+            
+            
+            
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-tazavesh-streets-of-wonder">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-tazavesh-streets-of-wonder" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-tazavesh-streets-of-wonder" style="
+                            background-image: url('/data/icons/tazavesh-the-veiled-market-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">Tazavesh: Streets of Wonder</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +14
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      30:47.961
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755299342></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135920.jpg" alt="Holy"
+                        title="Holy" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135932.jpg" alt="Arcane"
+                        title="Arcane" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/236179.jpg" alt="Marksmanship"
+                        title="Marksmanship" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-tazavesh-streets-of-wonder" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-tazavesh-streets-of-wonder" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 14. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/1667658">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/tazavesh-streets-of-wonder/EyoZOAq/tazavesh-streets-of-wonder/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
+            
+            
+            
+            <div class="accordion-item mb-2">
+              <h2 class="accordion-header" id="routeDungeonHeading-the-dawnbreaker">
+                <button class="accordion-button collapsed d-flex" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#routeDungeonCollapse-the-dawnbreaker" aria-expanded="false"
+                  aria-controls="routeDungeonCollapse-the-dawnbreaker" style="
+                            background-image: url('/data/icons/the-dawnbreaker-small.jpg');
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-blend-mode: overlay;
+                          ">
+                  <div class="flex-fill text-start text-nowrap">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2">The Dawnbreaker</span>
+                    
+                    <span class="badge bg-dark bg-opacity-50  text-success rounded px-2 mx-1">
+                      +14
+                    </span>
+                  </div>
+                  <div class="flex-fill text-center p-2">
+                    <span class="badge bg-dark bg-opacity-50 text-white rounded px-2 mr-1">
+                      28:11.457
+                    </span>
+                    <span class="timestamp badge bg-dark bg-opacity-50 text-white rounded px-2 ml-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-timestamp=1755294797></span>
+                  </div>
+                  <div class="flex-fill text-end">
+                    <div class="d-inline-flex align-items-center">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/132276.jpg" alt="Guardian"
+                        title="Guardian" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135920.jpg" alt="Holy"
+                        title="Holy" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/135932.jpg" alt="Arcane"
+                        title="Arcane" class="me-1" />
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/461112.jpg" alt="Beast Mastery"
+                        title="Beast Mastery" class="me-1" />
+                      
+                      
+                      
+                      
+                      <img src="/data/icons/136048.jpg" alt="Elemental"
+                        title="Elemental" class="me-1" />
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </button>
+              </h2>
+              <div id="routeDungeonCollapse-the-dawnbreaker" class="accordion-collapse collapse"
+                aria-labelledby="routeDungeonHeading-the-dawnbreaker" data-bs-parent="#routeDungeonAccordion">
+                <div class="accordion-body">
+                  Route Taken from + 14. Checkout full run
+                  details: <a
+                    href="https://raider.io/mythic-plus-runs/season-tww-3/1655678">
+                    <img src="/assets/img/logos/RaiderIOLogo.png" alt="RaiderIo run link" title="RaiderIo run link"
+                      class="me-1" height="24em" width="24em" /></a>
+                  <div class="iframe-container position-relative">
+                    <!-- Spinner overlay -->
+                    <div class="iframe-spinner position-absolute top-50 start-50 translate-middle">
+                      <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                    </div>
+                    <iframe src="" loading="lazy"
+                      data-src="https://keystone.guru/route/the-dawnbreaker/IdIB51t/the-dawnbreaker/embed"
+                      class="w-100" style="
+                                border: none;
+                                width: 100%;
+                                height: calc(80vh - 3rem);
+                                display: block;
+                              "></iframe>
+                  </div>
+                </div> 
+              </div> 
+            </div> 
             
             
           </div> 
@@ -19261,20 +20303,20 @@
 
       const raw = [
         
-    8804
+    10351
       , 
     
-    6339
+    7476
       , 
     
-    528
+    608
       , 
     
-    4948
+    5559
       
     
 ];
-    const total = 20619;
+    const total = 23994;
     const pcts = raw.map(c => c / total * 100);
     const baseColors = ['#FF0000', '#1eff00', '#a335ee', '#ff8000'];
 
