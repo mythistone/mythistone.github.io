@@ -1,0 +1,2553 @@
+<!--
+=========================================================
+* Material Dashboard 3 - v3.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MythiStone" />
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+  <title>
+    WoW Stats - MythiStone
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" />
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="/assets/css/material-dashboard.css" rel="stylesheet" />
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-radius-lg fixed-start ms-2  bg-white my-2"
+    id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-dark opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand px-4 py-3 m-0" href="/pages/dashboard " target="_blank">
+        <img src="../assets/img/favicon/favicon-96x96.png" class="navbar-brand-img" width="26" height="26"
+          alt="main_logo">
+        <span class="ms-1 text-sm text-dark">MythiStone</span>
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" href="/pages/dashboard">
+            <i class="material-symbols-rounded opacity-5">dashboard</i>
+            <span class="nav-link-text ms-1">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="/pages/routes">
+            <i class="material-symbols-rounded opacity-5">Route</i>
+            <span class="nav-link-text ms-1">Routes</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-5">Classes</h6>
+        </li>
+        <div class="accordion" id="specNavAccordion">
+          
+          
+          <div class="accordion-item bg-transparent border-0">
+            <!-- Accordion header / button -->
+            <h2 class="accordion-header" id="heading-Tank">
+              <button class="nav-link text-dark collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-Tank" aria-expanded="false" aria-controls="collapse-Tank">
+                
+                <i class="material-symbols-rounded opacity-5">shield</i>
+                <span class="nav-link-text ms-1">Tank</span>
+              </button>
+            </h2>
+
+            <!-- Accordion body: list of specs -->
+            <div id="collapse-Tank" class="accordion-collapse collapse" aria-labelledby="heading-Tank"
+              data-bs-parent="#specNavAccordion">
+              <div class="accordion-body px-0 py-1">
+                <ul class="nav flex-column">
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Tank/Blood_Death Knight"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135770.jpg" class="img-fluid" alt="Blood Death Knight Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(196, 30, 58)" >
+                        Blood Death Knight
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Tank/Brewmaster_Monk"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/608951.jpg" class="img-fluid" alt="Brewmaster Monk Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(0, 255, 152)" >
+                        Brewmaster Monk
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Tank/Guardian_Druid"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/132276.jpg" class="img-fluid" alt="Guardian Druid Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 124, 10)" >
+                        Guardian Druid
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Tank/Protection_Paladin"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/236264.jpg" class="img-fluid" alt="Protection Paladin Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(244, 140, 186)" >
+                        Protection Paladin
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Tank/Protection_Warrior"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/132341.jpg" class="img-fluid" alt="Protection Warrior Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(198, 155, 109)" >
+                        Protection Warrior
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Tank/Vengeance_Demon Hunter"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/1247265.jpg" class="img-fluid" alt="Vengeance Demon Hunter Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(163, 48, 201)" >
+                        Vengeance Demon Hunter
+                      </span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="accordion-item bg-transparent border-0">
+            <!-- Accordion header / button -->
+            <h2 class="accordion-header" id="heading-Healer">
+              <button class="nav-link text-dark collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-Healer" aria-expanded="false" aria-controls="collapse-Healer">
+                
+                <i class="material-symbols-rounded opacity-5">health_cross</i>
+                <span class="nav-link-text ms-1">Healer</span>
+              </button>
+            </h2>
+
+            <!-- Accordion body: list of specs -->
+            <div id="collapse-Healer" class="accordion-collapse collapse" aria-labelledby="heading-Healer"
+              data-bs-parent="#specNavAccordion">
+              <div class="accordion-body px-0 py-1">
+                <ul class="nav flex-column">
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Discipline_Priest"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135940.jpg" class="img-fluid" alt="Discipline Priest Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 255, 255)" >
+                        Discipline Priest
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Holy_Paladin"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135920.jpg" class="img-fluid" alt="Holy Paladin Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(244, 140, 186)" >
+                        Holy Paladin
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Holy_Priest"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/237542.jpg" class="img-fluid" alt="Holy Priest Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 255, 255)" >
+                        Holy Priest
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Mistweaver_Monk"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/608952.jpg" class="img-fluid" alt="Mistweaver Monk Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(0, 255, 152)" >
+                        Mistweaver Monk
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Preservation_Evoker"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/4511812.jpg" class="img-fluid" alt="Preservation Evoker Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(51, 147, 127)" >
+                        Preservation Evoker
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Restoration_Druid"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136041.jpg" class="img-fluid" alt="Restoration Druid Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 124, 10)" >
+                        Restoration Druid
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Healer/Restoration_Shaman"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136052.jpg" class="img-fluid" alt="Restoration Shaman Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(0, 112, 221)" >
+                        Restoration Shaman
+                      </span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="accordion-item bg-transparent border-0">
+            <!-- Accordion header / button -->
+            <h2 class="accordion-header" id="heading-Dps">
+              <button class="nav-link text-dark collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-Dps" aria-expanded="false" aria-controls="collapse-Dps">
+                
+                <i class="material-symbols-rounded opacity-5">swords</i>
+                <span class="nav-link-text ms-1">Dps</span>
+              </button>
+            </h2>
+
+            <!-- Accordion body: list of specs -->
+            <div id="collapse-Dps" class="accordion-collapse collapse" aria-labelledby="heading-Dps"
+              data-bs-parent="#specNavAccordion">
+              <div class="accordion-body px-0 py-1">
+                <ul class="nav flex-column">
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Affliction_Warlock"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136145.jpg" class="img-fluid" alt="Affliction Warlock Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(135, 136, 238)" >
+                        Affliction Warlock
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Arcane_Mage"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135932.jpg" class="img-fluid" alt="Arcane Mage Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(63, 199, 235)" >
+                        Arcane Mage
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Arms_Warrior"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/132355.jpg" class="img-fluid" alt="Arms Warrior Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(198, 155, 109)" >
+                        Arms Warrior
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Assassination_Rogue"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/236270.jpg" class="img-fluid" alt="Assassination Rogue Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 244, 104)" >
+                        Assassination Rogue
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Augmentation_Evoker"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/5198700.jpg" class="img-fluid" alt="Augmentation Evoker Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(51, 147, 127)" >
+                        Augmentation Evoker
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Balance_Druid"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136096.jpg" class="img-fluid" alt="Balance Druid Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 124, 10)" >
+                        Balance Druid
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Beast Mastery_Hunter"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/461112.jpg" class="img-fluid" alt="Beast Mastery Hunter Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(170, 211, 114)" >
+                        Beast Mastery Hunter
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Demonology_Warlock"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136172.jpg" class="img-fluid" alt="Demonology Warlock Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(135, 136, 238)" >
+                        Demonology Warlock
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Destruction_Warlock"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136186.jpg" class="img-fluid" alt="Destruction Warlock Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(135, 136, 238)" >
+                        Destruction Warlock
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Devastation_Evoker"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/4511811.jpg" class="img-fluid" alt="Devastation Evoker Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(51, 147, 127)" >
+                        Devastation Evoker
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Elemental_Shaman"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136048.jpg" class="img-fluid" alt="Elemental Shaman Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(0, 112, 221)" >
+                        Elemental Shaman
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Enhancement_Shaman"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/237581.jpg" class="img-fluid" alt="Enhancement Shaman Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(0, 112, 221)" >
+                        Enhancement Shaman
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Feral_Druid"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/132115.jpg" class="img-fluid" alt="Feral Druid Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 124, 10)" >
+                        Feral Druid
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Fire_Mage"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135810.jpg" class="img-fluid" alt="Fire Mage Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(63, 199, 235)" >
+                        Fire Mage
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Frost_Death Knight"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135773.jpg" class="img-fluid" alt="Frost Death Knight Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(196, 30, 58)" >
+                        Frost Death Knight
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Frost_Mage"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135846.jpg" class="img-fluid" alt="Frost Mage Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(63, 199, 235)" >
+                        Frost Mage
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Fury_Warrior"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/132347.jpg" class="img-fluid" alt="Fury Warrior Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(198, 155, 109)" >
+                        Fury Warrior
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Havoc_Demon Hunter"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/1247264.jpg" class="img-fluid" alt="Havoc Demon Hunter Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(163, 48, 201)" >
+                        Havoc Demon Hunter
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Marksmanship_Hunter"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/236179.jpg" class="img-fluid" alt="Marksmanship Hunter Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(170, 211, 114)" >
+                        Marksmanship Hunter
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Outlaw_Rogue"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/236286.jpg" class="img-fluid" alt="Outlaw Rogue Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 244, 104)" >
+                        Outlaw Rogue
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Retribution_Paladin"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135873.jpg" class="img-fluid" alt="Retribution Paladin Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(244, 140, 186)" >
+                        Retribution Paladin
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Shadow_Priest"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/136207.jpg" class="img-fluid" alt="Shadow Priest Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 255, 255)" >
+                        Shadow Priest
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Subtlety_Rogue"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/132320.jpg" class="img-fluid" alt="Subtlety Rogue Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(255, 244, 104)" >
+                        Subtlety Rogue
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Survival_Hunter"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/461113.jpg" class="img-fluid" alt="Survival Hunter Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(170, 211, 114)" >
+                        Survival Hunter
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Unholy_Death Knight"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/135775.jpg" class="img-fluid" alt="Unholy Death Knight Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(196, 30, 58)" >
+                        Unholy Death Knight
+                      </span>
+                    </a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a href="/classes/Dps/Windwalker_Monk"
+                      class="nav-link d-flex align-items-center
+                         text-dark">
+                      <img width="24" src="/data/icons/608953.jpg" class="img-fluid" alt="Windwalker Monk Icon">
+                      <span class="nav-link-text ms-2" 
+                        style="color: rgb(0, 255, 152)" >
+                        Windwalker Monk
+                      </span>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-5">Other Pages</h6>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark">
+            <i class="material-symbols-rounded opacity-5">Upcoming</i>
+            <span class="nav-link-text ms-1">Coming Soon</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidenav-footer position-absolute w-100 bottom-0 ">
+      <div class="mx-3">
+        <a class="btn btn-outline mt-4 w-100" href="https://discord.com/invite/v3gYmYamGJ" type="button">Join the
+          discord</a>
+      </div>
+    </div>
+  </aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-3 shadow-none border-radius-xl" id="navbarBlur"
+      data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
+          </ol>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div class="input-group input-group-outline">
+              <label class="form-label">Type here...</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <ul class="navbar-nav d-flex align-items-center  justify-content-end">
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item px-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0">
+                <i class="material-symbols-rounded fixed-plugin-button-nav">settings</i>
+              </a>
+            </li>
+            <li class="nav-item dropdown pe-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="material-symbols-rounded">notifications</i>
+              </a>
+              <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="../assets/img/logos/Jods_logo.png" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">New Stuff</span> Coming Soon
+                        </h6>
+                        <p class="text-xs text-secondary mb-0">
+                          <i class="fa fa-clock me-1"></i>
+                          5 minutes ago
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-2">
+      <div class="row">
+        <div class="ms-3">
+          <h3 class="mb-0 h4 font-weight-bolder">Dashboard</h3>
+          <p class="mb-4">
+            Check M+ Overall Statistics.
+          </p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+          <div class="card h-100" style="
+              background-image: url('/data/icons/tazavesh-the-veiled-market-small.jpg');
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-blend-mode: overlay;
+            ">
+            <div class="card-header p-2 ps-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-sm mb-0 text-capitalize">Shortest Run</p>
+                  
+                  <div>
+                    <span class="font-weight-bolder h4 text-success">+++2</span>
+                    <span class="font-weight-bolder h4">Tazavesh: So&#39;leah&#39;s Gambit</span>
+                    <span class="font-weight-bolder h4">US</span>
+                  </div>
+                </div>
+                <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                  <i class="material-symbols-rounded opacity-10">leaderboard</i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <h4 class="mb-0" id="fastest-run-value">Cleared in 11:27.869
+              </h4>
+              <div class="d-flex align-items-center">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/608951.jpg"
+                  alt="Brewmaster" title="Brewmaster" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/136041.jpg"
+                  alt="Restoration" title="Restoration" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/4511811.jpg"
+                  alt="Devastation" title="Devastation" class="me-1"  />
+                
+                
+                
+                
+                <img src="/data/icons/136048.jpg"
+                  alt="Elemental" title="Elemental" class="me-1"  />
+                
+                
+                
+                
+                <img src="/data/icons/1247264.jpg"
+                  alt="Havoc" title="Havoc" class="me-1"  />
+                
+                
+                
+                
+                
+                
+              </div>
+            </div>
+            <hr class="dark horizontal my-0">
+            <div class="card-footer p-2 ps-3">
+              <p class="mb-0 text-sm">
+                <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-timestamp=1755114836.0>Run happened:</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+          <div class="card h-100" style="
+              background-image: url('/data/icons/tazavesh-the-veiled-market-small.jpg');
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-blend-mode: overlay;
+            ">
+            <div class="card-header p-2 ps-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-sm mb-0 text-capitalize">Longest Run</p>
+                  
+                  <div>
+                    <span class="font-weight-bolder h4 text-danger">-11</span>
+                    <span class="font-weight-bolder h4">Tazavesh: So&#39;leah&#39;s Gambit</span>
+                    <span class="font-weight-bolder h4">KR</span>
+                  </div>
+                </div>
+                <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                  <i class="material-symbols-rounded opacity-10">leaderboard</i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <h4 class="mb-0" id="fastest-run-value">Cleared in 04:32:02.985
+              </h4>
+              <div class="d-flex align-items-center">
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/236264.jpg"
+                  alt="Protection" title="Protection" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/237542.jpg"
+                  alt="Holy" title="Holy" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/236286.jpg"
+                  alt="Outlaw" title="Outlaw" class="me-1"  />
+                
+                
+                
+                
+                <img src="/data/icons/236179.jpg"
+                  alt="Marksmanship" title="Marksmanship" class="me-1"  />
+                
+                
+                
+                
+                <img src="/data/icons/136186.jpg"
+                  alt="Destruction" title="Destruction" class="me-1"  />
+                
+                
+                
+              </div>
+            </div>
+            <hr class="dark horizontal my-0">
+            <div class="card-footer p-2 ps-3">
+              <p class="mb-0 text-sm">
+                <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-timestamp=1755348228.0>Run happened:</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+          <div class="card h-100" style="
+              background-image: url('/data/icons/tazavesh-the-veiled-market-small.jpg');
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-blend-mode: overlay;
+            ">
+            <div class="card-header p-2 ps-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-sm mb-0 text-capitalize">Highest Run</p>
+                  
+                  <div>
+                    <span class="font-weight-bolder h4 text-success">+16</span>
+                    <span class="font-weight-bolder h4">Tazavesh: So&#39;leah&#39;s Gambit</span>
+                    <span class="font-weight-bolder h4">EU</span>
+                  </div>
+                </div>
+                <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                  <i class="material-symbols-rounded opacity-10">leaderboard</i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body ">
+              <h4 class="mb-0" id="fastest-run-value">Cleared in 26:14.195
+              </h4>
+              <div class="d-flex align-items-center">
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/132341.jpg"
+                  alt="Protection" title="Protection" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/136052.jpg"
+                  alt="Restoration" title="Restoration" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/135773.jpg"
+                  alt="Frost" title="Frost" class="me-1"  />
+                
+                
+                
+                
+                
+                
+                
+                <img src="/data/icons/1247264.jpg"
+                  alt="Havoc" title="Havoc" class="me-1"  />
+                
+                
+                
+                
+                <img src="/data/icons/135932.jpg"
+                  alt="Arcane" title="Arcane" class="me-1"  />
+                
+                
+                
+              </div>
+            </div>
+            <hr class="dark horizontal my-0">
+            <div class="card-footer p-2 ps-3">
+              <p class="mb-0 text-sm">
+                <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-timestamp=1755522188.0>Run happened:</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-lg-12 col-md-6 mt-4 mb-4">
+          <div class="card ">
+            <div class="card-body">
+              <ul class="nav nav-tabs mb-3" id="specTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="overall-tab" data-bs-toggle="tab" data-bs-target="#overall"
+                    type="button" role="tab" aria-controls="overall" aria-selected="false">
+                    Spec Popularity Overall
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="keylevel-tab" data-bs-toggle="tab" data-bs-target="#keylevel"
+                    type="button" role="tab" aria-controls="keylevel" aria-selected="true">
+                    Spec Popularity by Keylevel
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content" id="specTabsContent">
+                <!-- Tab 1 -->
+                <div class="tab-pane fade show active" id="overall" role="tabpanel" aria-labelledby="overall-tab">
+                  <div class="row">
+                    <div class="col-lg-12 mt-4 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h6 class="mb-0">Spec popularity</h6>
+                          <p class="text-sm">Across all Keylevels</p>
+                          <div class="pe-2">
+                            <div class="chart">
+                              <canvas id="chart-overall" class="chart-canvas" height="100"></canvas>
+                            </div>
+                          </div>
+                          <hr class="dark horizontal">
+                          <div class="d-flex">
+                            <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
+                            <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                              data-timestamp=1755679030.735773>Last Update: </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tab 2 -->
+                <div class="tab-pane fade" id="keylevel" role="tabpanel" aria-labelledby="keylevel-tab">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-4 mt-4 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h6 class="mb-0">Spec popularity</h6>
+                          <p class="text-sm">By Keylevel</p>
+                          <div class="pe-2">
+                            <div class="chart">
+                              <canvas id="chart-keylevel" class="chart-canvas" height="80"></canvas>
+                            </div>
+                          </div>
+                          <hr class="dark horizontal">
+                          <div class="d-flex">
+                            <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
+                            <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                              data-timestamp=1755679030.735773>Last Update: </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mt-4 mb-4">
+          <div class="card ">
+            <div class="card-body">
+              <h6 class="mb-0 "> Keys per Week</h6>
+              <p class="text-sm "></p>
+              <div class="pe-2">
+                <div class="chart">
+                  <canvas id="chart-keys-per-week" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+              <hr class="dark horizontal">
+              <div class="d-flex ">
+                <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
+                <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-timestamp=1755679030.735773>Last Update: </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="mb-0 ">Most Popular Dungeons</h6>
+              <p class="text-sm "></p>
+              <div class="pe-2">
+                <div class="chart">
+                  <canvas id="chart-dungeon-popularity" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+              <hr class="dark horizontal">
+              <div class="d-flex ">
+                <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
+                <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-timestamp=1755679030.735773>Last Update: </p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mt-4 mb-4">
+          <div class="card ">
+            <div class="card-body">
+              <h6 class="mb-0 ">Spec Popularity vs Performance</h6>
+              <p class="text-sm "></p>
+              <div class="pe-2">
+                <div class="chart">
+                  <canvas id="chart-popularity-vs-tier" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+              <hr class="dark horizontal">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
+                  <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-timestamp=1755679030.735773>Last Update: </p>
+                </div>
+                <a class="mb-0 text-sm" style="cursor: pointer;" data-bs-toggle="modal"
+                  data-bs-target="#performanceModal">See How It’s
+                  Calculated</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="mb-0 ">Dungeon Popularity across Keylevels</h6>
+              <p class="text-sm "></p>
+              <div class="pe-2">
+                <div class="chart">
+                  <canvas id="chart-dungeon-popularity-vs-ease" class="chart-canvas" height="170"></canvas>
+                </div>
+              </div>
+              <hr class="dark horizontal">
+              <div class="d-flex ">
+                <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
+                <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-timestamp=1755679030.735773>Last Update: </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <div class="row mb-4">
+        <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
+          <div class="card">
+            <div class="card-header pb-0">
+              <div class="row">
+                <div class="col-lg-6 col-7">
+                  <h6>Spec Tierlist</h6>
+                  <p class="text-sm mb-0">
+                    <i class="fa fa-check text-info" aria-hidden="true"></i>
+                    <span class="font-weight-bold ms-1">30 done</span> this month
+                  </p>
+                </div>
+                <div class="col-lg-6 col-5 my-auto text-end">
+                  <div class="dropdown float-lg-end pe-4">
+                    <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-ellipsis-v text-secondary"></i>
+                    </a>
+                    <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Action</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Another action</a></li>
+                      <li><a class="dropdown-item border-radius-md" href="javascript:;">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Companies</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Members</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Budget
+                      </th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                        Completion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm me-3" alt="xd">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Material XD Version</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Ryan Tompson">
+                            <img src="../assets/img/team-1.jpg" alt="team1">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Romina Hadid">
+                            <img src="../assets/img/team-2.jpg" alt="team2">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Alexander Smith">
+                            <img src="../assets/img/team-3.jpg" alt="team3">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Jessica Doe">
+                            <img src="../assets/img/team-4.jpg" alt="team4">
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> $14,000 </span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="progress-wrapper w-75 mx-auto">
+                          <div class="progress-info">
+                            <div class="progress-percentage">
+                              <span class="text-xs font-weight-bold">60%</span>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-info w-60" role="progressbar" aria-valuenow="60"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/small-logos/logo-atlassian.svg" class="avatar avatar-sm me-3"
+                              alt="atlassian">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Add Progress Track</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Romina Hadid">
+                            <img src="../assets/img/team-2.jpg" alt="team5">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Jessica Doe">
+                            <img src="../assets/img/team-4.jpg" alt="team6">
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> $3,000 </span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="progress-wrapper w-75 mx-auto">
+                          <div class="progress-info">
+                            <div class="progress-percentage">
+                              <span class="text-xs font-weight-bold">10%</span>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-info w-10" role="progressbar" aria-valuenow="10"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/small-logos/logo-slack.svg" class="avatar avatar-sm me-3"
+                              alt="team7">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Fix Platform Errors</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Romina Hadid">
+                            <img src="../assets/img/team-3.jpg" alt="team8">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Jessica Doe">
+                            <img src="../assets/img/team-1.jpg" alt="team9">
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> Not set </span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="progress-wrapper w-75 mx-auto">
+                          <div class="progress-info">
+                            <div class="progress-percentage">
+                              <span class="text-xs font-weight-bold">100%</span>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-success w-100" role="progressbar" aria-valuenow="100"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm me-3"
+                              alt="spotify">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Launch our Mobile App</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Ryan Tompson">
+                            <img src="../assets/img/team-4.jpg" alt="user1">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Romina Hadid">
+                            <img src="../assets/img/team-3.jpg" alt="user2">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Alexander Smith">
+                            <img src="../assets/img/team-4.jpg" alt="user3">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Jessica Doe">
+                            <img src="../assets/img/team-1.jpg" alt="user4">
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> $20,500 </span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="progress-wrapper w-75 mx-auto">
+                          <div class="progress-info">
+                            <div class="progress-percentage">
+                              <span class="text-xs font-weight-bold">100%</span>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-success w-100" role="progressbar" aria-valuenow="100"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/small-logos/logo-jira.svg" class="avatar avatar-sm me-3" alt="jira">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Add the New Pricing Page</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Ryan Tompson">
+                            <img src="../assets/img/team-4.jpg" alt="user5">
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> $500 </span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="progress-wrapper w-75 mx-auto">
+                          <div class="progress-info">
+                            <div class="progress-percentage">
+                              <span class="text-xs font-weight-bold">25%</span>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-info w-25" role="progressbar" aria-valuenow="25"
+                              aria-valuemin="0" aria-valuemax="25"></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/small-logos/logo-invision.svg" class="avatar avatar-sm me-3"
+                              alt="invision">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Redesign New Online Shop</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="avatar-group mt-2">
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Ryan Tompson">
+                            <img src="../assets/img/team-1.jpg" alt="user6">
+                          </a>
+                          <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="Jessica Doe">
+                            <img src="../assets/img/team-4.jpg" alt="user7">
+                          </a>
+                        </div>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xs font-weight-bold"> $2,000 </span>
+                      </td>
+                      <td class="align-middle">
+                        <div class="progress-wrapper w-75 mx-auto">
+                          <div class="progress-info">
+                            <div class="progress-percentage">
+                              <span class="text-xs font-weight-bold">40%</span>
+                            </div>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-gradient-info w-40" role="progressbar" aria-valuenow="40"
+                              aria-valuemin="0" aria-valuemax="40"></div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <div class="card-header pb-0">
+              <h6>Orders overview</h6>
+              <p class="text-sm">
+                <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
+                <span class="font-weight-bold">24%</span> this month
+              </p>
+            </div>
+            <div class="card-body p-3">
+              <div class="timeline timeline-one-side">
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="material-symbols-rounded text-success text-gradient">notifications</i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">$2400, Design changes</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">22 DEC 7:20 PM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="material-symbols-rounded text-danger text-gradient">code</i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="material-symbols-rounded text-info text-gradient">shopping_cart</i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Server payments for April</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 9:34 PM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="material-symbols-rounded text-warning text-gradient">credit_card</i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">New card added for order #4395133</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">20 DEC 2:20 AM</p>
+                  </div>
+                </div>
+                <div class="timeline-block mb-3">
+                  <span class="timeline-step">
+                    <i class="material-symbols-rounded text-primary text-gradient">key</i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">Unlock packages for development</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">18 DEC 4:54 AM</p>
+                  </div>
+                </div>
+                <div class="timeline-block">
+                  <span class="timeline-step">
+                    <i class="material-symbols-rounded text-dark text-gradient">payments</i>
+                  </span>
+                  <div class="timeline-content">
+                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #9583120</h6>
+                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">17 DEC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+
+      <div class="modal fade" id="performanceModal" tabindex="-1" aria-labelledby="performanceModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content card">
+            <div class="modal-header">
+              <h5 class="modal-title" id="performanceModalLabel">How Performance Is Calculated</h5>
+            </div>
+            <div class="modal-body">
+
+
+              <p>We look at every run of a given specialization and assign:</p>
+              <ul>
+                <li><strong>Positive points</strong> when the key upgrades (higher-level keys earn more points).</li>
+                <li><strong>Negative points</strong> when the key depletes (losing a low-level key is judged more
+                  harshly).</li>
+              </ul>
+              <p>Then we average those points across all runs to get a single “Performance” number.</p>
+
+              <h2>Why This Matters</h2>
+              <ul>
+                <li>Rewards high-level pushes more strongly.</li>
+                <li>Punishes depletes in a balanced way.</li>
+                <li>Gives a fair comparison regardless of how many runs each spec has.</li>
+              </ul>
+
+              <h2>Summary</h2>
+              <p>This chart helps you spot specializations that are both strong in pushing keys (high performance) and
+                popular among players (many runs).</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer py-4  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>,
+                made with Material-dashboard by
+                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank"> Creative Tim</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a href="https://www.Rivalsstats.com" class="nav-link text-muted" target="_blank">MythiStone</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.Rivalsstats.com/WoW" class="nav-link text-muted" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.Rivalsstats.com/Specs" class="nav-link text-muted" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.Rivalsstats.com/license" class="nav-link pe-0 text-muted"
+                    target="_blank">License</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <div class="fixed-plugin">
+    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
+      <i class="material-symbols-rounded py-2">settings</i>
+    </a>
+    <div class="card shadow-lg">
+      <div class="card-header pb-0 pt-3">
+        <div class="float-start">
+          <h5 class="mt-3 mb-0">UI Configurator</h5>
+          <p>Config the Ui</p>
+        </div>
+        <div class="float-end mt-4">
+          <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+            <i class="material-symbols-rounded">clear</i>
+          </button>
+        </div>
+        <!-- End Toggle Button -->
+      </div>
+      <hr class="horizontal dark my-1">
+      <div class="card-body pt-sm-3 pt-0">
+        <!-- Sidebar Backgrounds -->
+        <div>
+          <h6 class="mb-0">Sidebar Colors</h6>
+        </div>
+        <a href="javascript:void(0)" class="switch-trigger background-color">
+          <div class="badge-colors my-2 text-start">
+            <span class="badge filter bg-gradient-primary" data-color="primary" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-dark active" data-color="dark" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-danger" id="defaultColor" data-color="danger"
+              onclick="sidebarColor(this)"></span>
+          </div>
+        </a>
+        <!-- Sidenav Type -->
+        <div class="mt-3">
+          <h6 class="mb-0">Sidenav Type</h6>
+          <p class="text-sm">Choose between different sidenav types.</p>
+        </div>
+        <div class="d-flex">
+          <button class="btn bg-gradient-dark px-3 mb-2" data-class="bg-gradient-dark"
+            onclick="sidebarType(this)">Dark</button>
+          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" id="defaultSidebarType" data-class="bg-transparent"
+            onclick="sidebarType(this)">Transparent</button>
+          <button class="btn bg-gradient-dark px-3 mb-2  active ms-2" data-class="bg-white"
+            onclick="sidebarType(this)">White</button>
+        </div>
+        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+        <hr class="horizontal dark my-3">
+        <div class="mt-2 d-flex">
+          <h6 class="mb-0">Light / Dark</h6>
+          <div class="form-check form-switch ps-0 ms-auto my-auto">
+            <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
+          </div>
+        </div>
+        <hr class="horizontal dark my-sm-4">
+        <a class="btn btn-outline-dark w-100" href="https://discord.com/invite/v3gYmYamGJ">Give Feedback on Discord</a>
+        <div class="w-100 text-center">
+          <a class="github-button" href="https://github.com/Rivalsstats/WoW" data-icon="octicon-star" data-size="large"
+            data-show-count="true" aria-label="Star Rivalsstats/WoW on GitHub">Star</a>
+          <h6 class="mt-3">Thank you for sharing!</h6>
+          <a href="https://twitter.com/intent/tweet?text=Check%20Rivalsstats%20WoW%20M%20Plus%20Meta&amp;url=https%3A%2F%2Fwww.Rivalsstats.com%2FWoW"
+            class="btn btn-dark mb-0 me-2" target="_blank">
+            <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.Rivalsstats.com/WoW"
+            class="btn btn-dark mb-0 me-2" target="_blank">
+            <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+
+  <!-- initialize charts -->
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+
+<!-- Overall Keys by Spec Chart -->
+<script>
+(() => {
+  const labels = ["Restoration", "Frost", "Arcane", "Vengeance", "Retribution", "Restoration", "Protection", "Protection", "Havoc", "Discipline", "Beast Mastery", "Marksmanship", "Demonology", "Assassination", "Elemental", "Balance", "Shadow", "Frost", "Brewmaster", "Fury", "Devastation", "Guardian", "Blood", "Holy", "Destruction", "Mistweaver", "Windwalker", "Unholy", "Affliction", "Feral", "Enhancement", "Holy", "Preservation", "Outlaw", "Survival", "Arms", "Subtlety", "Fire", "Augmentation"];
+  const counts = [67041, 58081, 54169, 54110, 48584, 47375, 45401, 43604, 42147, 41848, 38822, 38694, 34272, 31488, 31476, 30141, 30131, 25282, 24616, 24527, 22158, 20619, 19345, 18151, 17904, 14949, 14702, 14485, 13167, 11565, 11268, 10181, 8119, 7071, 4829, 4006, 3567, 1838, 1363];
+  const barColors = ["rgba(0, 112, 221, 0.8)", "rgba(196, 30, 58, 0.8)", "rgba(63, 199, 235, 0.8)", "rgba(163, 48, 201, 0.8)", "rgba(244, 140, 186, 0.8)", "rgba(255, 124, 10, 0.8)", "rgba(198, 155, 109, 0.8)", "rgba(244, 140, 186, 0.8)", "rgba(163, 48, 201, 0.8)", "rgba(255, 255, 255, 0.8)", "rgba(170, 211, 114, 0.8)", "rgba(170, 211, 114, 0.8)", "rgba(135, 136, 238, 0.8)", "rgba(255, 244, 104, 0.8)", "rgba(0, 112, 221, 0.8)", "rgba(255, 124, 10, 0.8)", "rgba(255, 255, 255, 0.8)", "rgba(63, 199, 235, 0.8)", "rgba(0, 255, 152, 0.8)", "rgba(198, 155, 109, 0.8)", "rgba(51, 147, 127, 0.8)", "rgba(255, 124, 10, 0.8)", "rgba(196, 30, 58, 0.8)", "rgba(244, 140, 186, 0.8)", "rgba(135, 136, 238, 0.8)", "rgba(0, 255, 152, 0.8)", "rgba(0, 255, 152, 0.8)", "rgba(196, 30, 58, 0.8)", "rgba(135, 136, 238, 0.8)", "rgba(255, 124, 10, 0.8)", "rgba(0, 112, 221, 0.8)", "rgba(255, 255, 255, 0.8)", "rgba(51, 147, 127, 0.8)", "rgba(255, 244, 104, 0.8)", "rgba(170, 211, 114, 0.8)", "rgba(198, 155, 109, 0.8)", "rgba(255, 244, 104, 0.8)", "rgba(63, 199, 235, 0.8)", "rgba(51, 147, 127, 0.8)"];
+  const iconUrls = ["/data/icons/136052.jpg", "/data/icons/135773.jpg", "/data/icons/135932.jpg", "/data/icons/1247265.jpg", "/data/icons/135873.jpg", "/data/icons/136041.jpg", "/data/icons/132341.jpg", "/data/icons/236264.jpg", "/data/icons/1247264.jpg", "/data/icons/135940.jpg", "/data/icons/461112.jpg", "/data/icons/236179.jpg", "/data/icons/136172.jpg", "/data/icons/236270.jpg", "/data/icons/136048.jpg", "/data/icons/136096.jpg", "/data/icons/136207.jpg", "/data/icons/135846.jpg", "/data/icons/608951.jpg", "/data/icons/132347.jpg", "/data/icons/4511811.jpg", "/data/icons/132276.jpg", "/data/icons/135770.jpg", "/data/icons/135920.jpg", "/data/icons/136186.jpg", "/data/icons/608952.jpg", "/data/icons/608953.jpg", "/data/icons/135775.jpg", "/data/icons/136145.jpg", "/data/icons/132115.jpg", "/data/icons/237581.jpg", "/data/icons/237542.jpg", "/data/icons/4511812.jpg", "/data/icons/236286.jpg", "/data/icons/461113.jpg", "/data/icons/132355.jpg", "/data/icons/132320.jpg", "/data/icons/135810.jpg", "/data/icons/5198700.jpg"];
+
+  const overall_ctx = document.getElementById("chart-overall").getContext("2d");
+
+  // load images once
+  const iconPromises = iconUrls.map(src => new Promise(res => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => res(img);
+    img.onerror = () => res(null); // fail-safe
+  }));
+
+  const iconPlugin = {
+    id: "iconLabels",
+    afterDraw(chart, args, opts) {
+      if (!opts.enabled) return;
+      const { ctx, chartArea: { bottom }, scales: { x } } = chart;
+      opts.icons.forEach((img, i) => {
+        if (!img) return; // skip failed loads
+        const xPos = x.getPixelForTick(i);
+        ctx.drawImage(img, xPos - opts.size / 2, bottom + opts.offsetY, opts.size, opts.size);
+      });
+    }
+  };
+
+  Promise.all(iconPromises).then(icons => {
+    new Chart(overall_ctx, {
+      type: "bar",
+      data: {
+        labels: labels,
+        datasets: [{
+          label: "Keys by spec",
+          tension: 0.4,
+          borderColor: "darkgrey",
+          borderWidth: 1,
+          borderRadius: 4,
+          borderSkipped: false,
+          backgroundColor: barColors,
+          data: counts,
+          barThickness: 'flex'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          iconLabels: {
+            enabled: true,
+            size: 32,
+            offsetY: 4,
+            icons: icons
+          }
+        },
+        layout: { padding: { bottom: (32 + 8 + 4) } },
+        interaction: { intersect: false, mode: 'index' },
+        scales: {
+          y: { grid: { drawBorder:false, display:true, drawOnChartArea:true, drawTicks:false, borderDash:[5,5], color:'#e5e5e5'}, ticks:{display:false} },
+          x: { grid:{drawBorder:false, display:false, drawOnChartArea:false, drawTicks:false, borderDash:[5,5]}, ticks:{display:false, color:'#737373', padding:10, font:{size:14, lineHeight:2}} }
+        }
+      },
+      plugins: [iconPlugin]
+    });
+  });
+})();
+</script>
+
+  <!-- Key Level Chart -->
+  <script>
+    (() => {
+      var keylevel_ctx = document.getElementById("chart-keylevel").getContext("2d");
+      const keyLevels = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    const datasets = [{"label": "Protection", "data": [4.392, 4.336, 4.51, 4.443, 4.576, 4.413, 4.288, 4.268, 4.446, 4.259, 4.704, 4.839, 6.391, 10.0, 18.0], "rawCounts": [2961, 817, 1959, 1550, 3076, 4185, 5263, 5521, 13154, 4754, 1720, 323, 88, 21, 9], "backgroundColor": "rgba(178, 140, 98, 0.8)", "borderWidth": 0}, {"label": "Fury", "data": [2.539, 2.638, 2.406, 2.439, 2.41, 2.353, 2.426, 2.461, 2.346, 2.295, 2.01, 2.097, 1.888, 2.381, 2.0], "rawCounts": [1712, 497, 1045, 851, 1620, 2232, 2978, 3184, 6940, 2561, 735, 140, 26, 5, 1], "backgroundColor": "rgba(198, 155, 109, 0.8)", "borderWidth": 0}, {"label": "Arms", "data": [0.693, 0.679, 0.599, 0.613, 0.489, 0.441, 0.406, 0.39, 0.289, 0.221, 0.205, 0.12, 0.29, 0.0, 0.0], "rawCounts": [467, 128, 260, 214, 329, 418, 498, 504, 854, 247, 75, 8, 4, 0, 0], "backgroundColor": "rgba(218, 170, 120, 0.8)", "borderWidth": 0}, {"label": "Brewmaster", "data": [2.213, 2.24, 2.176, 2.342, 2.394, 2.329, 2.376, 2.495, 2.39, 2.509, 2.549, 2.067, 2.397, 2.381, 2.0], "rawCounts": [1492, 422, 945, 817, 1609, 2209, 2916, 3227, 7070, 2800, 932, 138, 33, 5, 1], "backgroundColor": "rgba(0, 230, 137, 0.8)", "borderWidth": 0}, {"label": "Mistweaver", "data": [1.75, 1.842, 1.545, 1.542, 1.572, 1.472, 1.437, 1.378, 1.507, 1.238, 0.903, 0.614, 0.073, 0.0, 0.0], "rawCounts": [1180, 347, 671, 538, 1057, 1396, 1764, 1783, 4459, 1382, 330, 41, 1, 0, 0], "backgroundColor": "rgba(0, 255, 152, 0.8)", "borderWidth": 0}, {"label": "Windwalker", "data": [1.412, 1.507, 1.388, 1.479, 1.561, 1.489, 1.546, 1.524, 1.414, 1.258, 0.933, 0.974, 1.017, 4.762, 4.0], "rawCounts": [952, 284, 603, 516, 1049, 1412, 1897, 1971, 4182, 1404, 341, 65, 14, 10, 2], "backgroundColor": "rgba(0, 255, 167, 0.8)", "borderWidth": 0}, {"label": "Restoration", "data": [4.688, 4.421, 4.683, 4.489, 4.72, 4.461, 4.654, 4.745, 4.506, 4.549, 4.792, 4.599, 4.067, 1.905, 0.0], "rawCounts": [3161, 833, 2034, 1566, 3173, 4231, 5712, 6138, 13331, 5077, 1752, 307, 56, 4, 0], "backgroundColor": "rgba(230, 112, 9, 0.8)", "borderWidth": 0}, {"label": "Balance", "data": [2.689, 2.914, 2.519, 2.669, 2.508, 2.582, 2.742, 2.86, 3.1, 3.389, 3.616, 3.536, 2.76, 0.952, 2.0], "rawCounts": [1813, 549, 1094, 931, 1686, 2449, 3365, 3700, 9172, 3783, 1322, 236, 38, 2, 1], "backgroundColor": "rgba(246, 120, 10, 0.8)", "borderWidth": 0}, {"label": "Guardian", "data": [2.466, 2.187, 2.399, 2.376, 2.252, 2.229, 2.202, 2.043, 1.744, 1.785, 1.264, 1.094, 0.581, 1.429, 0.0], "rawCounts": [1663, 412, 1042, 829, 1514, 2114, 2703, 2643, 5161, 1992, 462, 73, 8, 3, 0], "backgroundColor": "rgba(255, 128, 10, 0.8)", "borderWidth": 0}, {"label": "Feral", "data": [1.023, 1.061, 1.029, 0.906, 1.102, 1.169, 1.167, 1.083, 1.084, 1.189, 1.387, 1.828, 3.341, 7.619, 6.0], "rawCounts": [690, 200, 447, 316, 741, 1109, 1433, 1401, 3207, 1327, 507, 122, 46, 16, 3], "backgroundColor": "rgba(255, 136, 11, 0.8)", "borderWidth": 0}, {"label": "Vengeance", "data": [4.215, 4.262, 4.446, 4.518, 4.619, 5.018, 5.027, 5.136, 5.473, 6.191, 6.936, 7.79, 7.988, 5.238, 0.0], "rawCounts": [2842, 803, 1931, 1576, 3105, 4759, 6170, 6644, 16193, 6910, 2536, 520, 110, 11, 0], "backgroundColor": "rgba(147, 43, 181, 0.8)", "borderWidth": 0}, {"label": "Havoc", "data": [3.871, 4.023, 3.971, 3.953, 3.924, 4.09, 3.889, 3.906, 4.063, 4.328, 5.29, 6.397, 7.407, 4.762, 12.0], "rawCounts": [2610, 758, 1725, 1379, 2638, 3879, 4774, 5053, 12021, 4831, 1934, 427, 102, 10, 6], "backgroundColor": "rgba(179, 53, 221, 0.8)", "borderWidth": 0}, {"label": "Devastation", "data": [1.593, 1.746, 1.533, 1.769, 1.802, 1.966, 2.054, 2.258, 2.511, 2.427, 1.936, 1.453, 0.799, 0.0, 0.0], "rawCounts": [1074, 329, 666, 617, 1211, 1865, 2521, 2921, 7429, 2709, 708, 97, 11, 0, 0], "backgroundColor": "rgba(46, 132, 114, 0.8)", "borderWidth": 0}, {"label": "Preservation", "data": [0.839, 0.844, 0.732, 0.76, 0.722, 0.702, 0.732, 0.824, 0.861, 0.778, 0.613, 0.659, 0.871, 0.476, 0.0], "rawCounts": [566, 159, 318, 265, 485, 666, 899, 1066, 2546, 868, 224, 44, 12, 1, 0], "backgroundColor": "rgba(51, 147, 127, 0.8)", "borderWidth": 0}, {"label": "Augmentation", "data": [0.163, 0.111, 0.127, 0.135, 0.147, 0.146, 0.126, 0.128, 0.143, 0.103, 0.074, 0.09, 0.0, 0.0, 0.0], "rawCounts": [110, 21, 55, 47, 99, 138, 155, 166, 424, 115, 27, 6, 0, 0, 0], "backgroundColor": "rgba(56, 162, 140, 0.8)", "borderWidth": 0}, {"label": "Retribution", "data": [6.032, 5.965, 6.126, 5.957, 5.677, 5.29, 5.218, 4.9, 3.942, 3.646, 3.107, 2.592, 2.179, 1.429, 4.0], "rawCounts": [4067, 1124, 2661, 2078, 3816, 5017, 6405, 6339, 11664, 4069, 1136, 173, 30, 3, 2], "backgroundColor": "rgba(220, 126, 167, 0.8)", "borderWidth": 0}, {"label": "Protection", "data": [4.706, 4.846, 4.66, 4.5, 4.38, 4.275, 4.316, 4.204, 4.152, 3.833, 3.701, 3.581, 2.469, 0.952, 0.0], "rawCounts": [3173, 913, 2024, 1570, 2944, 4055, 5297, 5438, 12284, 4278, 1353, 239, 34, 2, 0], "backgroundColor": "rgba(244, 140, 186, 0.8)", "borderWidth": 0}, {"label": "Holy", "data": [2.194, 2.25, 2.185, 2.196, 1.808, 1.869, 1.802, 1.702, 1.624, 1.597, 1.255, 1.124, 0.508, 0.476, 2.0], "rawCounts": [1479, 424, 949, 766, 1215, 1773, 2212, 2202, 4806, 1782, 459, 75, 7, 1, 1], "backgroundColor": "rgba(255, 154, 205, 0.8)", "borderWidth": 0}, {"label": "Beast Mastery", "data": [4.836, 5.021, 4.809, 4.632, 4.521, 4.164, 3.979, 3.624, 3.386, 3.017, 2.306, 1.558, 1.017, 1.429, 0.0], "rawCounts": [3261, 946, 2089, 1616, 3039, 3949, 4884, 4688, 10019, 3367, 843, 104, 14, 3, 0], "backgroundColor": "rgba(153, 190, 103, 0.8)", "borderWidth": 0}, {"label": "Marksmanship", "data": [3.603, 3.545, 3.964, 3.858, 4.082, 3.851, 3.993, 4.085, 3.627, 3.536, 3.036, 2.112, 1.162, 1.429, 0.0], "rawCounts": [2429, 668, 1722, 1346, 2744, 3652, 4901, 5284, 10731, 3947, 1110, 141, 16, 3, 0], "backgroundColor": "rgba(170, 211, 114, 0.8)", "borderWidth": 0}, {"label": "Survival", "data": [0.589, 0.647, 0.605, 0.602, 0.672, 0.574, 0.545, 0.487, 0.354, 0.341, 0.271, 0.225, 0.0, 0.0, 0.0], "rawCounts": [397, 122, 263, 210, 452, 544, 669, 630, 1047, 381, 99, 15, 0, 0, 0], "backgroundColor": "rgba(187, 232, 125, 0.8)", "borderWidth": 0}, {"label": "Assassination", "data": [2.346, 2.256, 2.486, 2.511, 2.612, 3.001, 2.896, 2.907, 3.263, 3.582, 4.218, 4.674, 5.882, 9.048, 6.0], "rawCounts": [1582, 425, 1080, 876, 1756, 2846, 3554, 3760, 9654, 3998, 1542, 312, 81, 19, 3], "backgroundColor": "rgba(230, 220, 94, 0.8)", "borderWidth": 0}, {"label": "Outlaw", "data": [0.661, 0.679, 0.686, 0.691, 0.613, 0.659, 0.689, 0.652, 0.664, 0.734, 0.963, 1.228, 0.944, 0.952, 0.0], "rawCounts": [446, 128, 298, 241, 412, 625, 846, 844, 1963, 819, 352, 82, 13, 2, 0], "backgroundColor": "rgba(255, 244, 104, 0.8)", "borderWidth": 0}, {"label": "Subtlety", "data": [0.347, 0.329, 0.292, 0.327, 0.283, 0.295, 0.303, 0.302, 0.377, 0.383, 0.498, 0.554, 1.525, 6.19, 4.0], "rawCounts": [234, 62, 127, 114, 190, 280, 372, 391, 1114, 428, 182, 37, 21, 13, 2], "backgroundColor": "rgba(255, 255, 114, 0.8)", "borderWidth": 0}, {"label": "Discipline", "data": [3.687, 3.811, 3.928, 4.145, 3.985, 3.898, 3.997, 4.232, 4.174, 4.325, 3.638, 3.011, 2.106, 0.0, 0.0], "rawCounts": [2486, 718, 1706, 1446, 2679, 3697, 4906, 5474, 12349, 4827, 1330, 201, 29, 0, 0], "backgroundColor": "rgba(230, 230, 230, 0.8)", "borderWidth": 0}, {"label": "Shadow", "data": [3.077, 3.057, 2.945, 2.935, 2.733, 2.928, 2.809, 2.927, 3.033, 2.922, 2.464, 2.427, 2.106, 1.429, 0.0], "rawCounts": [2075, 576, 1279, 1024, 1837, 2777, 3448, 3787, 8972, 3261, 901, 162, 29, 3, 0], "backgroundColor": "rgba(255, 255, 255, 0.8)", "borderWidth": 0}, {"label": "Holy", "data": [1.691, 1.751, 1.423, 1.347, 1.333, 1.271, 1.017, 0.916, 0.777, 0.585, 0.325, 0.255, 0.0, 0.0, 0.0], "rawCounts": [1140, 330, 618, 470, 896, 1205, 1248, 1185, 2300, 653, 119, 17, 0, 0, 0], "backgroundColor": "rgba(255, 255, 255, 0.8)", "borderWidth": 0}, {"label": "Frost", "data": [4.414, 4.294, 4.6, 4.81, 5.149, 5.358, 5.409, 5.541, 5.832, 6.441, 8.233, 9.558, 11.184, 9.524, 8.0], "rawCounts": [2976, 809, 1998, 1678, 3461, 5082, 6639, 7168, 17255, 7189, 3010, 638, 154, 20, 4], "backgroundColor": "rgba(176, 27, 52, 0.8)", "borderWidth": 0}, {"label": "Blood", "data": [2.208, 2.356, 1.948, 1.969, 1.952, 1.894, 1.931, 1.989, 1.941, 1.525, 0.908, 0.704, 0.218, 0.0, 0.0], "rawCounts": [1489, 444, 846, 687, 1312, 1796, 2370, 2573, 5744, 1702, 332, 47, 3, 0, 0], "backgroundColor": "rgba(196, 30, 58, 0.8)", "borderWidth": 0}, {"label": "Unholy", "data": [1.029, 1.109, 1.172, 1.19, 1.284, 1.366, 1.499, 1.562, 1.481, 1.428, 1.586, 1.064, 0.799, 0.476, 0.0], "rawCounts": [694, 209, 509, 415, 863, 1296, 1840, 2021, 4381, 1594, 580, 71, 11, 1, 0], "backgroundColor": "rgba(216, 33, 64, 0.8)", "borderWidth": 0}, {"label": "Restoration", "data": [5.348, 5.286, 5.636, 5.664, 6.047, 6.469, 6.492, 6.334, 6.697, 7.032, 8.536, 9.813, 12.418, 17.143, 18.0], "rawCounts": [3606, 996, 2448, 1976, 4065, 6135, 7969, 8194, 19812, 7848, 3121, 655, 171, 36, 9], "backgroundColor": "rgba(0, 101, 199, 0.8)", "borderWidth": 0}, {"label": "Elemental", "data": [3.002, 2.808, 2.972, 2.944, 2.91, 2.95, 2.97, 3.03, 3.152, 3.161, 3.14, 3.446, 3.413, 2.857, 2.0], "rawCounts": [2024, 529, 1291, 1027, 1956, 2798, 3646, 3920, 9325, 3528, 1148, 230, 47, 6, 1], "backgroundColor": "rgba(0, 112, 221, 0.8)", "borderWidth": 0}, {"label": "Enhancement", "data": [1.253, 1.284, 1.241, 1.106, 1.148, 1.222, 1.094, 1.018, 1.043, 1.028, 1.028, 0.794, 0.29, 0.0, 0.0], "rawCounts": [845, 242, 539, 386, 772, 1159, 1343, 1317, 3085, 1147, 376, 53, 4, 0, 0], "backgroundColor": "rgba(0, 123, 243, 0.8)", "borderWidth": 0}, {"label": "Arcane", "data": [3.73, 3.752, 4.144, 4.44, 4.645, 4.663, 5.022, 5.226, 5.914, 6.019, 6.4, 6.936, 7.262, 2.381, 10.0], "rawCounts": [2515, 707, 1800, 1549, 3122, 4423, 6164, 6761, 17497, 6718, 2340, 463, 100, 5, 5], "backgroundColor": "rgba(57, 179, 212, 0.8)", "borderWidth": 0}, {"label": "Frost", "data": [3.496, 3.2, 3.14, 3.021, 2.844, 2.768, 2.554, 2.461, 2.118, 1.927, 1.452, 1.333, 0.654, 0.476, 0.0], "rawCounts": [2357, 603, 1364, 1054, 1912, 2625, 3135, 3184, 6267, 2151, 531, 89, 9, 1, 0], "backgroundColor": "rgba(63, 199, 235, 0.8)", "borderWidth": 0}, {"label": "Fire", "data": [0.292, 0.308, 0.269, 0.224, 0.229, 0.217, 0.162, 0.145, 0.155, 0.136, 0.085, 0.015, 0.0, 0.0, 0.0], "rawCounts": [197, 58, 117, 78, 154, 206, 199, 187, 458, 152, 31, 1, 0, 0, 0], "backgroundColor": "rgba(69, 219, 255, 0.8)", "borderWidth": 0}, {"label": "Demonology", "data": [3.221, 3.02, 3.37, 3.305, 3.445, 3.376, 3.362, 3.377, 3.49, 3.148, 2.505, 1.873, 1.38, 0.476, 0.0], "rawCounts": [2172, 569, 1464, 1153, 2316, 3202, 4127, 4369, 10326, 3513, 916, 125, 19, 1, 0], "backgroundColor": "rgba(122, 122, 214, 0.8)", "borderWidth": 0}, {"label": "Destruction", "data": [2.539, 2.622, 2.254, 2.136, 1.813, 1.69, 1.714, 1.621, 1.529, 1.598, 1.422, 1.528, 1.38, 1.429, 0.0], "rawCounts": [1712, 494, 979, 745, 1219, 1603, 2104, 2097, 4524, 1783, 520, 102, 19, 3, 0], "backgroundColor": "rgba(135, 136, 238, 0.8)", "borderWidth": 0}, {"label": "Affliction", "data": [1.151, 0.992, 1.082, 1.058, 1.034, 1.093, 1.154, 1.258, 1.398, 1.537, 1.709, 1.438, 1.235, 0.0, 0.0], "rawCounts": [776, 187, 470, 369, 695, 1037, 1416, 1628, 4135, 1716, 625, 96, 17, 0, 0], "backgroundColor": "rgba(148, 150, 255, 0.8)", "borderWidth": 0}];
+
+    new Chart(keylevel_ctx, {
+      type: "bar",
+      data: {
+        labels: keyLevels.map(lvl => `M + Level ${lvl}`),
+        datasets
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        scales: {
+          x: {
+            stacked: true,
+            max: 100,
+            ticks: {
+              callback: val => val + '%'   // show “%”
+            },
+            grid: {
+              display: false,
+              drawBorder: false,
+              color: '#e5e5e5',
+              borderDash: [5, 5]
+            }
+          },
+          y: {
+            stacked: true,
+            grid: { display: false },
+            barPercentage: 0.1,
+            ticks: {
+              color: '#737373',
+              padding: 6,
+              font: { size: 12, lineHeight: 2 }
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            mode: 'nearest',
+            intersect: true,
+            callbacks: {
+              label: ctx => {
+                const level = keyLevels[ctx.dataIndex];
+                const pct = ctx.parsed.x;
+                const rawCount = (ctx.dataset.rawCounts?.[ctx.dataIndex]) || 0;
+                // return percentage + raw count
+                return `${ctx.dataset.label}: ${pct}% (${rawCount.toLocaleString()} ${rawCount > 1 ? "runs" : "run"})`;
+              }
+            }
+          },
+          legend: {
+            display: false,
+          }
+        }
+      }
+    });
+       }) ();
+  </script>
+  <!-- Keys per Week Chart -->
+  <script>
+    (() => {
+      const ctx_keys_per_week = document
+        .getElementById("chart-keys-per-week")
+        .getContext("2d");
+
+      // these come straight from your Python
+      const periodLabels = ["Week:2 Day: 1", "Week:2 Day: 2", "Week:2 Day: 3", "Week:2 Day: 4", "Week:2 Day: 5", "Week:2 Day: 6", "Week:2 Day: 7"];
+    const periodDatasets = [{'label': 'Total', 'data': [75602, 55587, 48171, 43340, 36054, 22299, 4860], 'tension': 0.3, 'borderColor': '#4A90E2', 'pointBackgroundColor': '#4A90E2', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': 'Depleted', 'data': [13609, 10237, 9590, 9286, 8422, 5617, 1344], 'tension': 0.3, 'borderColor': '#FF0000', 'pointBackgroundColor': '#FF0000', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+1', 'data': [26145, 22761, 21808, 20235, 17369, 10801, 2279], 'tension': 0.3, 'borderColor': '#1eff00', 'pointBackgroundColor': '#1eff00', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+2', 'data': [30939, 20642, 15774, 13100, 9785, 5648, 1179], 'tension': 0.3, 'borderColor': '#a335ee', 'pointBackgroundColor': '#a335ee', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+3', 'data': [4909, 1947, 999, 719, 478, 233, 58], 'tension': 0.3, 'borderColor': '#ff8000', 'pointBackgroundColor': '#ff8000', 'pointRadius': 4, 'pointHoverRadius': 6}];
+
+    new Chart(ctx_keys_per_week, {
+      type: "line",
+      data: {
+        labels: periodLabels,
+        datasets: periodDatasets
+      },
+      options: {
+        responsive: true,
+        scales: {
+          x: {
+            display: true,
+            title: {
+              display: true,
+              text: "Week",
+              font: { size: 14 }
+            },
+            ticks: {
+              autoSkip: false,
+              maxRotation: 0,
+              minRotation: 0
+            }
+          },
+          y: {
+            display: true,
+            title: {
+              display: true,
+              text: "Total Keys",
+              font: { size: 14 }
+            },
+            beginAtZero: true,
+            grid: {
+              color: "#e5e5e5",
+              borderDash: [5, 5]
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: ctx => ` ${ctx.parsed.y.toLocaleString()} keys`
+            }
+          },
+          legend: {
+            display: true
+          }
+        }
+      }
+    });
+  }) ();
+  </script>
+  <!-- Dungeon Popularity Chart -->
+  <script>
+    (() => {
+      const ctx = document
+        .getElementById("chart-dungeon-popularity")
+        .getContext("2d");
+
+      // Injected by Jinja:
+      const dungeonLabels = ["FLOOD", "HOA", "PSF", "EDA", "GMBT", "ARAK", "STRT", "DAWN"];
+    const dungeonFullNames = ["Operation: Floodgate", "Halls of Atonement", "Priory of the Sacred Flame", "Eco-Dome Al\u0027dani", "Tazavesh: So\u0027leah\u0027s Gambit", "Ara-Kara, City of Echoes", "Tazavesh: Streets of Wonder", "The Dawnbreaker"];
+    const iconUrls = ["/data/icons/operation-floodgate-small.jpg", "/data/icons/halls-of-atonement-small.jpg", "/data/icons/priory-of-the-sacred-flame-small.jpg", "/data/icons/eco-dome-aldani-small.jpg", "/data/icons/tazavesh-the-veiled-market-small.jpg", "/data/icons/ara-kara-city-of-echoes-small.jpg", "/data/icons/tazavesh-the-veiled-market-small.jpg", "/data/icons/the-dawnbreaker-small.jpg"];
+    const totalCounts = [38649, 36965, 35617, 35384, 35156, 35073, 34862, 34207];
+    const dungeonDatasets = [{"backgroundColor": "#FF0000", "data": [7137, 10279, 4678, 3670, 7566, 7857, 11380, 5538], "label": "Depleted", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#1eff00", "data": [18136, 17747, 13897, 12227, 10509, 16117, 16890, 15875], "label": "+1", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#a335ee", "data": [12608, 8546, 15289, 17152, 14504, 10351, 6532, 12085], "label": "+2", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#ff8000", "data": [768, 393, 1753, 2335, 2577, 748, 60, 709], "label": "+3", "order": 0, "stack": "Stack 0"}];
+
+    // Kick off loading each icon
+    const iconPromises = iconUrls.map(src =>
+      new Promise(resolve => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve(img);
+      })
+    );
+
+    // Plugin that draws the icons + short‑names on the Y axis
+    const iconPlugin = {
+      id: "iconLabels",
+      afterDraw(chart, args, opts) {
+        if (!opts.enabled) return;
+        const { ctx, chartArea, scales: { y } } = chart;
+        const { size, iconOffset, textGap, fontSize, fontFace, color, icons } = opts;
+
+        ctx.textBaseline = "middle";
+        ctx.font = `${fontSize}px ${fontFace}`;
+        ctx.fillStyle = color;
+
+        icons.forEach((img, i) => {
+          const yPos = y.getPixelForTick(i);
+          const iconX = chartArea.left - iconOffset - size;
+          ctx.drawImage(img, iconX, yPos - size / 2, size, size);
+
+          const shortName = dungeonLabels[i];
+          const textX = iconX - textGap;
+          ctx.textAlign = "right";
+          ctx.fillText(shortName, textX, yPos);
+        });
+      }
+    };
+
+    // Once all icons are loaded, build the chart
+    Promise.all(iconPromises).then(icons => {
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: dungeonLabels,
+          datasets: dungeonDatasets
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          layout: {
+            padding: { left: 120 }
+          },
+          scales: {
+            x: {
+              grid: { display: false },
+              ticks: {
+                callback: v => v.toLocaleString(),
+                font: { size: 12 }
+              }
+            },
+            y: {
+              grid: { color: "#e5e5e5", borderDash: [5, 5] },
+              ticks: { display: false, padding: 6, font: { size: 12 } }
+            }
+          },
+          plugins: {
+            legend: { position: "top" },
+            tooltip: {
+              callbacks: {
+                title: items => dungeonFullNames[items[0].dataIndex],
+                label: item => {
+                  const count = item.parsed.x;
+                  const total = totalCounts[item.dataIndex];
+                  const pct = total
+                    ? ((count / total) * 100).toFixed(1)
+                    : "0.0";
+                  return `${count.toLocaleString()} runs (${pct}%)`;
+                }
+              }
+            },
+            // pass the pre‑loaded icons into the plugin via its options
+            iconLabels: {
+              enabled: true,
+              icons: icons,        // <— the loaded Image objects
+              size: 28,
+              iconOffset: 8,
+              textGap: 4,
+              fontSize: 12,
+              fontFace: "Arial",
+              color: "#fff"
+            }
+          }
+        },
+        plugins: [iconPlugin]
+      });
+    });
+  }) ();
+  </script>
+  <!-- Spec Popularity vs Performance Chart -->
+  <script>
+    (() => {
+      const ctx = document
+        .getElementById("chart-popularity-vs-tier")
+        .getContext("2d");
+
+      const rawPoints = [{"backgroundColor": "rgba(0,112,221,0.4)", "borderColor": "rgba(0,112,221,0.8)", "iconUrl": "/data/icons/136052.jpg", "label": "Restoration", "x": 6.7366, "y": 67041}, {"backgroundColor": "rgba(63,199,235,0.4)", "borderColor": "rgba(63,199,235,0.8)", "iconUrl": "/data/icons/135932.jpg", "label": "Arcane", "x": 7.3018, "y": 54169}, {"backgroundColor": "rgba(196,30,58,0.4)", "borderColor": "rgba(196,30,58,0.8)", "iconUrl": "/data/icons/135773.jpg", "label": "Frost", "x": 6.3479, "y": 58081}, {"backgroundColor": "rgba(163,48,201,0.4)", "borderColor": "rgba(163,48,201,0.8)", "iconUrl": "/data/icons/1247265.jpg", "label": "Vengeance", "x": 6.5344, "y": 54110}, {"backgroundColor": "rgba(255,124,10,0.4)", "borderColor": "rgba(255,124,10,0.8)", "iconUrl": "/data/icons/136041.jpg", "label": "Restoration", "x": 5.6599, "y": 47375}, {"backgroundColor": "rgba(198,155,109,0.4)", "borderColor": "rgba(198,155,109,0.8)", "iconUrl": "/data/icons/132341.jpg", "label": "Protection", "x": 6.1199, "y": 45401}, {"backgroundColor": "rgba(255,255,255,0.4)", "borderColor": "rgba(255,255,255,0.8)", "iconUrl": "/data/icons/135940.jpg", "label": "Discipline", "x": 5.6605, "y": 41848}, {"backgroundColor": "rgba(244,140,186,0.4)", "borderColor": "rgba(244,140,186,0.8)", "iconUrl": "/data/icons/236264.jpg", "label": "Protection", "x": 5.5217, "y": 43604}, {"backgroundColor": "rgba(163,48,201,0.4)", "borderColor": "rgba(163,48,201,0.8)", "iconUrl": "/data/icons/1247264.jpg", "label": "Havoc", "x": 6.4694, "y": 42147}, {"backgroundColor": "rgba(244,140,186,0.4)", "borderColor": "rgba(244,140,186,0.8)", "iconUrl": "/data/icons/135873.jpg", "label": "Retribution", "x": 4.3414, "y": 48584}, {"backgroundColor": "rgba(170,211,114,0.4)", "borderColor": "rgba(170,211,114,0.8)", "iconUrl": "/data/icons/236179.jpg", "label": "Marksmanship", "x": 5.1572, "y": 38694}, {"backgroundColor": "rgba(135,136,238,0.4)", "borderColor": "rgba(135,136,238,0.8)", "iconUrl": "/data/icons/136172.jpg", "label": "Demonology", "x": 6.1216, "y": 34272}, {"backgroundColor": "rgba(170,211,114,0.4)", "borderColor": "rgba(170,211,114,0.8)", "iconUrl": "/data/icons/461112.jpg", "label": "Beast Mastery", "x": 4.8721, "y": 38822}, {"backgroundColor": "rgba(255,244,104,0.4)", "borderColor": "rgba(255,244,104,0.8)", "iconUrl": "/data/icons/236270.jpg", "label": "Assassination", "x": 6.6189, "y": 31488}, {"backgroundColor": "rgba(0,112,221,0.4)", "borderColor": "rgba(0,112,221,0.8)", "iconUrl": "/data/icons/136048.jpg", "label": "Elemental", "x": 6.3195, "y": 31476}, {"backgroundColor": "rgba(255,124,10,0.4)", "borderColor": "rgba(255,124,10,0.8)", "iconUrl": "/data/icons/136096.jpg", "label": "Balance", "x": 6.8248, "y": 30141}, {"backgroundColor": "rgba(255,255,255,0.4)", "borderColor": "rgba(255,255,255,0.8)", "iconUrl": "/data/icons/136207.jpg", "label": "Shadow", "x": 6.3662, "y": 30131}, {"backgroundColor": "rgba(51,147,127,0.4)", "borderColor": "rgba(51,147,127,0.8)", "iconUrl": "/data/icons/4511811.jpg", "label": "Devastation", "x": 5.9394, "y": 22158}, {"backgroundColor": "rgba(0,255,152,0.4)", "borderColor": "rgba(0,255,152,0.8)", "iconUrl": "/data/icons/608951.jpg", "label": "Brewmaster", "x": 5.746, "y": 24616}, {"backgroundColor": "rgba(198,155,109,0.4)", "borderColor": "rgba(198,155,109,0.8)", "iconUrl": "/data/icons/132347.jpg", "label": "Fury", "x": 5.5591, "y": 24527}, {"backgroundColor": "rgba(63,199,235,0.4)", "borderColor": "rgba(63,199,235,0.8)", "iconUrl": "/data/icons/135846.jpg", "label": "Frost", "x": 4.6765, "y": 25282}, {"backgroundColor": "rgba(196,30,58,0.4)", "borderColor": "rgba(196,30,58,0.8)", "iconUrl": "/data/icons/135770.jpg", "label": "Blood", "x": 5.4887, "y": 19345}, {"backgroundColor": "rgba(255,124,10,0.4)", "borderColor": "rgba(255,124,10,0.8)", "iconUrl": "/data/icons/132276.jpg", "label": "Guardian", "x": 5.1916, "y": 20619}, {"backgroundColor": "rgba(244,140,186,0.4)", "borderColor": "rgba(244,140,186,0.8)", "iconUrl": "/data/icons/135920.jpg", "label": "Holy", "x": 5.3638, "y": 18151}, {"backgroundColor": "rgba(135,136,238,0.4)", "borderColor": "rgba(135,136,238,0.8)", "iconUrl": "/data/icons/136186.jpg", "label": "Destruction", "x": 5.255, "y": 17904}, {"backgroundColor": "rgba(0,255,152,0.4)", "borderColor": "rgba(0,255,152,0.8)", "iconUrl": "/data/icons/608952.jpg", "label": "Mistweaver", "x": 5.7477, "y": 14949}, {"backgroundColor": "rgba(196,30,58,0.4)", "borderColor": "rgba(196,30,58,0.8)", "iconUrl": "/data/icons/135775.jpg", "label": "Unholy", "x": 5.6143, "y": 14485}, {"backgroundColor": "rgba(0,255,152,0.4)", "borderColor": "rgba(0,255,152,0.8)", "iconUrl": "/data/icons/608953.jpg", "label": "Windwalker", "x": 5.6672, "y": 14702}, {"backgroundColor": "rgba(135,136,238,0.4)", "borderColor": "rgba(135,136,238,0.8)", "iconUrl": "/data/icons/136145.jpg", "label": "Affliction", "x": 6.9072, "y": 13167}, {"backgroundColor": "rgba(255,124,10,0.4)", "borderColor": "rgba(255,124,10,0.8)", "iconUrl": "/data/icons/132115.jpg", "label": "Feral", "x": 6.4982, "y": 11565}, {"backgroundColor": "rgba(0,112,221,0.4)", "borderColor": "rgba(0,112,221,0.8)", "iconUrl": "/data/icons/237581.jpg", "label": "Enhancement", "x": 5.9437, "y": 11268}, {"backgroundColor": "rgba(51,147,127,0.4)", "borderColor": "rgba(51,147,127,0.8)", "iconUrl": "/data/icons/4511812.jpg", "label": "Preservation", "x": 5.8753, "y": 8119}, {"backgroundColor": "rgba(255,255,255,0.4)", "borderColor": "rgba(255,255,255,0.8)", "iconUrl": "/data/icons/237542.jpg", "label": "Holy", "x": 3.8456, "y": 10181}, {"backgroundColor": "rgba(255,244,104,0.4)", "borderColor": "rgba(255,244,104,0.8)", "iconUrl": "/data/icons/236286.jpg", "label": "Outlaw", "x": 6.102, "y": 7071}, {"backgroundColor": "rgba(255,244,104,0.4)", "borderColor": "rgba(255,244,104,0.8)", "iconUrl": "/data/icons/132320.jpg", "label": "Subtlety", "x": 6.6602, "y": 3567}, {"backgroundColor": "rgba(170,211,114,0.4)", "borderColor": "rgba(170,211,114,0.8)", "iconUrl": "/data/icons/461113.jpg", "label": "Survival", "x": 4.4857, "y": 4829}, {"backgroundColor": "rgba(198,155,109,0.4)", "borderColor": "rgba(198,155,109,0.8)", "iconUrl": "/data/icons/132355.jpg", "label": "Arms", "x": 3.4909, "y": 4006}, {"backgroundColor": "rgba(63,199,235,0.4)", "borderColor": "rgba(63,199,235,0.8)", "iconUrl": "/data/icons/135810.jpg", "label": "Fire", "x": 4.2458, "y": 1838}, {"backgroundColor": "rgba(51,147,127,0.4)", "borderColor": "rgba(51,147,127,0.8)", "iconUrl": "/data/icons/5198700.jpg", "label": "Augmentation", "x": 5.3532, "y": 1363}];
+    const ICON_SIZE = 20;
+    // preload each icon
+    const iconPromises = rawPoints.map(p =>
+      new Promise(res => {
+        const img = new Image();
+        img.width = ICON_SIZE;
+        img.height = ICON_SIZE;
+        img.src = p.iconUrl;
+        img.onload = () => res(img);
+      })
+    );
+
+    // once loaded, build the chart
+    Promise.all(iconPromises).then(images => {
+      // attach the loaded Image to each data point
+      const data = rawPoints.map((p, i) => ({
+        ...p,
+        pointStyle: images[i]
+      }));
+
+      new Chart(ctx, {
+        type: 'scatter',
+        data: {
+          datasets: [{
+            label: 'Spec Popularity vs Performance',
+            data: data,
+            pointRadius: 12,
+            pointHoverRadius: 16,
+            // these two read from the raw datum
+            pointStyle: ctx => ctx.raw.pointStyle,
+            borderColor: ctx => ctx.raw.borderColor,
+            backgroundColor: ctx => ctx.raw.backgroundColor,
+            borderWidth: 2,
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              title: { display: true, text: 'Performance' },
+              ticks: { display: false }
+            },
+            y: {
+              title: { display: true, text: 'Popularity' },
+              ticks: { display: false },
+              beginAtZero: true
+            }
+          },
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: ctx => {
+                  const { label, x, y } = ctx.raw;
+                  return `${label}: TierScore=${x.toFixed(2)}, Runs=${y}`;
+                }
+              }
+            },
+            legend: { display: false }
+          }
+        }
+      });
+    });
+}) ();
+  </script>
+  <!-- Dungeon Popularity vs Ease Chart -->
+  <script>
+    (() => {
+      const ctx = document
+        .getElementById("chart-dungeon-popularity-vs-ease")
+        .getContext("2d");
+
+      // ← injected server‑side
+      const keyLevels = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    const datasets = [{"data": [9.7, 9.6, 11.8, 13.6, 13.4, 13.0, 11.7, 12.9, 16.0, 15.8, 17.2, 17.5, 14.5, 14.3, 20.0], "label": "Operation: Floodgate", "rawCounts": [2874, 641, 1932, 1794, 2766, 3520, 3968, 4338, 11218, 4017, 1297, 236, 40, 6, 2]}, {"data": [13.7, 12.9, 13.4, 13.0, 11.9, 12.3, 13.0, 13.9, 13.3, 12.0, 10.1, 7.8, 7.2, 2.4, 10.0], "label": "Halls of Atonement", "rawCounts": [4061, 857, 2190, 1714, 2457, 3351, 4409, 4677, 9319, 3047, 756, 105, 20, 1, 1]}, {"data": [13.0, 13.9, 12.9, 12.7, 11.7, 12.2, 13.7, 13.1, 12.3, 10.7, 10.0, 8.5, 7.2, 2.4, 0.0], "label": "Priory of the Sacred Flame", "rawCounts": [3868, 924, 2109, 1680, 2421, 3321, 4634, 4405, 8644, 2727, 749, 114, 20, 1, 0]}, {"data": [13.8, 14.0, 12.7, 12.0, 10.9, 10.8, 11.6, 13.3, 11.0, 15.1, 16.8, 18.8, 18.5, 23.8, 20.0], "label": "Eco-Dome Al\u0027dani", "rawCounts": [4099, 933, 2078, 1594, 2248, 2928, 3913, 4466, 7701, 3846, 1262, 253, 51, 10, 2]}, {"data": [12.4, 12.9, 11.7, 11.5, 13.6, 13.3, 12.5, 11.7, 11.6, 12.4, 13.7, 15.4, 16.3, 33.3, 10.0], "label": "Tazavesh: So\u0027leah\u0027s Gambit", "rawCounts": [3675, 858, 1913, 1526, 2800, 3612, 4221, 3940, 8162, 3153, 1028, 208, 45, 14, 1]}, {"data": [13.3, 13.6, 13.1, 11.9, 13.1, 12.1, 12.3, 12.2, 12.0, 10.9, 11.0, 10.7, 12.7, 7.1, 20.0], "label": "Ara-Kara, City of Echoes", "rawCounts": [3957, 903, 2141, 1577, 2705, 3288, 4181, 4111, 8440, 2760, 826, 144, 35, 3, 2]}, {"data": [12.5, 10.6, 12.1, 13.0, 13.4, 14.7, 12.9, 10.8, 12.2, 10.4, 8.5, 7.9, 9.1, 7.1, 0.0], "label": "Tazavesh: Streets of Wonder", "rawCounts": [3713, 707, 1981, 1718, 2776, 3981, 4358, 3637, 8576, 2644, 636, 107, 25, 3, 0]}, {"data": [11.6, 12.4, 12.4, 12.3, 12.0, 11.5, 12.4, 12.2, 11.4, 12.6, 12.9, 13.4, 14.5, 9.5, 20.0], "label": "The Dawnbreaker", "rawCounts": [3451, 821, 2028, 1630, 2469, 3134, 4188, 4095, 8003, 3193, 968, 181, 40, 4, 2]}];
+
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        // “M + Level X”
+        labels: keyLevels.map(l => `M + Level ${l}`),
+        datasets: datasets
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        scales: {
+          x: {
+            stacked: true,
+            max: 100,
+            ticks: { callback: v => v + '%' },
+            grid: {
+              display: false,
+              drawBorder: false,
+              color: '#e5e5e5',
+              borderDash: [5, 5]
+            }
+          },
+          y: {
+            stacked: true,
+            grid: { display: false },
+            barPercentage: 0.1,
+            ticks: {
+              color: '#737373',
+              padding: 6,
+              font: { size: 12, lineHeight: 2 }
+            }
+          }
+        },
+        plugins: {
+          tooltip: {
+            mode: 'nearest',
+            intersect: true,
+            callbacks: {
+              label: ctx => {
+                const ds = ctx.dataset;
+                const lvl = keyLevels[ctx.dataIndex];
+                const pct = ctx.parsed.x.toFixed(1);
+                const raw = ds.rawCounts[ctx.dataIndex] || 0;
+                return `${ds.label}: ${pct}% (${raw.toLocaleString()} runs)`;
+              }
+            }
+          },
+          legend: { display: false }
+        }
+      }
+    });
+}) ();
+  </script>
+
+  <!-- Material Dashboard JS -->
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+    function timeAgo(unixTsSeconds) {
+      const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+      const now = Date.now() / 1000;
+      const diff = now - unixTsSeconds;
+
+      const units = [
+        { name: 'year', secs: 60 * 60 * 24 * 365 },
+        { name: 'month', secs: 60 * 60 * 24 * 30 },
+        { name: 'day', secs: 60 * 60 * 24 },
+        { name: 'hour', secs: 60 * 60 },
+        { name: 'minute', secs: 60 },
+        { name: 'second', secs: 1 },
+      ];
+
+      for (const { name, secs } of units) {
+        const delta = Math.floor(diff / secs);
+        if (Math.abs(delta) >= 1) {
+          return rtf.format(-delta, name);
+        }
+      }
+      return 'just now';
+    }
+
+    //initialize timestamps
+    document.querySelectorAll('.timestamp').forEach(function (el) {
+      const timestamp = el.getAttribute('data-timestamp');
+      el.textContent = `${el.textContent} ${timeAgo(Number(timestamp))}`;
+      el.setAttribute('title', new Date(Number(timestamp) * 1000).toLocaleString());
+    });
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/material-dashboard.js"></script>
+  <script>
+    darkMode(document.querySelector('#dark-version'));
+    sidebarColor(document.querySelector('#defaultColor'));
+    document.querySelector('#defaultSidebarType').classList.add('active');
+    sidebarType(document.querySelector('#defaultSidebarType'));
+  </script>
+</body>
+
+</html>
