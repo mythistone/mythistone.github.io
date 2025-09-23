@@ -1,0 +1,1479 @@
+<!--
+=========================================================
+* Material Dashboard 3 - v3.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2024 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    WoW Stats - MythiStone
+  </title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="MythiStone" />
+<link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+
+<!-- Fonts and icons -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900" />
+<!-- Nucleo Icons -->
+<link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+<link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+<!-- WoW Classes -->
+<link href="/assets/css/classes.css" rel="stylesheet" />
+<!-- Material Icons -->
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+<!-- CSS Files -->
+<link id="pagestyle" href="/assets/css/material-dashboard.css" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/bootstrap-select.min.css" />
+<!-- bootstrap Icons-->
+<link href="/assets/css/bootstrap-icons.css" rel="stylesheet" />
+<!-- Klaro cookie consent -->
+<script defer type="text/javascript" src="/assets/js/plugins/cookie-config.js"></script>
+<script defer type="text/javascript" src="/assets/js/plugins/klaro.js"></script>
+<link href="/assets/css/klaro.css" rel="stylesheet" />
+<!-- Simple Web Analytics -->
+<script type="text/plain" data-hostname="mythistone.github.io" data-type="application/javascript"
+    data-name="simple-analytics" data-src='https://scripts.simpleanalyticscdn.com/latest.js'></script>
+<meta name="google-adsense-account" content="ca-pub-5589411805810733">
+</head>
+
+<body class="g-sidenav-show g-sidenav-show-right" data-bs-theme="dark">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-radius-lg fixed-start ms-2 my-2" id="sidenav-main">
+  <div class="sidenav-header">
+    <i class="fas fa-times p-3 cursor-pointer opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+      aria-hidden="true" id="iconSidenav"></i>
+    <a class="navbar-brand px-4 py-3 m-0" href="/" target="_blank">
+      <img src="/assets/img/favicon/favicon-96x96.png" class="navbar-brand-img" width="26" height="26" alt="main_logo">
+      <span class="ms-1 text-sm text-body-emphasis">MythiStone</span>
+    </a>
+  </div>
+  <hr class="horizontal dark mt-0 mb-2">
+
+  <div class="collapse navbar-collapse w-auto pb-5" id="sidenav-collapse-main">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link "
+          href="/">
+          <i
+            class="material-symbols-rounded text-body-emphasis opacity-5">leaderboard</i>
+          <span
+            class="nav-link-text text-body-emphasis ms-1">Tierlists</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link "
+          href="/pages/dashboard">
+          <i
+            class="material-symbols-rounded text-body-emphasis opacity-5">dashboard</i>
+          <span
+            class="nav-link-text text-body-emphasis ms-1">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link "
+          href="/pages/routes">
+          <i
+            class="material-symbols-rounded text-body-emphasis opacity-5">Route</i>
+          <span
+            class="nav-link-text text-body-emphasis ms-1">Routes</span>
+        </a>
+      </li>
+
+      <li class="nav-item mt-3">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs text-body-emphasis font-weight-bolder opacity-5">Classes</h6>
+      </li>
+
+      <div class="accordion" id="specNavAccordion">
+        
+        
+        <div class="accordion-item bg-transparent border-0">
+          <h2 class="accordion-header" id="heading-Tank">
+            <button class="nav-link collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-Tank" aria-expanded="false" aria-controls="collapse-Tank">
+              
+              <i class="material-symbols-rounded text-body-emphasis opacity-5">shield</i>
+              <span class="nav-link-text text-body-emphasis ms-1">Tank</span>
+            </button>
+          </h2>
+
+          <div id="collapse-Tank" class="accordion-collapse collapse" aria-labelledby="heading-Tank"
+            data-bs-parent="#specNavAccordion">
+            <div class="accordion-body px-0 py-1">
+              <ul class="nav flex-column">
+                
+                <li class="nav-item">
+                  <a href="/classes/Tank/Blood_Death Knight" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135770.jpg" class="img-fluid" alt="Blood Death Knight Icon">
+                    <span class="nav-link-text ms-2  class-DeathKnight-text
+                      ">
+                      Blood Death Knight
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Tank/Brewmaster_Monk" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/608951.jpg" class="img-fluid" alt="Brewmaster Monk Icon">
+                    <span class="nav-link-text ms-2  class-Monk-text
+                      ">
+                      Brewmaster Monk
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Tank/Guardian_Druid" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/132276.jpg" class="img-fluid" alt="Guardian Druid Icon">
+                    <span class="nav-link-text ms-2  class-Druid-text
+                      ">
+                      Guardian Druid
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Tank/Protection_Paladin" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/236264.jpg" class="img-fluid" alt="Protection Paladin Icon">
+                    <span class="nav-link-text ms-2  class-Paladin-text
+                      ">
+                      Protection Paladin
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Tank/Protection_Warrior" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/132341.jpg" class="img-fluid" alt="Protection Warrior Icon">
+                    <span class="nav-link-text ms-2  class-Warrior-text
+                      ">
+                      Protection Warrior
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Tank/Vengeance_Demon Hunter" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/1247265.jpg" class="img-fluid" alt="Vengeance Demon Hunter Icon">
+                    <span class="nav-link-text ms-2  class-DemonHunter-text
+                      ">
+                      Vengeance Demon Hunter
+                    </span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="accordion-item bg-transparent border-0">
+          <h2 class="accordion-header" id="heading-Healer">
+            <button class="nav-link collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-Healer" aria-expanded="false" aria-controls="collapse-Healer">
+              
+              <i class="material-symbols-rounded text-body-emphasis opacity-5">health_cross</i>
+              <span class="nav-link-text text-body-emphasis ms-1">Healer</span>
+            </button>
+          </h2>
+
+          <div id="collapse-Healer" class="accordion-collapse collapse" aria-labelledby="heading-Healer"
+            data-bs-parent="#specNavAccordion">
+            <div class="accordion-body px-0 py-1">
+              <ul class="nav flex-column">
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Discipline_Priest" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135940.jpg" class="img-fluid" alt="Discipline Priest Icon">
+                    <span class="nav-link-text ms-2  class-Priest-text
+                      ">
+                      Discipline Priest
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Holy_Paladin" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135920.jpg" class="img-fluid" alt="Holy Paladin Icon">
+                    <span class="nav-link-text ms-2  class-Paladin-text
+                      ">
+                      Holy Paladin
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Holy_Priest" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/237542.jpg" class="img-fluid" alt="Holy Priest Icon">
+                    <span class="nav-link-text ms-2  class-Priest-text
+                      ">
+                      Holy Priest
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Mistweaver_Monk" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/608952.jpg" class="img-fluid" alt="Mistweaver Monk Icon">
+                    <span class="nav-link-text ms-2  class-Monk-text
+                      ">
+                      Mistweaver Monk
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Preservation_Evoker" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/4511812.jpg" class="img-fluid" alt="Preservation Evoker Icon">
+                    <span class="nav-link-text ms-2  class-Evoker-text
+                      ">
+                      Preservation Evoker
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Restoration_Druid" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136041.jpg" class="img-fluid" alt="Restoration Druid Icon">
+                    <span class="nav-link-text ms-2  class-Druid-text
+                      ">
+                      Restoration Druid
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Healer/Restoration_Shaman" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136052.jpg" class="img-fluid" alt="Restoration Shaman Icon">
+                    <span class="nav-link-text ms-2  class-Shaman-text
+                      ">
+                      Restoration Shaman
+                    </span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="accordion-item bg-transparent border-0">
+          <h2 class="accordion-header" id="heading-Dps">
+            <button class="nav-link collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-Dps" aria-expanded="false" aria-controls="collapse-Dps">
+              
+              <i class="material-symbols-rounded text-body-emphasis opacity-5">swords</i>
+              <span class="nav-link-text text-body-emphasis ms-1">Dps</span>
+            </button>
+          </h2>
+
+          <div id="collapse-Dps" class="accordion-collapse collapse" aria-labelledby="heading-Dps"
+            data-bs-parent="#specNavAccordion">
+            <div class="accordion-body px-0 py-1">
+              <ul class="nav flex-column">
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Affliction_Warlock" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136145.jpg" class="img-fluid" alt="Affliction Warlock Icon">
+                    <span class="nav-link-text ms-2  class-Warlock-text
+                      ">
+                      Affliction Warlock
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Arcane_Mage" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135932.jpg" class="img-fluid" alt="Arcane Mage Icon">
+                    <span class="nav-link-text ms-2  class-Mage-text
+                      ">
+                      Arcane Mage
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Arms_Warrior" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/132355.jpg" class="img-fluid" alt="Arms Warrior Icon">
+                    <span class="nav-link-text ms-2  class-Warrior-text
+                      ">
+                      Arms Warrior
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Assassination_Rogue" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/236270.jpg" class="img-fluid" alt="Assassination Rogue Icon">
+                    <span class="nav-link-text ms-2  class-Rogue-text
+                      ">
+                      Assassination Rogue
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Augmentation_Evoker" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/5198700.jpg" class="img-fluid" alt="Augmentation Evoker Icon">
+                    <span class="nav-link-text ms-2  class-Evoker-text
+                      ">
+                      Augmentation Evoker
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Balance_Druid" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136096.jpg" class="img-fluid" alt="Balance Druid Icon">
+                    <span class="nav-link-text ms-2  class-Druid-text
+                      ">
+                      Balance Druid
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Beast Mastery_Hunter" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/461112.jpg" class="img-fluid" alt="Beast Mastery Hunter Icon">
+                    <span class="nav-link-text ms-2  class-Hunter-text
+                      ">
+                      Beast Mastery Hunter
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Demonology_Warlock" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136172.jpg" class="img-fluid" alt="Demonology Warlock Icon">
+                    <span class="nav-link-text ms-2  class-Warlock-text
+                      ">
+                      Demonology Warlock
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Destruction_Warlock" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136186.jpg" class="img-fluid" alt="Destruction Warlock Icon">
+                    <span class="nav-link-text ms-2  class-Warlock-text
+                      ">
+                      Destruction Warlock
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Devastation_Evoker" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/4511811.jpg" class="img-fluid" alt="Devastation Evoker Icon">
+                    <span class="nav-link-text ms-2  class-Evoker-text
+                      ">
+                      Devastation Evoker
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Elemental_Shaman" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136048.jpg" class="img-fluid" alt="Elemental Shaman Icon">
+                    <span class="nav-link-text ms-2  class-Shaman-text
+                      ">
+                      Elemental Shaman
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Enhancement_Shaman" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/237581.jpg" class="img-fluid" alt="Enhancement Shaman Icon">
+                    <span class="nav-link-text ms-2  class-Shaman-text
+                      ">
+                      Enhancement Shaman
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Feral_Druid" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/132115.jpg" class="img-fluid" alt="Feral Druid Icon">
+                    <span class="nav-link-text ms-2  class-Druid-text
+                      ">
+                      Feral Druid
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Fire_Mage" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135810.jpg" class="img-fluid" alt="Fire Mage Icon">
+                    <span class="nav-link-text ms-2  class-Mage-text
+                      ">
+                      Fire Mage
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Frost_Death Knight" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135773.jpg" class="img-fluid" alt="Frost Death Knight Icon">
+                    <span class="nav-link-text ms-2  class-DeathKnight-text
+                      ">
+                      Frost Death Knight
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Frost_Mage" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135846.jpg" class="img-fluid" alt="Frost Mage Icon">
+                    <span class="nav-link-text ms-2  class-Mage-text
+                      ">
+                      Frost Mage
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Fury_Warrior" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/132347.jpg" class="img-fluid" alt="Fury Warrior Icon">
+                    <span class="nav-link-text ms-2  class-Warrior-text
+                      ">
+                      Fury Warrior
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Havoc_Demon Hunter" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/1247264.jpg" class="img-fluid" alt="Havoc Demon Hunter Icon">
+                    <span class="nav-link-text ms-2  class-DemonHunter-text
+                      ">
+                      Havoc Demon Hunter
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Marksmanship_Hunter" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/236179.jpg" class="img-fluid" alt="Marksmanship Hunter Icon">
+                    <span class="nav-link-text ms-2  class-Hunter-text
+                      ">
+                      Marksmanship Hunter
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Outlaw_Rogue" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/236286.jpg" class="img-fluid" alt="Outlaw Rogue Icon">
+                    <span class="nav-link-text ms-2  class-Rogue-text
+                      ">
+                      Outlaw Rogue
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Retribution_Paladin" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135873.jpg" class="img-fluid" alt="Retribution Paladin Icon">
+                    <span class="nav-link-text ms-2  class-Paladin-text
+                      ">
+                      Retribution Paladin
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Shadow_Priest" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/136207.jpg" class="img-fluid" alt="Shadow Priest Icon">
+                    <span class="nav-link-text ms-2  class-Priest-text
+                      ">
+                      Shadow Priest
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Subtlety_Rogue" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/132320.jpg" class="img-fluid" alt="Subtlety Rogue Icon">
+                    <span class="nav-link-text ms-2  class-Rogue-text
+                      ">
+                      Subtlety Rogue
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Survival_Hunter" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/461113.jpg" class="img-fluid" alt="Survival Hunter Icon">
+                    <span class="nav-link-text ms-2  class-Hunter-text
+                      ">
+                      Survival Hunter
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Unholy_Death Knight" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/135775.jpg" class="img-fluid" alt="Unholy Death Knight Icon">
+                    <span class="nav-link-text ms-2  class-DeathKnight-text
+                      ">
+                      Unholy Death Knight
+                    </span>
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a href="/classes/Dps/Windwalker_Monk" class="nav-link d-flex align-items-center
+                       ">
+                    <img width="24" src="/data/icons/608953.jpg" class="img-fluid" alt="Windwalker Monk Icon">
+                    <span class="nav-link-text ms-2  class-Monk-text
+                      ">
+                      Windwalker Monk
+                    </span>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <li class="nav-item mt-3">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-5">Other Pages</h6>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <i class="material-symbols-rounded text-body-emphasis opacity-5">Upcoming</i>
+          <span class="nav-link-text text-body-emphasis ms-1">Coming Soon</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="sidenav-footer position-absolute bottom-0 start-0 end-0 shadow border-top py-3" role="contentinfo">
+    <div class="mx-3">
+      <div class="w-100 text-center">
+        <a class="btn btn-outline-emphasis w-100 mb-2" href="https://www.patreon.com/c/Jodsderechte">Support the Site
+          Development</a>
+        <a class="btn btn-outline-emphasis w-100 mb-2" href="https://discord.com/invite/v3gYmYamGJ">Give Feedback on
+          Discord</a>
+
+        <h6 class="mt-3">Share on Socials!</h6>
+        <div class="d-inline-flex gap-2">
+          <a href="https://twitter.com/intent/tweet?text=Check%20@Mythistone%20WoW%20M%20Plus%20Meta&amp;url=https%3A%2F%2Fwww.mythistone.com%2FWoW"
+            class="btn btn-primary mb-0" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.mythistone.com"
+            class="btn btn-primary mb-0" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://bsky.app/intent/compose?text=Check%20@mythistone.bsky.social%20WoW%20M%20Plus%20Meta%20https%3A%2F%2Fwww.mythistone.com%2FWoW"
+            class="btn btn-primary mb-0" target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky">
+            <i class="bi bi-bluesky"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-3 shadow-none border-radius-xl">
+  <div class="container-fluid py-1 px-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+        
+        
+        <li class="breadcrumb-item text-sm text-body-emphasis active" aria-current="page">Blog</li>
+        
+        
+      </ol>
+    </nav>
+    <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+      <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+        <div class="input-group input-group-outline">
+          <label class="form-label">Type here...</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <ul class="navbar-nav d-flex align-items-center  justify-content-end">
+        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+          <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+              <i class="sidenav-toggler-line"></i>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item px-3 d-flex align-items-center">
+          <a href="javascript:;" class="nav-link text-body p-0">
+            <i class="material-symbols-rounded fixed-plugin-button-nav">settings</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- End Navbar -->
+    <!-- Notifications -->
+    
+    <!-- End Notifications -->
+    <div class="container-fluid py-2">
+      <div class="list-group gap-2">
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1758220742.281></small>
+          </div>
+          <p class="mb-1">Ret Pallys: Avenged your wipe? 498.9K runs can’t lie-Templar tree’s crusadin’ with holy-cow efficiency! Top run: +20 Taz in 31:42. Need divine key-help? Click for *ret*ribution stats! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1758048005.226></small>
+          </div>
+          <p class="mb-1">Time flies when you&#39;re draggin&#39; through Tazavesh! Devastation Evokers clocked a +19 in 29:34 - 138.6K runs prove we&#39;re fired up! Flameshaper&#39;s 94.42% roasting comp. Can you handle the heat? (helmets optional) #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757961390.503></small>
+          </div>
+          <p class="mb-1">Vengeance DHs tanked 318K M+ runs- 83.86% agree Aldrachi Reaver swings best! Who cleared a +20 Tazavesh in 31:42? They were in a *demon*-strate hurry! Share your PB (punchline below). #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757874730.105></small>
+          </div>
+          <p class="mb-1">Blood DKs are pouring in (get it?), with 127.2K runs hemorrhaging data! Topped +19 Tazavesh:29:39-clock drained dry. Top tree: San’layn (55.95% veins). Rise or crypt-sit? #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757788451.221></small>
+          </div>
+          <p class="mb-1">Feral Druid stats are claw-some! Analyzed 87.5K runs - someone clawed their way to a +19 Tazavesh (27:22). Druid of the Claw claws 97.62% popularity. How&#39;s your M+ run time? Share your best (or cat-astrophic) logs! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757701973.207></small>
+          </div>
+          <p class="mb-1">174.8K Demo runs? That&#39;s a Dreadful Army of data! Diabolists (99.33%) smashed a +18 Taz in 26:05 - demons clocked in late? How’s YOUR M+ week going? #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757622608.197></small>
+          </div>
+          <p class="mb-1">Augmentation Evokers: 11.7k runs &amp; still eggs-augmenting? 🥚 Their +17 Dawnbreaker cracked in 29:20 – bet their Scalecommander tree scales well (91.65% agree)! Got tips or a better yolk? Cluck back! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757529451.011></small>
+          </div>
+          <p class="mb-1">Prot Warriors tanked 311.4K M+ runs! Mountain Thane’s 95.87% pick rate? Peak tank-formance. Cleared +20 Taz: So&#39;leah&#39;s Gambit in 26:53? That’s a shield-blockbuster! Share your WoW-esome puns! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757442931.354></small>
+          </div>
+          <p class="mb-1">Fire Mages are on fire (duh!) with 15.8K runs! Highest blaze? +18 Tazavesh in 29:03. Feeling the heat as 71.75% embrace Sunfury. Remember, we don’t cast Cold Snap… it’s too chill. Share your fiery feats! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757356666.083></small>
+          </div>
+          <p class="mb-1">Enhancement Shamans shocked 51.1K M+ runs—Stormbringer (99.09%) proving lightning DOES strike twice. They aced +17 Taz in 24:36! Don’t get grounded; bolt to the site for stats. #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757269897.0></small>
+          </div>
+          <p class="mb-1">Why did the Havoc DH bring a ladder to Tazavesh? To scale the charts! 230K runs logged, with a +19 So&#39;leah&#39;s Gambit cleared (28:45). 80% use Aldrachi Reaver - branch out or go out on a limb? Share your M+ highs! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757183515.482></small>
+          </div>
+          <p class="mb-1">Affliction Warlocks prove we&#39;re not cursed-just REALLY into dots! 36K runs say Hellcallers (89%) summoned hell… and a tidy garage? Top run: +17 Tazavesh&#39;s mailbox purged in 28:06. Share your stamp-eding DPS! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757097284.944></small>
+          </div>
+          <p class="mb-1">Fury-ous numbers to make your shield block: 113.3k warriors charged into M+! Top run: +17 Tazavesh in 25:51 - did Thunderous Applause help? What&#39;s your highest key smashed? Share below! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1757010936.375></small>
+          </div>
+          <p class="mb-1">Arcane Mages went mana-ical! 232K runs cast past bedtime. Top: +19 Tazavesh in 26:40 (rollin&#39;!). Sunfury at 98%-bright as a moonwell. Click for sparkly stats: #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756924686.776></small>
+          </div>
+          <p class="mb-1">Shadow Priests be like: &#34;We&#39;re just here for the *a-massing* data!&#34; Holy stats! 115K runs-Archon (83%)’s crushing +19 Taz in 29:22. Think you can out-priest us? Drop a mind-blowing reply! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756838052.551></small>
+          </div>
+          <p class="mb-1">Lvl 18 stats: Halls of Atonement topping charts (no repentance needed), while Dawnbreaker’s at the bottom—guess it’s still dawning. Dropped your key? Click to see where your dungeon stands! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756751686.74></small>
+          </div>
+          <p class="mb-1">Holy Moley! Did 70.1K runs baptize this Holy Paladin in +17 Tazavesh&#39;s holy water? Clocked a divine 28:11 - guess the Light speed buff worked! 95% guildies praise Sun heralds… *son*rising talent! Out-pun our time? #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756665246.334></small>
+          </div>
+          <p class="mb-1">Resto Druids are really branching out! 165K M+ runs logged. Topped by a +18 Tazavesh in 26:05- 95% of you picked Wildstalker. Stalker market cornered! Check logs &amp; share your tales (not the WoW kind)! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756578799.594></small>
+          </div>
+          <p class="mb-1">47.1k riders joined the Apocalypse, but Unholy DKs still aced a +17 Tazavesh in 29:25. 98% agree: ghoul power &gt; horsepower! Saddle up (bring snacks). Ready to raise dead(elines)? #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756492392.592></small>
+          </div>
+          <p class="mb-1">Blood DKs don’t bleed success-they *drain* it! 62.4K runs prove San&#39;layn (68.47%) made hearts stop…but their Eco-Dome +17 in 31:47 didn’t! Stack stats or get vault-ed—comment your best bone puns! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756406185.46></small>
+          </div>
+          <p class="mb-1">Ret Pals are smiting it out of the park! 178.4K runs prove someone lied about &#39;Retail is ded.&#39; Highest? +17 Eco-Dome in 26:25 - 98.39% Templar fans (pala-DO approve). Think you can out-holy their DPS? Click! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756319687.243></small>
+          </div>
+          <p class="mb-1">Devastation Evokers scorched 60.1K runs! Top Flameshaper (98.39%) is fire… literally. Their +16 Tazavesh cleared in 25:39 – hope they didn’t *drake* the timer! Think your squad can out-burn them? #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756147195.207></small>
+          </div>
+          <p class="mb-1">Augmentation Evokers proving they’re dragon their stats! 2.8K runs + a +15 Ara-Kara in 25:30 (echo-ception!). Share your M+ dad joke - let’s hear those ‘key’ punchlines! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1756060468.027></small>
+          </div>
+          <p class="mb-1">Enhancement Shamans electrified the charts! 18.2K runs analyzed, topped by a +15 Eco-Dome Al’dani in 26:46 (Dome sweet dome?). Stormbringer (100%)—they’re storming AND charming! Shocked? Share your spark below! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1755974032.578></small>
+          </div>
+          <p class="mb-1">Havoc we been up to? 61K M+ runs recorded, including a +17 Tazavesh cleared in 25:20! Time to let that sink in… just not like a kitchen sink in your vault run. Click to out-dps our dad jokes! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1755801541.862></small>
+          </div>
+          <p class="mb-1">Destro Locks torched 17.9K runs - call the fire marshal! Their hottest run? A +15 Eco-Dome in 30:50. Think you&#39;re fireproof? Share your flaming feats below! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1755715255.002></small>
+          </div>
+          <p class="mb-1">Beast Masters herd it through the grapevine: 38.8K M+ runs! Top doggo sniffed out a +15 Tazavesh in 27:03 (no Scooby snacks). Pack Leader? More like *Snack* Leader! Share your best key/wipe story! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1755628982.696></small>
+          </div>
+          <p class="mb-1">Holy Paladins reporting 17.1K holy carry-ons logged! Cleared +16 Ara-Kara minus echo-location (used bubbles instead). Ready to bless our M+ stats with your healy deeds? Share your glory! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1755110791.074></small>
+          </div>
+          <p class="mb-1">Outlaw Rogues swashbuckled 34.2K runs—these pirates love &#39;chart&#39;-er parties! Plundered a +22 Darkflame Cleft in 30:10. 95% Trickster trees? Must&#39;ve found the *root* issue. Share your best loot (or jokes) below! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1755024577.847></small>
+          </div>
+          <p class="mb-1">Holy cow! Holy Pallys clocked 44.1K M+ runs - that&#39;s a holy lot of stuns! Top tree? Herald of the Sun (93.91%). Bask in +22 Darkflame Cleft glory? Share YOUR holy light! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754938147.611></small>
+          </div>
+          <p class="mb-1">Marksmanship Hunters: 126.9K M+ runs! Top shot? A +21 bullseye in Darkflame Cleft (28:36)! 84% play Sentinel – aim so true, even arrows tell dad jokes. Share your best runs below! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754851446.98></small>
+          </div>
+          <p class="mb-1">Resto Shamans healed 156.3K runs - that&#39;s a tidal wave of data! Topped by a +22 Darkflame Cleft (30:10). 95% rocked Totemic (water you waiting for?). Dive into your stats, or are you &#39;current&#39;-ly busy? #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754765123.568></small>
+          </div>
+          <p class="mb-1">Holy stats, Batman! Ret Pallys (1.3M runs) are crusadin’ keys like a burst of Holy power. Aug Evokers (51.1K)? Still practicing their scales. Folks, should we tune this lute or reroll? Click responsibly. #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754678853.641></small>
+          </div>
+          <p class="mb-1">Guardian Druids tanked 80.5K M+ runs—bear-ly time for naps. A +21 Darkflame in 30:07? Fur real. 97% pick Elune’s Chosen—moonlight savings! Share stats! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754592842.997></small>
+          </div>
+          <p class="mb-1">Holy moly, 170.9k runs? We’re not Disc-ouraged! Disc Priests aced +22 Darkflame Cleft in 27:23 - penance due... for speed! 93% went Oracle: foresaw the meta? Think you can out-pray? Click for more! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754506273.005></small>
+          </div>
+          <p class="mb-1">Smoldering 182.8K M+ runs! Vengeance DHs getting lit. Highest: +22 Darkflame Cleft (27:23)-fel the heat, still aced. 85% Aldrachi: splitting headaches? Share your feats! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754423135.084></small>
+          </div>
+          <p class="mb-1">Havoc DHs tearing up charts (and fel energy)! 97.8K runs, with a +21 Darkflame in 27:22. 72.74% chose Aldrachi Reaver—couldn’t leaf it alone? Dive in &amp; chaos your way up! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754335529.306></small>
+          </div>
+          <p class="mb-1">Brewmasters are pouring over 44.6K runs! Topped with a +22 Darkflame Cleft (30:10) - aged like a fine barrel! 64.6% mastered harmony - talk about balance! Tap our site to check your stats. #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754246793.649></small>
+          </div>
+          <p class="mb-1">Frost DKs proving cooler heads prevail! 35.2K frozen stompers just iced the +22 Darkflame Cleft in 28:08. Deathbringer tree? 85% chill. Think your keys run colder? Let’s hear it! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1754074208.911></small>
+          </div>
+          <p class="mb-1">Unholy DKs are RAISING the bar (and the dead)! 110.6K M+ runs don&#39;t lie. Carved up a +22 Darkflame in 27:23 - dead-lines matter! 95% San&#39;layn: vampiric efficiency. Check stats! [link] #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753987859.328></small>
+          </div>
+          <p class="mb-1">Augmentation Evokers are *dragon* the M+ ladder! 8.8K runs logged. Scalecommander (86.16%) blasted a +20 Darkflame Cleft in 25:05. Still dragon your feet? Share your stats! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753901461.399></small>
+          </div>
+          <p class="mb-1">Latest M+ stats: Feral’s clawing up dungeons-must’ve found the purrfect strat! Ret Pals? More like Regret-ribution. Where’s your spec stand? Paws for thought below! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753814620.448></small>
+          </div>
+          <p class="mb-1">Why did the Assassination Rogue bring a ladder? To climb that +21 Darkflame Cleft in 26:46! 39.7K runs stabbed the meta. Deathstalker (99.52%) isn&#39;t just stalking... Share your top key! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753729032.947></small>
+          </div>
+          <p class="mb-1">Devastation Evokers singe 41.4K M+ runs! Best: +20 Darkflame in 25:31 - lit! 85% Flameshapers. Share your fiery time! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753641517.594></small>
+          </div>
+          <p class="mb-1">Rise and grind—Darkflame Cleft clears the tierlist top, while Theater of Pain gets booed offstage! 17.9M runs tracked… time to log yours or critique ours? #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753555826.893></small>
+          </div>
+          <p class="mb-1">Holy moly, Holy Priest stats are LIT! 32.1K runs prove we’re not holy- just wholly committed. Cleared +20 Darkflame (25:47). Why a flashlight? To SHED LIGHT on the comp! Click before we dispel! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753469025.053></small>
+          </div>
+          <p class="mb-1">Windwalker Monks aren&#39;t monkeying around- 41K runs logged! Punched a +21 Darkflame Cleft (28:14) w/78.88% celestial punchlines. Kick faster? Share your time! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753382505.252></small>
+          </div>
+          <p class="mb-1">Affliction Warlocks: suffering from success! 16.5K M+ runs logged - 84.49% of Hellcallers agree agony loves company. Topped by a +20 Darkflame Cleft (27:41). Think YOU can out-dps this dot? Click to argue. #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753296067.087></small>
+          </div>
+          <p class="mb-1">Destruction Warlocks incinerated the stats: 64.3K runs burned through. Topped with a +20 Darkflame Cleft (24:10) - talk about hot keys! 90% are Hellcallers… hell-raising or hell-chilling? Share your infernal takes! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753209699.423></small>
+          </div>
+          <p class="mb-1">Blood DKs are UNDEAD-icated! Mined 59.3K runs–if your mom says ‘dig a hole,’ our +21 MOTHERLODE shows you’re overdoing it. San&#39;layn is the holy grail (61.51%). Thirsty for more stats? Loot ours! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753123304.634></small>
+          </div>
+          <p class="mb-1">US WoW players: Just hatched a level 2 Rookery run in 8:14! Only 25 days early for the early bird achievement… Think you can wing it faster? #WoW #MythicPlus #WorldofWarcraft (210) https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1753037106.834></small>
+          </div>
+          <p class="mb-1">Fury Warriors: +21 ToP cleared in 41:26 - so fast the bosses yelled &#39;time out&#39;! 48.3k Warriors charged in, but only Mountain Thane (83%) stayed rooted. Why? They’re hill-arious. Ready to top the charts? #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1752950350.479></small>
+          </div>
+          <p class="mb-1">Prospectors still dig The MOTHERLODE!! at 21s (Marruk’s band ghosting). Operation: Floodgate sinks faster than a plate-clad gnome. Team Mine or Drain? Share your picks! #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1752935004.824></small>
+          </div>
+          <p class="mb-1">Arms Warriors: 45.2K runs! Colossus (89.86%) leads the coloss-arms race. +22 Darkflame Cleft crushed in 30:10. Who needs magic with biceps like these? Which Hero Tree arms your pick? #WoW #MythicPlus #WorldofWarcraft https://linktr.ee/Mythistone</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1752933488.091></small>
+          </div>
+          <p class="mb-1">Prot Paladins aced +20 Darkflame Cleft in 25:58… holy tank-speed! 85.2K runs later, 86.38% agree: Templar’s just divine. DPS mains, we see your Ret-ribution. Need a carry? Don’t be shield-shy. #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+        <div class="list-group-item flex-column align-items-start">
+          <a href="https://linktr.ee/mythistone" target="_blank">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Social Media Post</h5>
+            <small class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
+              data-timestamp=1752932040.344></small>
+          </div>
+          <p class="mb-1">KR squad lit the Sacred Flame so bright in their lvl16 Priory run, it took 11 HOURS to put it out! Still the season&#39;s longest M+ crock-pot cook. Can anyone slow-roast longer? Share your sizzlin&#39; stats! #WoW #MythicPlus #WorldofWarcraft</p>
+          </a>
+        </div>
+        
+      </div>
+      <footer class="footer py-4  ">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+            <!-- left: copyright -->
+            <div class="col-12 col-lg-4 mb-3 mb-lg-0 order-1 order-lg-1">
+                <div class="text-center text-sm text-muted text-lg-start">
+                    ©
+                    <script>document.write(new Date().getFullYear())</script>,
+                    made by <a href="https://linktr.ee/jodsderechte" class="font-weight-bold" target="_blank">Jods</a>
+                    with <a href="https://www.creative-tim.com/product/material-dashboard" class="font-weight-bold"
+                        target="_blank">Material-dashboard</a>
+                </div>
+            </div>
+
+            <!-- middle: trademark (same element for all sizes) -->
+            <div class="col-12 col-lg-4 order-2 order-lg-2">
+                <div class="text-center text-sm text-muted">
+                    <em>
+                        All World of Warcraft-related content, including but not limited to the game itself, is copyright of Blizzard Entertainment, Inc. This website is not
+                        affiliated with Blizzard Entertainment.
+                    </em>
+                </div>
+            </div>
+
+            <!-- right: links -->
+            <div class="col-12 col-lg-4 order-3 order-lg-3">
+                <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                    <li class="nav-item"><a href="/" class="nav-link text-muted" target="_blank">MythiStone</a></li>
+                    <li class="nav-item"><a href="/pages/privacy" class="nav-link text-muted"
+                            target="_blank">Privacy</a></li>
+                    <li class="nav-item"><a href="/pages/impressum" class="nav-link text-muted"
+                            target="_blank">Impressum</a></li>
+                    <li class="nav-item"><a href="/pages/about" class="nav-link text-muted" target="_blank">About Us</a>
+                    </li>
+                    <li class="nav-item"><a href="/pages/blog" class="nav-link text-muted" target="_blank">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+  </main>
+  
+<aside class="sidenav navbar navbar-vertical navbar-expand-xs border-radius-lg fixed-end me-2 my-2 mt-6 d-none d-xl-block"
+       id="sidenav-right" role="complementary" aria-label="Right sidebar">
+  <div class="sidenav-header">
+    Advertisements
+  </div>
+
+  <hr class="horizontal dark mt-0 mb-2">
+
+  <div class="collapse navbar-collapse w-auto pb-5" id="sidenav-right-collapse">
+    <div class="card mb-3">
+      <div class="card-body text-center">
+        <h6 class="card-title mb-2">Sponsored</h6>
+        <div class="ratio ratio-3x5 mb-2">
+          <img src="/assets/img/placeholder-300x600.png" class="img-fluid rounded" alt="Ad placeholder">
+        </div>
+        <p class="small text-muted mb-0">Want this space? <a href="mailto:sponsor@mythistone.com">Contact us</a></p>
+      </div>
+    </div>
+
+    <div class="text-center small text-muted px-3">
+      Ads help keep Mythistone free. Thank you for your support!
+    </div>
+  </div>
+</aside>
+  <div class="fixed-plugin">
+  <div class="card shadow-lg">
+    <div class="card-header pb-0 pt-3">
+      <div class="float-start">
+        <h5 class="mt-3 mb-0">UI Configurator</h5>
+        <p>Config the Ui</p>
+      </div>
+      <div class="float-end mt-4">
+        <button class="btn btn-link p-0 fixed-plugin-close-button">
+          <i class="material-symbols-rounded">clear</i>
+        </button>
+      </div>
+      <!-- End Toggle Button -->
+    </div>
+    <hr class="horizontal dark my-1">
+    <div class="card-body pt-sm-3 pt-0">
+      <!-- Sidebar Backgrounds -->
+      <div>
+        <h6 class="mb-0">Sidebar Colors</h6>
+      </div>
+      <a href="javascript:void(0)" class="switch-trigger background-color">
+        <div class="badge-colors my-2 text-start">
+          <span class="badge filter bg-gradient-primary" data-color="primary" onclick="sidebarColor(this)"></span>
+          <span class="badge filter bg-gradient-dark active" data-color="dark" onclick="sidebarColor(this)"></span>
+          <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+          <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+          <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+          <span class="badge filter bg-gradient-danger" id="defaultColor" data-color="danger"
+            onclick="sidebarColor(this)"></span>
+        </div>
+      </a>
+      <!-- Page Theme -->
+      <hr class="horizontal dark my-3">
+      <div class="mt-2 d-flex">
+        <h6 class="mb-0">Light / Dark</h6>
+        <div class="form-check form-switch ps-0 ms-auto my-auto">
+          <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version">
+        </div>
+      </div>
+      <hr class="horizontal dark my-3">
+      <div class="mt-2 mx-3">
+        <button type="button" class="btn btn-outline-emphasis w-100 mb-2" onclick="klaro.show()"
+          aria-label="Open cookie settings">
+          Cookie settings
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--   Core JS Files   -->
+<script src="/assets/js/core/popper.min.js"></script>
+<script src="/assets/js/core/jquery.min.js"></script>
+<script src="/assets/js/core/bootstrap.min.js"></script>
+<script src="/assets/js/plugins/bootstrap-select.min.js"></script>
+
+<!-- Material Dashboard JS -->
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+    function timeAgo(unixTsSeconds) {
+        const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+        const now = Date.now() / 1000;
+        const diff = now - unixTsSeconds;
+
+        const units = [
+            { name: 'year', secs: 60 * 60 * 24 * 365 },
+            { name: 'month', secs: 60 * 60 * 24 * 30 },
+            { name: 'day', secs: 60 * 60 * 24 },
+            { name: 'hour', secs: 60 * 60 },
+            { name: 'minute', secs: 60 },
+            { name: 'second', secs: 1 },
+        ];
+
+        for (const { name, secs } of units) {
+            const delta = Math.floor(diff / secs);
+            if (Math.abs(delta) >= 1) {
+                return rtf.format(-delta, name);
+            }
+        }
+        return 'just now';
+    }
+
+    function formatDuration(ms) {
+        const minutes = Math.floor(ms / 60000);
+        const seconds = Math.floor((ms % 60000) / 1000);
+        const milliseconds = ms % 1000;
+
+        const mm = String(minutes).padStart(2, '0');
+        const ss = String(seconds).padStart(2, '0');
+        const mmm = String(milliseconds).padStart(3, '0');
+
+        return `${mm}:${ss}.${mmm}`;
+    }
+    //initialize timestamps
+    document.querySelectorAll('.timestamp').forEach(function (el) {
+        const timestamp = el.getAttribute('data-timestamp');
+        el.textContent = `${el.textContent} ${timeAgo(Number(timestamp))}`;
+        el.setAttribute('title', new Date(Number(timestamp) * 1000).toLocaleString());
+    });
+</script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="/assets/js/material-dashboard.js"></script>
+<script>
+    sidebarColor(document.querySelector('#defaultColor'));
+</script>
+</body>
+
+</html>
