@@ -30,6 +30,8 @@
 <link rel="stylesheet" href="/assets/css/search.css" />
 <!-- bootstrap Icons-->
 <link href="/assets/css/bootstrap-icons.css" rel="stylesheet" />
+<!-- Custom Scrollbars -->
+<link href="/assets/css/custom-scrollbars.css" rel="stylesheet" />
 <!-- Klaro cookie consent -->
 <script defer type="text/javascript" src="/assets/js/plugins/cookie-config.js"></script>
 <script defer type="text/javascript" src="/assets/js/plugins/klaro.js"></script>
@@ -1207,15 +1209,18 @@
 <script src="/assets/js/plugins/bootstrap-select.min.js"></script>
 <script src="/assets/js/plugins/fuse.js"></script>
 <script src="/assets/js/site-search.js"></script>
+<!-- Smooth Scrollbar (used sparingly on sidenav) -->
+<script src="/assets/js/plugins/smooth-scrollbar.min.js"></script>
 <!-- Material Dashboard JS -->
 <script>
     var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
+    if (win && document.querySelector('#sidenav-collapse-main')) {
         var options = {
             damping: '0.5'
         }
-        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        Scrollbar.init(document.querySelector('#sidenav-collapse-main'), options);
     }
+
     function timeAgo(unixTsSeconds) {
         const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
         const now = Date.now() / 1000;

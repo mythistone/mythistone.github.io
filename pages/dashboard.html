@@ -42,6 +42,8 @@
 <link rel="stylesheet" href="/assets/css/search.css" />
 <!-- bootstrap Icons-->
 <link href="/assets/css/bootstrap-icons.css" rel="stylesheet" />
+<!-- Custom Scrollbars -->
+<link href="/assets/css/custom-scrollbars.css" rel="stylesheet" />
 <!-- Klaro cookie consent -->
 <script defer type="text/javascript" src="/assets/js/plugins/cookie-config.js"></script>
 <script defer type="text/javascript" src="/assets/js/plugins/klaro.js"></script>
@@ -57,7 +59,7 @@
 
   <!-- Primary SEO -->
   <meta name="description"
-    content="Interactive Mythic+ dashboard for World of Warcraft MN Season 1. Find spec popularity, keys per week, dungeon popularity, performance vs. popularity and more. Data updated 07/04/2026, 08:50:32.">
+    content="Interactive Mythic+ dashboard for World of Warcraft MN Season 1. Find spec popularity, keys per week, dungeon popularity, performance vs. popularity and more. Data updated 07/04/2026, 12:11:15.">
   <meta name="keywords"
     content="MythiStone, Mythic+, WoW, Dungeon popularity, spec popularity, keys per week, M+ dashboard, WoW stats, WoW meta MN Season 1">
 
@@ -75,7 +77,7 @@
   <meta property="og:url" content="https://mythistone.com/pages/dashboard">
   <meta property="og:title" content=" Mythic+ Dashboard: Spec & Dungeon Trends for MN Season 1 | MythiStone">
   <meta property="og:description"
-    content="Live Mythic+ dashboard for MN Season 1: spec popularity, dungeon trends, keys per week and performance scoring (updated 07/04/2026, 08:50:32).">
+    content="Live Mythic+ dashboard for MN Season 1: spec popularity, dungeon trends, keys per week and performance scoring (updated 07/04/2026, 12:11:15).">
   <meta property="og:image" content="https://mythistone.com/assets/img/previews/dungeon_popularity_across_keylevels.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -118,7 +120,7 @@
             {"@type": "ListItem", "position": 2, "name": "Dashboard", "item": "https://mythistone.com/pages/dashboard"}
           ]
         },
-        "dateModified": "07/04/2026, 08:50:32"
+        "dateModified": "07/04/2026, 12:11:15"
       },
       {
         "@type": "SiteNavigationElement",
@@ -387,7 +389,7 @@
     "url": "https://mythistone.com"
     },
     "datePublished": "01/07/2025",
-    "dateModified": "07/04/2026, 08:50:32"
+    "dateModified": "07/04/2026, 12:11:15"
   }
   </script>
 
@@ -1589,7 +1591,7 @@
                           <div class="d-flex">
                             <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
                             <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                              data-timestamp=1775551832.171974>Last Update: </p>
+                              data-timestamp=1775563875.860905>Last Update: </p>
                           </div>
                         </div>
                       </div>
@@ -1613,7 +1615,7 @@
                           <div class="d-flex">
                             <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
                             <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                              data-timestamp=1775551832.171974>Last Update: </p>
+                              data-timestamp=1775563875.860905>Last Update: </p>
                           </div>
                         </div>
                       </div>
@@ -1643,7 +1645,7 @@
               <div class="d-flex ">
                 <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
                 <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-timestamp=1775551832.171974>Last Update: </p>
+                  data-timestamp=1775563875.860905>Last Update: </p>
                 </p>
               </div>
             </div>
@@ -1663,7 +1665,7 @@
               <div class="d-flex ">
                 <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
                 <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-timestamp=1775551832.171974>Last Update: </p>
+                  data-timestamp=1775563875.860905>Last Update: </p>
                 </p>
               </div>
             </div>
@@ -1687,7 +1689,7 @@
                 <div class="d-flex">
                   <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
                   <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-timestamp=1775551832.171974>Last Update: </p>
+                    data-timestamp=1775563875.860905>Last Update: </p>
                 </div>
                 <a class="mb-0 text-sm" style="cursor: pointer;" data-bs-toggle="modal"
                   data-bs-target="#performanceModal">See How It’s
@@ -1710,7 +1712,7 @@
               <div class="d-flex ">
                 <i class="material-symbols-rounded text-sm my-auto me-1">schedule</i>
                 <p class="mb-0 text-sm timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-timestamp=1775551832.171974>Last Update: </p>
+                  data-timestamp=1775563875.860905>Last Update: </p>
               </div>
             </div>
           </div>
@@ -2451,15 +2453,18 @@
 <script src="/assets/js/plugins/bootstrap-select.min.js"></script>
 <script src="/assets/js/plugins/fuse.js"></script>
 <script src="/assets/js/site-search.js"></script>
+<!-- Smooth Scrollbar (used sparingly on sidenav) -->
+<script src="/assets/js/plugins/smooth-scrollbar.min.js"></script>
 <!-- Material Dashboard JS -->
 <script>
     var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
+    if (win && document.querySelector('#sidenav-collapse-main')) {
         var options = {
             damping: '0.5'
         }
-        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        Scrollbar.init(document.querySelector('#sidenav-collapse-main'), options);
     }
+
     function timeAgo(unixTsSeconds) {
         const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
         const now = Date.now() / 1000;
@@ -2978,7 +2983,7 @@
 
       // these come straight from your Python
       const periodLabels = ["Week:2 ", "Week:3 "];
-    const periodDatasets = [{'label': 'Total', 'data': [621987, 585314], 'tension': 0.3, 'borderColor': '#4A90E2', 'pointBackgroundColor': '#4A90E2', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': 'Depleted', 'data': [86003, 76130], 'tension': 0.3, 'borderColor': '#FF0000', 'pointBackgroundColor': '#FF0000', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+1', 'data': [242510, 271017], 'tension': 0.3, 'borderColor': '#1eff00', 'pointBackgroundColor': '#1eff00', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+2', 'data': [239916, 213407], 'tension': 0.3, 'borderColor': '#a335ee', 'pointBackgroundColor': '#a335ee', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+3', 'data': [53558, 24760], 'tension': 0.3, 'borderColor': '#ff8000', 'pointBackgroundColor': '#ff8000', 'pointRadius': 4, 'pointHoverRadius': 6}];
+    const periodDatasets = [{'label': 'Total', 'data': [621987, 586120], 'tension': 0.3, 'borderColor': '#4A90E2', 'pointBackgroundColor': '#4A90E2', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': 'Depleted', 'data': [86003, 76249], 'tension': 0.3, 'borderColor': '#FF0000', 'pointBackgroundColor': '#FF0000', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+1', 'data': [242510, 271324], 'tension': 0.3, 'borderColor': '#1eff00', 'pointBackgroundColor': '#1eff00', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+2', 'data': [239916, 213718], 'tension': 0.3, 'borderColor': '#a335ee', 'pointBackgroundColor': '#a335ee', 'pointRadius': 4, 'pointHoverRadius': 6}, {'label': '+3', 'data': [53558, 24829], 'tension': 0.3, 'borderColor': '#ff8000', 'pointBackgroundColor': '#ff8000', 'pointRadius': 4, 'pointHoverRadius': 6}];
 
     new Chart(ctx_keys_per_week, {
       type: "line",
@@ -3041,8 +3046,8 @@
       const dungeonLabels = ["WS", "AA", "POS", "NPX", "SR", "MT", "SEAT", "MC"];
     const dungeonFullNames = ["Windrunner Spire", "Algeth\u0027ar Academy", "Pit of Saron", "Nexus-Point Xenas", "Skyreach", "Magisters\u0027 Terrace", "Seat of the Triumvirate", "Maisara Caverns"];
     const iconUrls = ["/data/icons/windrunner-spire-small.jpg", "/data/icons/algethar-academy-small.jpg", "/data/icons/pit-of-saron-small.jpg", "/data/icons/nexus-point-xenas-small.jpg", "/data/icons/skyreach-small.jpg", "/data/icons/magisters-terrace-small.jpg", "/data/icons/seat-of-the-triumvirate-small.jpg", "/data/icons/maisara-caverns-small.jpg"];
-    const totalCounts = [160920, 159684, 157951, 157328, 156783, 155686, 155098, 149557];
-    const dungeonDatasets = [{"backgroundColor": "#FF0000", "data": [16065, 36246, 17524, 20083, 18668, 18807, 15250, 24964], "label": "Depleted", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#1eff00", "data": [60182, 78369, 68334, 68537, 61028, 65849, 57545, 72382], "label": "+1", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#a335ee", "data": [71949, 40257, 62572, 60003, 62200, 61377, 67718, 47066], "label": "+2", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#ff8000", "data": [12724, 4812, 9521, 8705, 14887, 9653, 14585, 5145], "label": "+3", "order": 0, "stack": "Stack 0"}];
+    const totalCounts = [161052, 159860, 158132, 157449, 156949, 155837, 155265, 149672];
+    const dungeonDatasets = [{"backgroundColor": "#FF0000", "data": [16083, 36286, 17546, 20095, 18691, 18831, 15270, 24975], "label": "Depleted", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#1eff00", "data": [60240, 78447, 68408, 68585, 61094, 65899, 57617, 72435], "label": "+1", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#a335ee", "data": [71998, 40312, 62645, 60058, 62258, 61445, 67779, 47112], "label": "+2", "order": 0, "stack": "Stack 0"}, {"backgroundColor": "#ff8000", "data": [12731, 4815, 9533, 8711, 14906, 9662, 14599, 5150], "label": "+3", "order": 0, "stack": "Stack 0"}];
 
     // Kick off loading each icon
     const iconPromises = iconUrls.map(src =>
@@ -3224,7 +3229,7 @@
 
       // ← injected server‑side
       const keyLevels = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-    const datasets = [{"data": [14.1, 12.5, 12.2, 11.6, 11.5, 12.2, 12.5, 12.6, 12.3, 14.0, 13.3, 13.2, 13.0, 12.7, 13.3, 12.7, 13.2, 11.4, 0.0], "label": "Windrunner Spire", "rawCounts": [7026, 640, 2762, 4058, 4495, 5593, 8353, 10280, 45700, 25835, 21072, 11896, 6848, 3955, 1768, 520, 109, 10, 0]}, {"data": [13.8, 11.6, 12.0, 12.3, 12.3, 12.1, 12.6, 13.0, 12.8, 13.2, 13.5, 12.1, 11.9, 11.0, 9.8, 8.9, 6.3, 1.1, 0.0], "label": "Algeth\u0027ar Academy", "rawCounts": [6885, 595, 2710, 4299, 4824, 5535, 8438, 10593, 47734, 24429, 21322, 10923, 6262, 3426, 1294, 362, 52, 1, 0]}, {"data": [11.9, 11.9, 11.7, 12.6, 12.0, 12.0, 12.4, 12.2, 12.0, 12.7, 12.7, 13.9, 14.0, 14.7, 16.4, 18.3, 20.0, 30.7, 50.0], "label": "Pit of Saron", "rawCounts": [5924, 610, 2638, 4434, 4697, 5500, 8311, 9895, 44821, 23424, 20129, 12495, 7374, 4583, 2178, 745, 165, 27, 1]}, {"data": [12.2, 11.9, 12.4, 12.2, 12.1, 12.0, 12.4, 12.5, 12.7, 13.2, 12.7, 12.2, 12.2, 11.8, 10.7, 10.5, 10.7, 8.0, 0.0], "label": "Nexus-Point Xenas", "rawCounts": [6104, 609, 2802, 4289, 4740, 5494, 8319, 10173, 47200, 24350, 20188, 11005, 6430, 3676, 1424, 430, 88, 7, 0]}, {"data": [12.3, 12.6, 12.8, 12.5, 12.8, 12.9, 12.4, 12.4, 12.6, 12.2, 12.5, 12.7, 12.3, 12.9, 13.4, 13.7, 14.3, 13.6, 0.0], "label": "Skyreach", "rawCounts": [6165, 645, 2885, 4393, 5018, 5911, 8303, 10103, 46752, 22498, 19736, 11423, 6479, 4005, 1779, 558, 118, 12, 0]}, {"data": [12.9, 13.8, 12.6, 13.1, 12.6, 12.5, 12.5, 12.5, 12.4, 12.1, 12.2, 12.4, 12.5, 12.5, 13.1, 12.8, 13.4, 12.5, 0.0], "label": "Magisters\u0027 Terrace", "rawCounts": [6428, 706, 2838, 4596, 4923, 5749, 8390, 10207, 46218, 22410, 19258, 11109, 6580, 3900, 1731, 521, 111, 11, 0]}, {"data": [11.0, 12.9, 13.1, 12.4, 13.2, 13.2, 12.3, 12.5, 12.8, 12.2, 12.0, 11.9, 12.2, 12.2, 11.4, 11.2, 9.3, 4.5, 0.0], "label": "Seat of the Triumvirate", "rawCounts": [5518, 662, 2960, 4364, 5159, 6048, 8237, 10198, 47583, 22496, 18942, 10689, 6416, 3782, 1505, 458, 77, 4, 0]}, {"data": [11.8, 12.7, 13.3, 13.2, 13.5, 13.2, 12.8, 12.3, 12.4, 10.4, 11.2, 11.5, 11.9, 12.2, 11.9, 11.9, 12.8, 18.2, 50.0], "label": "Maisara Caverns", "rawCounts": [5903, 648, 3011, 4639, 5305, 6057, 8531, 9986, 45992, 19132, 17700, 10381, 6295, 3789, 1579, 486, 106, 16, 1]}];
+    const datasets = [{"data": [14.1, 12.5, 12.2, 11.6, 11.5, 12.2, 12.5, 12.6, 12.3, 14.0, 13.3, 13.2, 13.0, 12.7, 13.3, 12.7, 13.2, 11.4, 0.0], "label": "Windrunner Spire", "rawCounts": [7026, 640, 2762, 4058, 4498, 5600, 8358, 10283, 45738, 25846, 21099, 11918, 6852, 3963, 1772, 520, 109, 10, 0]}, {"data": [13.8, 11.6, 12.0, 12.3, 12.3, 12.1, 12.6, 13.0, 12.8, 13.2, 13.5, 12.1, 11.9, 11.0, 9.8, 8.9, 6.3, 1.1, 0.0], "label": "Algeth\u0027ar Academy", "rawCounts": [6885, 595, 2710, 4299, 4827, 5543, 8451, 10603, 47782, 24468, 21344, 10940, 6269, 3432, 1296, 363, 52, 1, 0]}, {"data": [11.9, 11.9, 11.7, 12.7, 12.0, 12.0, 12.4, 12.2, 12.0, 12.7, 12.7, 13.9, 14.0, 14.7, 16.4, 18.3, 20.0, 30.7, 50.0], "label": "Pit of Saron", "rawCounts": [5924, 610, 2638, 4440, 4706, 5504, 8318, 9905, 44872, 23450, 20165, 12509, 7383, 4587, 2181, 746, 166, 27, 1]}, {"data": [12.2, 11.9, 12.4, 12.2, 12.1, 12.0, 12.4, 12.5, 12.7, 13.2, 12.7, 12.2, 12.2, 11.8, 10.7, 10.5, 10.6, 8.0, 0.0], "label": "Nexus-Point Xenas", "rawCounts": [6104, 609, 2804, 4291, 4748, 5506, 8320, 10181, 47250, 24356, 20202, 11017, 6433, 3678, 1425, 430, 88, 7, 0]}, {"data": [12.3, 12.6, 12.8, 12.5, 12.8, 12.9, 12.4, 12.4, 12.6, 12.2, 12.5, 12.7, 12.3, 12.9, 13.4, 13.7, 14.3, 13.6, 0.0], "label": "Skyreach", "rawCounts": [6165, 645, 2885, 4398, 5024, 5915, 8312, 10109, 46795, 22532, 19756, 11443, 6493, 4009, 1780, 558, 118, 12, 0]}, {"data": [12.9, 13.8, 12.6, 13.1, 12.6, 12.5, 12.5, 12.5, 12.4, 12.1, 12.2, 12.4, 12.5, 12.5, 13.1, 12.8, 13.4, 12.5, 0.0], "label": "Magisters\u0027 Terrace", "rawCounts": [6428, 706, 2838, 4596, 4931, 5756, 8397, 10217, 46280, 22423, 19274, 11123, 6589, 3902, 1734, 521, 111, 11, 0]}, {"data": [11.0, 12.9, 13.1, 12.4, 13.2, 13.2, 12.3, 12.5, 12.8, 12.2, 12.0, 11.9, 12.2, 12.2, 11.4, 11.2, 9.4, 4.5, 0.0], "label": "Seat of the Triumvirate", "rawCounts": [5518, 662, 2961, 4366, 5167, 6054, 8245, 10201, 47638, 22513, 18961, 10712, 6428, 3789, 1509, 459, 78, 4, 0]}, {"data": [11.8, 12.7, 13.3, 13.2, 13.5, 13.2, 12.8, 12.3, 12.4, 10.4, 11.2, 11.5, 11.9, 12.2, 11.9, 11.9, 12.8, 18.2, 50.0], "label": "Maisara Caverns", "rawCounts": [5905, 648, 3014, 4644, 5310, 6064, 8538, 9990, 46040, 19137, 17707, 10391, 6300, 3794, 1580, 487, 106, 16, 1]}];
 
     new Chart(ctx, {
       type: 'bar',
