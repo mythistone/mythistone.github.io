@@ -63,7 +63,7 @@
   <!-- Primary SEO -->
   <title>Enhancement Shaman Mythic+ Build & Gear Guide in Midnight Season 1 | MythiStone</title>
   <meta name="description"
-    content="Discover the most popular Mythic+ build for Enhancement Shaman in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 25/05/2026, 20:57:21.">
+    content="Discover the most popular Mythic+ build for Enhancement Shaman in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 26/05/2026, 13:17:10.">
   <link rel="canonical" href="https://mythistone.com/classes/Dps/Enhancement_Shaman">
   <meta name="keywords"
     content="MythiStone, Mythic+, build, gear, guide, enchantments, gems, talents, embellishment, missive, stats, WoW meta, Midnight Season 1">
@@ -381,11 +381,26 @@
     "url": "https://mythistone.com"
   },
   "datePublished": "01/07/2025",
-  "dateModified": "25/05/2026, 20:57:21"
+  "dateModified": "26/05/2026, 13:17:10"
 }
   </script>
   <link id="pagestyle" href="/assets/css/stat-colors.css" rel="stylesheet" />
   <link id="pagestyle" href="/assets/css/spec-page.css" rel="stylesheet" />
+  <style>
+    .spec-popularity-chart-wrapper {
+      height: 180px;
+    }
+
+    .spec-popularity-chart-wrapper .chart-scroll-container {
+      height: calc(100% - 1.5rem);
+    }
+
+    @media (max-width: 767.98px) {
+      .spec-popularity-chart-wrapper {
+        height: 240px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="g-sidenav-show g-sidenav-show-right" data-bs-theme="dark">
@@ -1207,29 +1222,32 @@
               background-blend-mode: overlay;
             ">
               <div class="card-header p-2 ps-3">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-start">
                   <div>
                     <p class="text-sm mb-0 text-capitalize">Spec Popularity</p>
+                    <div class="text-xs text-secondary mt-1">Overall Played: <span class="text-white">5.5%</span></div>
                   </div>
-                  <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                    <i class="material-symbols-rounded opacity-10">trending_up </i>
+                  <div class="d-flex align-items-center">
+                    <button id="resetZoomBtnSpec" class="btn btn-sm btn-outline-light me-2 mb-0" style="display: none;">Reset Zoom</button>
+                    <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                      <i class="material-symbols-rounded opacity-10">trending_up </i>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <h4 class="mb-0 px-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="347.9 K seen in 6.3 M total runs. Actual played: 5.52%">Overall
-                  Played: 6%</h4>
-                <div class="px-2" style="height: 4rem;">
-                  <span>Key Upgrades:</span>
-                  <canvas id="runsBarChart"></canvas>
+                <div class="spec-popularity-chart-wrapper px-2">
+                  <p class="text-xs text-center text-secondary mb-1">Use mouse scroll or pinch to zoom. Drag to pan.</p>
+                  <div class="chart-scroll-container" style="overflow-x:auto;">
+                    <canvas id="runsBarChart" style="display:block;height:100%;"></canvas>
+                  </div>
                 </div>
               </div>
               <hr class="dark horizontal my-0">
               <div class="card-footer p-2 ps-3">
                 <p class="mb-0 text-sm">
                   <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-timestamp=1779742641.330679>Last Update:</span>
+                    data-timestamp=1779801430.502236>Last Update:</span>
                 </p>
               </div>
             </div>
@@ -10147,8 +10165,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=151322?bonus=6652:12699:12806:13440:13577&spec=263"
-      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=263"
+      href="https://www.wowhead.com/item=151322?bonus=6652:12699:12798:13440:13577&spec=263"
+      data-wowhead="bonus=6652:12699:12798:13440:13577&spec=263"
       >
       <img src="/data/icons/inv_glove_mail_legiondungeon_c_03.png"
         class="item-icon-img" />
@@ -10157,8 +10175,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=151322?bonus=6652:12699:12806:13440:13577&spec=263"
-      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=263"
+      href="https://www.wowhead.com/item=151322?bonus=6652:12699:12798:13440:13577&spec=263"
+      data-wowhead="bonus=6652:12699:12798:13440:13577&spec=263"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Void-Touched Grips</p>
     </a>
@@ -10934,8 +10952,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=193722?bonus=6652:12667:12699:12798:13440:13577&spec=263"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=263"
+      href="https://www.wowhead.com/item=193722?bonus=6652:12667:12699:12806:13440:13577&spec=263"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=263"
       >
       <img src="/data/icons/inv_mail_dragondungeon_c_01_buckle.png"
         class="item-icon-img" />
@@ -10944,8 +10962,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=193722?bonus=6652:12667:12699:12798:13440:13577&spec=263"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=263"
+      href="https://www.wowhead.com/item=193722?bonus=6652:12667:12699:12806:13440:13577&spec=263"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=263"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Azure Belt of Competition</p>
     </a>
@@ -32370,132 +32388,73 @@
     data-src='https://wow.zamimg.com/widgets/power.js'></script>
   <!-- chart.js -->
   <script src="/assets/js/plugins/chartjs.min.js"></script>
-  <script src="/assets/js/plugins/chartjs-plugin-datalabels.min.js"></script>
+  <script src="/assets/js/plugins/hammer.min.js"></script>
+  <script src="/assets/js/plugins/chartjs-plugin-zoom.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      Chart.register(ChartDataLabels);
-      const ctx = document.getElementById('runsBarChart').getContext('2d');
+      const canvas = document.getElementById('runsBarChart');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
 
-      const raw = [
-        
-    38026
-      , 
-    
-    137408
-      , 
-    
-    135833
-      , 
-    
-    36626
-      
-    
-];
-    const total = 347893;
-    const pcts = raw.map(c => c / total * 100);
-    const baseColors = ['#FF0000', '#1eff00', '#a335ee', '#ff8000'];
+      // Use per-key-level stacked counts for this spec
+      var levelData = [{"depleted": 179, "keystone_level": 2, "total_runs": 10042, "upgrade_1": 779, "upgrade_2": 4449, "upgrade_3": 4635}, {"depleted": 50, "keystone_level": 3, "total_runs": 1490, "upgrade_1": 211, "upgrade_2": 821, "upgrade_3": 408}, {"depleted": 129, "keystone_level": 4, "total_runs": 4722, "upgrade_1": 626, "upgrade_2": 2784, "upgrade_3": 1183}, {"depleted": 113, "keystone_level": 5, "total_runs": 5859, "upgrade_1": 581, "upgrade_2": 2840, "upgrade_3": 2325}, {"depleted": 253, "keystone_level": 6, "total_runs": 8943, "upgrade_1": 1224, "upgrade_2": 4886, "upgrade_3": 2580}, {"depleted": 779, "keystone_level": 7, "total_runs": 7870, "upgrade_1": 2428, "upgrade_2": 4047, "upgrade_3": 616}, {"depleted": 1040, "keystone_level": 8, "total_runs": 10819, "upgrade_1": 3285, "upgrade_2": 5456, "upgrade_3": 1038}, {"depleted": 1315, "keystone_level": 9, "total_runs": 10701, "upgrade_1": 4055, "upgrade_2": 4947, "upgrade_3": 384}, {"depleted": 5483, "keystone_level": 10, "total_runs": 90736, "upgrade_1": 18901, "upgrade_2": 48742, "upgrade_3": 17610}, {"depleted": 3979, "keystone_level": 11, "total_runs": 31519, "upgrade_1": 11760, "upgrade_2": 14402, "upgrade_3": 1378}, {"depleted": 6968, "keystone_level": 12, "total_runs": 60418, "upgrade_1": 21757, "upgrade_2": 27345, "upgrade_3": 4348}, {"depleted": 5571, "keystone_level": 13, "total_runs": 29846, "upgrade_1": 16875, "upgrade_2": 7296, "upgrade_3": 104}, {"depleted": 3857, "keystone_level": 14, "total_runs": 23542, "upgrade_1": 15016, "upgrade_2": 4653, "upgrade_3": 16}, {"depleted": 2959, "keystone_level": 15, "total_runs": 19163, "upgrade_1": 14114, "upgrade_2": 2089, "upgrade_3": 1}, {"depleted": 2524, "keystone_level": 16, "total_runs": 14764, "upgrade_1": 11474, "upgrade_2": 766, "upgrade_3": 0}, {"depleted": 1438, "keystone_level": 17, "total_runs": 8908, "upgrade_1": 7218, "upgrade_2": 252, "upgrade_3": 0}, {"depleted": 849, "keystone_level": 18, "total_runs": 5204, "upgrade_1": 4299, "upgrade_2": 56, "upgrade_3": 0}, {"depleted": 416, "keystone_level": 19, "total_runs": 2518, "upgrade_1": 2100, "upgrade_2": 2, "upgrade_3": 0}, {"depleted": 107, "keystone_level": 20, "total_runs": 728, "upgrade_1": 621, "upgrade_2": 0, "upgrade_3": 0}, {"depleted": 15, "keystone_level": 21, "total_runs": 96, "upgrade_1": 81, "upgrade_2": 0, "upgrade_3": 0}, {"depleted": 2, "keystone_level": 22, "total_runs": 5, "upgrade_1": 3, "upgrade_2": 0, "upgrade_3": 0}];
+      levelData.sort((a,b) => a.keystone_level - b.keystone_level);
+      var labels = levelData.map(d => '+' + d.keystone_level);
+      var up3 = levelData.map(d => d.upgrade_3);
+      var up2 = levelData.map(d => d.upgrade_2);
+      var up1 = levelData.map(d => d.upgrade_1);
+      var depleted = levelData.map(d => d.depleted);
 
-    // create one gradient per color
-    const gradients = baseColors.map(hex => {
-      const grad = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
-      // use the same hex at 80% and 50% opacity stops
-      grad.addColorStop(0, hex.replace(/,?\s*1\)$/, ', 0.8)')    // top
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.8)`));
-      grad.addColorStop(1, hex.replace(/,?\s*1\)$/, ', 0.5)')    // bottom
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.5)`));
-      return grad;
-    });
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        // single “category” so all segments live in one bar
-        labels: [''],
-        datasets: [
-          {
-            label: 'Depleted',
-            data: [pcts[0]],
-            backgroundColor: gradients[0],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +1',
-            data: [pcts[1]],
-            backgroundColor: gradients[1],
-            stack: 'Stack 0',
-            datalabels: {
-              color: 'black'
+      // Make canvas width proportional to number of labels so bars are readable in small card
+      const container = canvas.parentElement;
+      const perLabel = 36; // px per keystone label
+      const desiredWidth = Math.max(container.clientWidth, labels.length * perLabel);
+      canvas.width = desiredWidth;
+      canvas.style.width = desiredWidth + 'px';
+
+      var keyLevelChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Depleted', data: depleted, backgroundColor: '#FF0000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+1', data: up1, backgroundColor: '#1eff00', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+2', data: up2, backgroundColor: '#a335ee', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+3', data: up3, backgroundColor: '#ff8000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 }            
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              ticks: { color: '#fff', autoSkip: true, maxRotation: 0, minRotation: 0, maxTicksLimit: 12, font: { size: 11 } },
+              grid: { display: false }
+            },
+            y: {
+              stacked: true,
+              ticks: { color: '#fff', beginAtZero: true, font: { size: 11 } },
+              grid: { color: '#333' }
             }
           },
-          {
-            label: 'Keys played +2',
-            data: [pcts[2]],
-            backgroundColor: gradients[2],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +3',
-            data: [pcts[3]],
-            backgroundColor: gradients[3],
-            stack: 'Stack 0'
-          }
-        ]
-      },
-      plugins: [ChartDataLabels],
-      options: {
-        indexAxis: 'y',            // horizontal orientation
-        maintainAspectRatio: false,
-        layout: {
-          padding: { left: 8, right: 8, top: 8, bottom: 8 }
-        },
-        scales: {
-          x: {
-            stacked: true,         // enable stacking on x‑axis
-            beginAtZero: true,
-            max: 100,
-            ticks: {
-              display: false
-            },
-            grid: { display: false }
-          },
-          y: {
-            stacked: true,         // required for horizontal stack
-            grid: { display: false },
-            ticks: { display: false }  // hide the empty category label
-
-          }
-        },
-        elements: {
-          bar: {
-            borderRadius: 4,
-            borderSkipped: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}%`
+          plugins: {
+            legend: { labels: { color: '#fff' } },
+            tooltip: { mode: 'index', intersect: false },
+            datalabels: { display: false },
+            zoom: {
+              pan: { enabled: true, mode: 'x', onPan: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } },
+              zoom: { wheel: { enabled: true }, pinch: { enabled: true }, mode: 'x', onZoom: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } }
             }
-          },
-          datalabels: {
-            color: 'white',
-            anchor: 'center',
-            align: 'center',
-            font: {
-              weight: 'bold',
-              size: 12
-            },
-            formatter: value => `${value.toFixed(1)}%`
           }
         }
-      }
-    });
-});
+      });
 
+      document.getElementById('resetZoomBtnSpec').addEventListener('click', function() {
+        keyLevelChart.resetZoom();
+        this.style.display = 'none';
+      });
+    });
   </script>
 
 

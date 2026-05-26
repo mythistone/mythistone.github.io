@@ -63,7 +63,7 @@
   <!-- Primary SEO -->
   <title>Subtlety Rogue Mythic+ Build & Gear Guide in Midnight Season 1 | MythiStone</title>
   <meta name="description"
-    content="Discover the most popular Mythic+ build for Subtlety Rogue in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 25/05/2026, 20:56:20.">
+    content="Discover the most popular Mythic+ build for Subtlety Rogue in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 26/05/2026, 13:16:07.">
   <link rel="canonical" href="https://mythistone.com/classes/Dps/Subtlety_Rogue">
   <meta name="keywords"
     content="MythiStone, Mythic+, build, gear, guide, enchantments, gems, talents, embellishment, missive, stats, WoW meta, Midnight Season 1">
@@ -381,11 +381,26 @@
     "url": "https://mythistone.com"
   },
   "datePublished": "01/07/2025",
-  "dateModified": "25/05/2026, 20:56:20"
+  "dateModified": "26/05/2026, 13:16:07"
 }
   </script>
   <link id="pagestyle" href="/assets/css/stat-colors.css" rel="stylesheet" />
   <link id="pagestyle" href="/assets/css/spec-page.css" rel="stylesheet" />
+  <style>
+    .spec-popularity-chart-wrapper {
+      height: 180px;
+    }
+
+    .spec-popularity-chart-wrapper .chart-scroll-container {
+      height: calc(100% - 1.5rem);
+    }
+
+    @media (max-width: 767.98px) {
+      .spec-popularity-chart-wrapper {
+        height: 240px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="g-sidenav-show g-sidenav-show-right" data-bs-theme="dark">
@@ -1207,29 +1222,32 @@
               background-blend-mode: overlay;
             ">
               <div class="card-header p-2 ps-3">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-start">
                   <div>
                     <p class="text-sm mb-0 text-capitalize">Spec Popularity</p>
+                    <div class="text-xs text-secondary mt-1">Overall Played: <span class="text-white">7.5%</span></div>
                   </div>
-                  <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                    <i class="material-symbols-rounded opacity-10">trending_up </i>
+                  <div class="d-flex align-items-center">
+                    <button id="resetZoomBtnSpec" class="btn btn-sm btn-outline-light me-2 mb-0" style="display: none;">Reset Zoom</button>
+                    <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                      <i class="material-symbols-rounded opacity-10">trending_up </i>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <h4 class="mb-0 px-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="471.4 K seen in 6.3 M total runs. Actual played: 7.48%">Overall
-                  Played: 7%</h4>
-                <div class="px-2" style="height: 4rem;">
-                  <span>Key Upgrades:</span>
-                  <canvas id="runsBarChart"></canvas>
+                <div class="spec-popularity-chart-wrapper px-2">
+                  <p class="text-xs text-center text-secondary mb-1">Use mouse scroll or pinch to zoom. Drag to pan.</p>
+                  <div class="chart-scroll-container" style="overflow-x:auto;">
+                    <canvas id="runsBarChart" style="display:block;height:100%;"></canvas>
+                  </div>
                 </div>
               </div>
               <hr class="dark horizontal my-0">
               <div class="card-footer p-2 ps-3">
                 <p class="mb-0 text-sm">
                   <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-timestamp=1779742580.02715>Last Update:</span>
+                    data-timestamp=1779801367.725132>Last Update:</span>
                 </p>
               </div>
             </div>
@@ -4292,8 +4310,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=251177?bonus=6652:12667:12699:12798:13440:13577&spec=261&ench=8017"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=261&ench=8017"
+      href="https://www.wowhead.com/item=251177?bonus=6652:12667:12699:12806:13440:13577&spec=261&ench=8017"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=261&ench=8017"
       >
       <img src="/data/icons/inv_helm_leather_dungeonharronir_c_01.png"
         class="item-icon-img" />
@@ -4302,8 +4320,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=251177?bonus=6652:12667:12699:12798:13440:13577&spec=261&ench=8017"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=261&ench=8017"
+      href="https://www.wowhead.com/item=251177?bonus=6652:12667:12699:12806:13440:13577&spec=261&ench=8017"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=261&ench=8017"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Fetid Vilecrown</p>
     </a>
@@ -11022,8 +11040,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=251166?bonus=6652:12667:12699:12798:13440:13577&spec=261"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=261"
+      href="https://www.wowhead.com/item=251166?bonus=6652:12667:12699:12806:13440:13577&spec=261"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=261"
       >
       <img src="/data/icons/inv_belt_leather_dungeonharronir_c_01.png"
         class="item-icon-img" />
@@ -11032,8 +11050,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=251166?bonus=6652:12667:12699:12798:13440:13577&spec=261"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=261"
+      href="https://www.wowhead.com/item=251166?bonus=6652:12667:12699:12806:13440:13577&spec=261"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=261"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Falconer&#39;s Cinch</p>
     </a>
@@ -18243,8 +18261,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250256?bonus=6652:12699:12798:13440&spec=261"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=261"
+      href="https://www.wowhead.com/item=250256?bonus=6652:12699:13440:13654&spec=261"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=261"
       >
       <img src="/data/icons/inv_10_jewelcrafting3_soulcage_air.png"
         class="item-icon-img" />
@@ -18253,8 +18271,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250256?bonus=6652:12699:12798:13440&spec=261"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=261"
+      href="https://www.wowhead.com/item=250256?bonus=6652:12699:13440:13654&spec=261"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=261"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Heart of Wind</p>
     </a>
@@ -18918,8 +18936,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250256?bonus=6652:12699:12798:13440&spec=261"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=261"
+      href="https://www.wowhead.com/item=250256?bonus=6652:12699:13440:13654&spec=261"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=261"
       >
       <img src="/data/icons/inv_10_jewelcrafting3_soulcage_air.png"
         class="item-icon-img" />
@@ -18928,8 +18946,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250256?bonus=6652:12699:12798:13440&spec=261"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=261"
+      href="https://www.wowhead.com/item=250256?bonus=6652:12699:13440:13654&spec=261"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=261"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Heart of Wind</p>
     </a>
@@ -32015,132 +32033,73 @@
     data-src='https://wow.zamimg.com/widgets/power.js'></script>
   <!-- chart.js -->
   <script src="/assets/js/plugins/chartjs.min.js"></script>
-  <script src="/assets/js/plugins/chartjs-plugin-datalabels.min.js"></script>
+  <script src="/assets/js/plugins/hammer.min.js"></script>
+  <script src="/assets/js/plugins/chartjs-plugin-zoom.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      Chart.register(ChartDataLabels);
-      const ctx = document.getElementById('runsBarChart').getContext('2d');
+      const canvas = document.getElementById('runsBarChart');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
 
-      const raw = [
-        
-    53231
-      , 
-    
-    190973
-      , 
-    
-    180137
-      , 
-    
-    47069
-      
-    
-];
-    const total = 471410;
-    const pcts = raw.map(c => c / total * 100);
-    const baseColors = ['#FF0000', '#1eff00', '#a335ee', '#ff8000'];
+      // Use per-key-level stacked counts for this spec
+      var levelData = [{"depleted": 219, "keystone_level": 2, "total_runs": 10546, "upgrade_1": 811, "upgrade_2": 4415, "upgrade_3": 5101}, {"depleted": 56, "keystone_level": 3, "total_runs": 1510, "upgrade_1": 226, "upgrade_2": 825, "upgrade_3": 403}, {"depleted": 145, "keystone_level": 4, "total_runs": 5037, "upgrade_1": 702, "upgrade_2": 2949, "upgrade_3": 1241}, {"depleted": 149, "keystone_level": 5, "total_runs": 7026, "upgrade_1": 654, "upgrade_2": 3289, "upgrade_3": 2934}, {"depleted": 326, "keystone_level": 6, "total_runs": 10278, "upgrade_1": 1397, "upgrade_2": 5616, "upgrade_3": 2939}, {"depleted": 884, "keystone_level": 7, "total_runs": 9149, "upgrade_1": 2803, "upgrade_2": 4685, "upgrade_3": 777}, {"depleted": 1300, "keystone_level": 8, "total_runs": 13330, "upgrade_1": 4028, "upgrade_2": 6807, "upgrade_3": 1195}, {"depleted": 1860, "keystone_level": 9, "total_runs": 15401, "upgrade_1": 5607, "upgrade_2": 7383, "upgrade_3": 551}, {"depleted": 7506, "keystone_level": 10, "total_runs": 128511, "upgrade_1": 27300, "upgrade_2": 69316, "upgrade_3": 24389}, {"depleted": 6086, "keystone_level": 11, "total_runs": 47459, "upgrade_1": 17984, "upgrade_2": 21457, "upgrade_3": 1932}, {"depleted": 10151, "keystone_level": 12, "total_runs": 82499, "upgrade_1": 32098, "upgrade_2": 34776, "upgrade_3": 5474}, {"depleted": 8121, "keystone_level": 13, "total_runs": 43986, "upgrade_1": 25905, "upgrade_2": 9836, "upgrade_3": 124}, {"depleted": 5603, "keystone_level": 14, "total_runs": 33653, "upgrade_1": 22550, "upgrade_2": 5491, "upgrade_3": 9}, {"depleted": 4330, "keystone_level": 15, "total_runs": 26420, "upgrade_1": 19833, "upgrade_2": 2257, "upgrade_3": 0}, {"depleted": 3355, "keystone_level": 16, "total_runs": 18949, "upgrade_1": 14775, "upgrade_2": 819, "upgrade_3": 0}, {"depleted": 1829, "keystone_level": 17, "total_runs": 10154, "upgrade_1": 8138, "upgrade_2": 187, "upgrade_3": 0}, {"depleted": 851, "keystone_level": 18, "total_runs": 4782, "upgrade_1": 3907, "upgrade_2": 24, "upgrade_3": 0}, {"depleted": 341, "keystone_level": 19, "total_runs": 2008, "upgrade_1": 1663, "upgrade_2": 4, "upgrade_3": 0}, {"depleted": 95, "keystone_level": 20, "total_runs": 576, "upgrade_1": 480, "upgrade_2": 1, "upgrade_3": 0}, {"depleted": 18, "keystone_level": 21, "total_runs": 122, "upgrade_1": 104, "upgrade_2": 0, "upgrade_3": 0}, {"depleted": 6, "keystone_level": 22, "total_runs": 14, "upgrade_1": 8, "upgrade_2": 0, "upgrade_3": 0}];
+      levelData.sort((a,b) => a.keystone_level - b.keystone_level);
+      var labels = levelData.map(d => '+' + d.keystone_level);
+      var up3 = levelData.map(d => d.upgrade_3);
+      var up2 = levelData.map(d => d.upgrade_2);
+      var up1 = levelData.map(d => d.upgrade_1);
+      var depleted = levelData.map(d => d.depleted);
 
-    // create one gradient per color
-    const gradients = baseColors.map(hex => {
-      const grad = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
-      // use the same hex at 80% and 50% opacity stops
-      grad.addColorStop(0, hex.replace(/,?\s*1\)$/, ', 0.8)')    // top
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.8)`));
-      grad.addColorStop(1, hex.replace(/,?\s*1\)$/, ', 0.5)')    // bottom
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.5)`));
-      return grad;
-    });
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        // single “category” so all segments live in one bar
-        labels: [''],
-        datasets: [
-          {
-            label: 'Depleted',
-            data: [pcts[0]],
-            backgroundColor: gradients[0],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +1',
-            data: [pcts[1]],
-            backgroundColor: gradients[1],
-            stack: 'Stack 0',
-            datalabels: {
-              color: 'black'
+      // Make canvas width proportional to number of labels so bars are readable in small card
+      const container = canvas.parentElement;
+      const perLabel = 36; // px per keystone label
+      const desiredWidth = Math.max(container.clientWidth, labels.length * perLabel);
+      canvas.width = desiredWidth;
+      canvas.style.width = desiredWidth + 'px';
+
+      var keyLevelChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Depleted', data: depleted, backgroundColor: '#FF0000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+1', data: up1, backgroundColor: '#1eff00', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+2', data: up2, backgroundColor: '#a335ee', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+3', data: up3, backgroundColor: '#ff8000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 }            
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              ticks: { color: '#fff', autoSkip: true, maxRotation: 0, minRotation: 0, maxTicksLimit: 12, font: { size: 11 } },
+              grid: { display: false }
+            },
+            y: {
+              stacked: true,
+              ticks: { color: '#fff', beginAtZero: true, font: { size: 11 } },
+              grid: { color: '#333' }
             }
           },
-          {
-            label: 'Keys played +2',
-            data: [pcts[2]],
-            backgroundColor: gradients[2],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +3',
-            data: [pcts[3]],
-            backgroundColor: gradients[3],
-            stack: 'Stack 0'
-          }
-        ]
-      },
-      plugins: [ChartDataLabels],
-      options: {
-        indexAxis: 'y',            // horizontal orientation
-        maintainAspectRatio: false,
-        layout: {
-          padding: { left: 8, right: 8, top: 8, bottom: 8 }
-        },
-        scales: {
-          x: {
-            stacked: true,         // enable stacking on x‑axis
-            beginAtZero: true,
-            max: 100,
-            ticks: {
-              display: false
-            },
-            grid: { display: false }
-          },
-          y: {
-            stacked: true,         // required for horizontal stack
-            grid: { display: false },
-            ticks: { display: false }  // hide the empty category label
-
-          }
-        },
-        elements: {
-          bar: {
-            borderRadius: 4,
-            borderSkipped: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}%`
+          plugins: {
+            legend: { labels: { color: '#fff' } },
+            tooltip: { mode: 'index', intersect: false },
+            datalabels: { display: false },
+            zoom: {
+              pan: { enabled: true, mode: 'x', onPan: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } },
+              zoom: { wheel: { enabled: true }, pinch: { enabled: true }, mode: 'x', onZoom: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } }
             }
-          },
-          datalabels: {
-            color: 'white',
-            anchor: 'center',
-            align: 'center',
-            font: {
-              weight: 'bold',
-              size: 12
-            },
-            formatter: value => `${value.toFixed(1)}%`
           }
         }
-      }
-    });
-});
+      });
 
+      document.getElementById('resetZoomBtnSpec').addEventListener('click', function() {
+        keyLevelChart.resetZoom();
+        this.style.display = 'none';
+      });
+    });
   </script>
 
 

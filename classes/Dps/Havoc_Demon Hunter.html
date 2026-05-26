@@ -63,7 +63,7 @@
   <!-- Primary SEO -->
   <title>Havoc Demon Hunter Mythic+ Build & Gear Guide in Midnight Season 1 | MythiStone</title>
   <meta name="description"
-    content="Discover the most popular Mythic+ build for Havoc Demon Hunter in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 25/05/2026, 21:01:41.">
+    content="Discover the most popular Mythic+ build for Havoc Demon Hunter in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 26/05/2026, 13:21:33.">
   <link rel="canonical" href="https://mythistone.com/classes/Dps/Havoc_Demon Hunter">
   <meta name="keywords"
     content="MythiStone, Mythic+, build, gear, guide, enchantments, gems, talents, embellishment, missive, stats, WoW meta, Midnight Season 1">
@@ -381,11 +381,26 @@
     "url": "https://mythistone.com"
   },
   "datePublished": "01/07/2025",
-  "dateModified": "25/05/2026, 21:01:41"
+  "dateModified": "26/05/2026, 13:21:33"
 }
   </script>
   <link id="pagestyle" href="/assets/css/stat-colors.css" rel="stylesheet" />
   <link id="pagestyle" href="/assets/css/spec-page.css" rel="stylesheet" />
+  <style>
+    .spec-popularity-chart-wrapper {
+      height: 180px;
+    }
+
+    .spec-popularity-chart-wrapper .chart-scroll-container {
+      height: calc(100% - 1.5rem);
+    }
+
+    @media (max-width: 767.98px) {
+      .spec-popularity-chart-wrapper {
+        height: 240px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="g-sidenav-show g-sidenav-show-right" data-bs-theme="dark">
@@ -1207,29 +1222,32 @@
               background-blend-mode: overlay;
             ">
               <div class="card-header p-2 ps-3">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-start">
                   <div>
                     <p class="text-sm mb-0 text-capitalize">Spec Popularity</p>
+                    <div class="text-xs text-secondary mt-1">Overall Played: <span class="text-white">7.4%</span></div>
                   </div>
-                  <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                    <i class="material-symbols-rounded opacity-10">trending_up </i>
+                  <div class="d-flex align-items-center">
+                    <button id="resetZoomBtnSpec" class="btn btn-sm btn-outline-light me-2 mb-0" style="display: none;">Reset Zoom</button>
+                    <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                      <i class="material-symbols-rounded opacity-10">trending_up </i>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <h4 class="mb-0 px-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="466 K seen in 6.3 M total runs. Actual played: 7.39%">Overall
-                  Played: 7%</h4>
-                <div class="px-2" style="height: 4rem;">
-                  <span>Key Upgrades:</span>
-                  <canvas id="runsBarChart"></canvas>
+                <div class="spec-popularity-chart-wrapper px-2">
+                  <p class="text-xs text-center text-secondary mb-1">Use mouse scroll or pinch to zoom. Drag to pan.</p>
+                  <div class="chart-scroll-container" style="overflow-x:auto;">
+                    <canvas id="runsBarChart" style="display:block;height:100%;"></canvas>
+                  </div>
                 </div>
               </div>
               <hr class="dark horizontal my-0">
               <div class="card-footer p-2 ps-3">
                 <p class="mb-0 text-sm">
                   <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-timestamp=1779742901.013687>Last Update:</span>
+                    data-timestamp=1779801693.583224>Last Update:</span>
                 </p>
               </div>
             </div>
@@ -6562,8 +6580,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=249642?bonus=6652:12786:13577&spec=577&ench=8001"
-      data-wowhead="bonus=6652:12786:13577&spec=577&ench=8001"
+      href="https://www.wowhead.com/item=249642?bonus=6652:12790:13577&spec=577&ench=8001"
+      data-wowhead="bonus=6652:12790:13577&spec=577&ench=8001"
       >
       <img src="/data/icons/inv_shoulder_leather_dungeonharronir_c_01.png"
         class="item-icon-img" />
@@ -6572,8 +6590,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=249642?bonus=6652:12786:13577&spec=577&ench=8001"
-      data-wowhead="bonus=6652:12786:13577&spec=577&ench=8001"
+      href="https://www.wowhead.com/item=249642?bonus=6652:12790:13577&spec=577&ench=8001"
+      data-wowhead="bonus=6652:12790:13577&spec=577&ench=8001"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Osseoclad Razorspaulders</p>
     </a>
@@ -8182,8 +8200,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=258586?bonus=6652:12699:12805:13440:13577&spec=577&ench=7987"
-      data-wowhead="bonus=6652:12699:12805:13440:13577&spec=577&ench=7987"
+      href="https://www.wowhead.com/item=258586?bonus=6652:12699:12806:13440:13577&spec=577&ench=7987"
+      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=577&ench=7987"
       >
       <img src="/data/icons/inv_leather_draenordungeon_c_01chest.png"
         class="item-icon-img" />
@@ -8192,8 +8210,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=258586?bonus=6652:12699:12805:13440:13577&spec=577&ench=7987"
-      data-wowhead="bonus=6652:12699:12805:13440:13577&spec=577&ench=7987"
+      href="https://www.wowhead.com/item=258586?bonus=6652:12699:12806:13440:13577&spec=577&ench=7987"
+      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=577&ench=7987"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Bloodfeather Chestguard</p>
     </a>
@@ -11575,8 +11593,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=49817?bonus=6652:12699:12798:13440:13577&spec=577&ench=8159"
-      data-wowhead="bonus=6652:12699:12798:13440:13577&spec=577&ench=8159"
+      href="https://www.wowhead.com/item=49817?bonus=6652:12699:12806:13440:13577&spec=577&ench=8159"
+      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=577&ench=8159"
       >
       <img src="/data/icons/inv_pants_leather_30a.png"
         class="item-icon-img" />
@@ -11585,8 +11603,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=49817?bonus=6652:12699:12798:13440:13577&spec=577&ench=8159"
-      data-wowhead="bonus=6652:12699:12798:13440:13577&spec=577&ench=8159"
+      href="https://www.wowhead.com/item=49817?bonus=6652:12699:12806:13440:13577&spec=577&ench=8159"
+      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=577&ench=8159"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Shaggy Wyrmleather Leggings</p>
     </a>
@@ -12463,8 +12481,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=258577?bonus=6652:12699:12798:13440:13577&spec=577&ench=7963"
-      data-wowhead="bonus=6652:12699:12798:13440:13577&spec=577&ench=7963"
+      href="https://www.wowhead.com/item=258577?bonus=6652:12699:12806:13440:13577&spec=577&ench=7963"
+      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=577&ench=7963"
       >
       <img src="/data/icons/inv_leather_draenordungeon_c_01boot.png"
         class="item-icon-img" />
@@ -12473,8 +12491,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=258577?bonus=6652:12699:12798:13440:13577&spec=577&ench=7963"
-      data-wowhead="bonus=6652:12699:12798:13440:13577&spec=577&ench=7963"
+      href="https://www.wowhead.com/item=258577?bonus=6652:12699:12806:13440:13577&spec=577&ench=7963"
+      data-wowhead="bonus=6652:12699:12806:13440:13577&spec=577&ench=7963"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Boots of Burning Focus</p>
     </a>
@@ -17815,8 +17833,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=577"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=577"
       >
       <img src="/data/icons/inv_enchant_shardbrilliantlarge.png"
         class="item-icon-img" />
@@ -17825,8 +17843,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=577"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=577"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Solarflare Prism</p>
     </a>
@@ -17886,8 +17904,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12798:13440&spec=577"
+      data-wowhead="bonus=6652:12699:12798:13440&spec=577"
       >
       <img src="/data/icons/inv_misc_food_162_fish_90blue.png"
         class="item-icon-img" />
@@ -17896,8 +17914,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12798:13440&spec=577"
+      data-wowhead="bonus=6652:12699:12798:13440&spec=577"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Vessel of Tortured Souls</p>
     </a>
@@ -18036,8 +18054,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=249806?bonus=6652:12798:13334&spec=577"
-      data-wowhead="bonus=6652:12798:13334&spec=577"
+      href="https://www.wowhead.com/item=249806?bonus=6652:13334:13653&spec=577"
+      data-wowhead="bonus=6652:13334:13653&spec=577"
       >
       <img src="/data/icons/inv_12_dualityphoenix_holy_feather.png"
         class="item-icon-img" />
@@ -18046,8 +18064,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=249806?bonus=6652:12798:13334&spec=577"
-      data-wowhead="bonus=6652:12798:13334&spec=577"
+      href="https://www.wowhead.com/item=249806?bonus=6652:13334:13653&spec=577"
+      data-wowhead="bonus=6652:13334:13653&spec=577"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Radiant Plume</p>
     </a>
@@ -18482,8 +18500,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=577"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=577"
       >
       <img src="/data/icons/inv_enchant_shardbrilliantlarge.png"
         class="item-icon-img" />
@@ -18492,8 +18510,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=577"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=577"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Solarflare Prism</p>
     </a>
@@ -18553,8 +18571,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12798:13440&spec=577"
+      data-wowhead="bonus=6652:12699:12798:13440&spec=577"
       >
       <img src="/data/icons/inv_misc_food_162_fish_90blue.png"
         class="item-icon-img" />
@@ -18563,8 +18581,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12806:13440&spec=577"
-      data-wowhead="bonus=6652:12699:12806:13440&spec=577"
+      href="https://www.wowhead.com/item=250258?bonus=6652:12699:12798:13440&spec=577"
+      data-wowhead="bonus=6652:12699:12798:13440&spec=577"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Vessel of Tortured Souls</p>
     </a>
@@ -18703,8 +18721,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=249806?bonus=6652:12798:13334&spec=577"
-      data-wowhead="bonus=6652:12798:13334&spec=577"
+      href="https://www.wowhead.com/item=249806?bonus=6652:13334:13653&spec=577"
+      data-wowhead="bonus=6652:13334:13653&spec=577"
       >
       <img src="/data/icons/inv_12_dualityphoenix_holy_feather.png"
         class="item-icon-img" />
@@ -18713,8 +18731,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=249806?bonus=6652:12798:13334&spec=577"
-      data-wowhead="bonus=6652:12798:13334&spec=577"
+      href="https://www.wowhead.com/item=249806?bonus=6652:13334:13653&spec=577"
+      data-wowhead="bonus=6652:13334:13653&spec=577"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Radiant Plume</p>
     </a>
@@ -32422,132 +32440,73 @@
     data-src='https://wow.zamimg.com/widgets/power.js'></script>
   <!-- chart.js -->
   <script src="/assets/js/plugins/chartjs.min.js"></script>
-  <script src="/assets/js/plugins/chartjs-plugin-datalabels.min.js"></script>
+  <script src="/assets/js/plugins/hammer.min.js"></script>
+  <script src="/assets/js/plugins/chartjs-plugin-zoom.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      Chart.register(ChartDataLabels);
-      const ctx = document.getElementById('runsBarChart').getContext('2d');
+      const canvas = document.getElementById('runsBarChart');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
 
-      const raw = [
-        
-    55758
-      , 
-    
-    184040
-      , 
-    
-    181378
-      , 
-    
-    44815
-      
-    
-];
-    const total = 465991;
-    const pcts = raw.map(c => c / total * 100);
-    const baseColors = ['#FF0000', '#1eff00', '#a335ee', '#ff8000'];
+      // Use per-key-level stacked counts for this spec
+      var levelData = [{"depleted": 398, "keystone_level": 2, "total_runs": 14888, "upgrade_1": 1548, "upgrade_2": 6772, "upgrade_3": 6170}, {"depleted": 114, "keystone_level": 3, "total_runs": 2357, "upgrade_1": 415, "upgrade_2": 1321, "upgrade_3": 507}, {"depleted": 269, "keystone_level": 4, "total_runs": 7343, "upgrade_1": 1192, "upgrade_2": 4329, "upgrade_3": 1553}, {"depleted": 267, "keystone_level": 5, "total_runs": 8652, "upgrade_1": 1048, "upgrade_2": 4420, "upgrade_3": 2917}, {"depleted": 485, "keystone_level": 6, "total_runs": 13473, "upgrade_1": 2070, "upgrade_2": 7420, "upgrade_3": 3498}, {"depleted": 1369, "keystone_level": 7, "total_runs": 12035, "upgrade_1": 3905, "upgrade_2": 5820, "upgrade_3": 941}, {"depleted": 1838, "keystone_level": 8, "total_runs": 16040, "upgrade_1": 5244, "upgrade_2": 7734, "upgrade_3": 1224}, {"depleted": 2478, "keystone_level": 9, "total_runs": 17275, "upgrade_1": 6607, "upgrade_2": 7611, "upgrade_3": 579}, {"depleted": 9007, "keystone_level": 10, "total_runs": 130395, "upgrade_1": 29071, "upgrade_2": 70219, "upgrade_3": 22098}, {"depleted": 6673, "keystone_level": 11, "total_runs": 46858, "upgrade_1": 18369, "upgrade_2": 20239, "upgrade_3": 1577}, {"depleted": 10701, "keystone_level": 12, "total_runs": 75987, "upgrade_1": 31179, "upgrade_2": 30441, "upgrade_3": 3666}, {"depleted": 8287, "keystone_level": 13, "total_runs": 40581, "upgrade_1": 24058, "upgrade_2": 8161, "upgrade_3": 75}, {"depleted": 5072, "keystone_level": 14, "total_runs": 28391, "upgrade_1": 19039, "upgrade_2": 4271, "upgrade_3": 9}, {"depleted": 3601, "keystone_level": 15, "total_runs": 22107, "upgrade_1": 16690, "upgrade_2": 1815, "upgrade_3": 1}, {"depleted": 2694, "keystone_level": 16, "total_runs": 15909, "upgrade_1": 12566, "upgrade_2": 649, "upgrade_3": 0}, {"depleted": 1511, "keystone_level": 17, "total_runs": 8252, "upgrade_1": 6611, "upgrade_2": 130, "upgrade_3": 0}, {"depleted": 674, "keystone_level": 18, "total_runs": 3742, "upgrade_1": 3044, "upgrade_2": 24, "upgrade_3": 0}, {"depleted": 245, "keystone_level": 19, "total_runs": 1333, "upgrade_1": 1086, "upgrade_2": 2, "upgrade_3": 0}, {"depleted": 61, "keystone_level": 20, "total_runs": 325, "upgrade_1": 264, "upgrade_2": 0, "upgrade_3": 0}, {"depleted": 12, "keystone_level": 21, "total_runs": 45, "upgrade_1": 33, "upgrade_2": 0, "upgrade_3": 0}, {"depleted": 2, "keystone_level": 22, "total_runs": 3, "upgrade_1": 1, "upgrade_2": 0, "upgrade_3": 0}];
+      levelData.sort((a,b) => a.keystone_level - b.keystone_level);
+      var labels = levelData.map(d => '+' + d.keystone_level);
+      var up3 = levelData.map(d => d.upgrade_3);
+      var up2 = levelData.map(d => d.upgrade_2);
+      var up1 = levelData.map(d => d.upgrade_1);
+      var depleted = levelData.map(d => d.depleted);
 
-    // create one gradient per color
-    const gradients = baseColors.map(hex => {
-      const grad = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
-      // use the same hex at 80% and 50% opacity stops
-      grad.addColorStop(0, hex.replace(/,?\s*1\)$/, ', 0.8)')    // top
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.8)`));
-      grad.addColorStop(1, hex.replace(/,?\s*1\)$/, ', 0.5)')    // bottom
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.5)`));
-      return grad;
-    });
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        // single “category” so all segments live in one bar
-        labels: [''],
-        datasets: [
-          {
-            label: 'Depleted',
-            data: [pcts[0]],
-            backgroundColor: gradients[0],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +1',
-            data: [pcts[1]],
-            backgroundColor: gradients[1],
-            stack: 'Stack 0',
-            datalabels: {
-              color: 'black'
+      // Make canvas width proportional to number of labels so bars are readable in small card
+      const container = canvas.parentElement;
+      const perLabel = 36; // px per keystone label
+      const desiredWidth = Math.max(container.clientWidth, labels.length * perLabel);
+      canvas.width = desiredWidth;
+      canvas.style.width = desiredWidth + 'px';
+
+      var keyLevelChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Depleted', data: depleted, backgroundColor: '#FF0000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+1', data: up1, backgroundColor: '#1eff00', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+2', data: up2, backgroundColor: '#a335ee', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+3', data: up3, backgroundColor: '#ff8000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 }            
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              ticks: { color: '#fff', autoSkip: true, maxRotation: 0, minRotation: 0, maxTicksLimit: 12, font: { size: 11 } },
+              grid: { display: false }
+            },
+            y: {
+              stacked: true,
+              ticks: { color: '#fff', beginAtZero: true, font: { size: 11 } },
+              grid: { color: '#333' }
             }
           },
-          {
-            label: 'Keys played +2',
-            data: [pcts[2]],
-            backgroundColor: gradients[2],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +3',
-            data: [pcts[3]],
-            backgroundColor: gradients[3],
-            stack: 'Stack 0'
-          }
-        ]
-      },
-      plugins: [ChartDataLabels],
-      options: {
-        indexAxis: 'y',            // horizontal orientation
-        maintainAspectRatio: false,
-        layout: {
-          padding: { left: 8, right: 8, top: 8, bottom: 8 }
-        },
-        scales: {
-          x: {
-            stacked: true,         // enable stacking on x‑axis
-            beginAtZero: true,
-            max: 100,
-            ticks: {
-              display: false
-            },
-            grid: { display: false }
-          },
-          y: {
-            stacked: true,         // required for horizontal stack
-            grid: { display: false },
-            ticks: { display: false }  // hide the empty category label
-
-          }
-        },
-        elements: {
-          bar: {
-            borderRadius: 4,
-            borderSkipped: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}%`
+          plugins: {
+            legend: { labels: { color: '#fff' } },
+            tooltip: { mode: 'index', intersect: false },
+            datalabels: { display: false },
+            zoom: {
+              pan: { enabled: true, mode: 'x', onPan: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } },
+              zoom: { wheel: { enabled: true }, pinch: { enabled: true }, mode: 'x', onZoom: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } }
             }
-          },
-          datalabels: {
-            color: 'white',
-            anchor: 'center',
-            align: 'center',
-            font: {
-              weight: 'bold',
-              size: 12
-            },
-            formatter: value => `${value.toFixed(1)}%`
           }
         }
-      }
-    });
-});
+      });
 
+      document.getElementById('resetZoomBtnSpec').addEventListener('click', function() {
+        keyLevelChart.resetZoom();
+        this.style.display = 'none';
+      });
+    });
   </script>
 
 

@@ -63,7 +63,7 @@
   <!-- Primary SEO -->
   <title>Assassination Rogue Mythic+ Build & Gear Guide in Midnight Season 1 | MythiStone</title>
   <meta name="description"
-    content="Discover the most popular Mythic+ build for Assassination Rogue in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 25/05/2026, 20:55:17.">
+    content="Discover the most popular Mythic+ build for Assassination Rogue in Midnight Season 1, with top talents, gear, enchants, gems, Embelishments & more—based on 6.3 M runs. Updated 26/05/2026, 13:14:49.">
   <link rel="canonical" href="https://mythistone.com/classes/Dps/Assassination_Rogue">
   <meta name="keywords"
     content="MythiStone, Mythic+, build, gear, guide, enchantments, gems, talents, embellishment, missive, stats, WoW meta, Midnight Season 1">
@@ -381,11 +381,26 @@
     "url": "https://mythistone.com"
   },
   "datePublished": "01/07/2025",
-  "dateModified": "25/05/2026, 20:55:17"
+  "dateModified": "26/05/2026, 13:14:49"
 }
   </script>
   <link id="pagestyle" href="/assets/css/stat-colors.css" rel="stylesheet" />
   <link id="pagestyle" href="/assets/css/spec-page.css" rel="stylesheet" />
+  <style>
+    .spec-popularity-chart-wrapper {
+      height: 180px;
+    }
+
+    .spec-popularity-chart-wrapper .chart-scroll-container {
+      height: calc(100% - 1.5rem);
+    }
+
+    @media (max-width: 767.98px) {
+      .spec-popularity-chart-wrapper {
+        height: 240px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="g-sidenav-show g-sidenav-show-right" data-bs-theme="dark">
@@ -1207,29 +1222,32 @@
               background-blend-mode: overlay;
             ">
               <div class="card-header p-2 ps-3">
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between align-items-start">
                   <div>
                     <p class="text-sm mb-0 text-capitalize">Spec Popularity</p>
+                    <div class="text-xs text-secondary mt-1">Overall Played: <span class="text-white">3.2%</span></div>
                   </div>
-                  <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
-                    <i class="material-symbols-rounded opacity-10">trending_up </i>
+                  <div class="d-flex align-items-center">
+                    <button id="resetZoomBtnSpec" class="btn btn-sm btn-outline-light me-2 mb-0" style="display: none;">Reset Zoom</button>
+                    <div class="icon icon-md icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-lg">
+                      <i class="material-symbols-rounded opacity-10">trending_up </i>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card-body">
-                <h4 class="mb-0 px-2" data-bs-toggle="tooltip" data-bs-placement="top"
-                  title="201.3 K seen in 6.3 M total runs. Actual played: 3.19%">Overall
-                  Played: 3%</h4>
-                <div class="px-2" style="height: 4rem;">
-                  <span>Key Upgrades:</span>
-                  <canvas id="runsBarChart"></canvas>
+                <div class="spec-popularity-chart-wrapper px-2">
+                  <p class="text-xs text-center text-secondary mb-1">Use mouse scroll or pinch to zoom. Drag to pan.</p>
+                  <div class="chart-scroll-container" style="overflow-x:auto;">
+                    <canvas id="runsBarChart" style="display:block;height:100%;"></canvas>
+                  </div>
                 </div>
               </div>
               <hr class="dark horizontal my-0">
               <div class="card-footer p-2 ps-3">
                 <p class="mb-0 text-sm">
                   <span class="timestamp" data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-timestamp=1779742517.949116>Last Update:</span>
+                    data-timestamp=1779801289.685617>Last Update:</span>
                 </p>
               </div>
             </div>
@@ -10736,8 +10754,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=251082?bonus=6652:12667:12699:12798:13440:13577&spec=259"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=259"
+      href="https://www.wowhead.com/item=251082?bonus=6652:12667:12699:12806:13440:13577&spec=259"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=259"
       >
       <img src="/data/icons/inv_belt_leather_dungeonharronir_c_01.png"
         class="item-icon-img" />
@@ -10746,8 +10764,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=251082?bonus=6652:12667:12699:12798:13440:13577&spec=259"
-      data-wowhead="bonus=6652:12667:12699:12798:13440:13577&spec=259"
+      href="https://www.wowhead.com/item=251082?bonus=6652:12667:12699:12806:13440:13577&spec=259"
+      data-wowhead="bonus=6652:12667:12699:12806:13440:13577&spec=259"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Snapvine Cinch</p>
     </a>
@@ -17923,8 +17941,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12798:13440&spec=259"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=259"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=259"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=259"
       >
       <img src="/data/icons/inv_enchant_shardbrilliantlarge.png"
         class="item-icon-img" />
@@ -17933,8 +17951,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12798:13440&spec=259"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=259"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=259"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=259"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Solarflare Prism</p>
     </a>
@@ -18582,8 +18600,8 @@
   <!-- Item icon & link -->
   <div class="col-auto px-0">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12798:13440&spec=259"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=259"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=259"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=259"
       >
       <img src="/data/icons/inv_enchant_shardbrilliantlarge.png"
         class="item-icon-img" />
@@ -18592,8 +18610,8 @@
   <!-- Name & secondary icons -->
   <div class="col item-details-col">
     <a target="_blank"
-      href="https://www.wowhead.com/item=252420?bonus=6652:12699:12798:13440&spec=259"
-      data-wowhead="bonus=6652:12699:12798:13440&spec=259"
+      href="https://www.wowhead.com/item=252420?bonus=6652:12699:13440:13654&spec=259"
+      data-wowhead="bonus=6652:12699:13440:13654&spec=259"
       data-wh-rename-link="true" >
         <p class="mb-0 text-truncate item-name-text">Solarflare Prism</p>
     </a>
@@ -31890,132 +31908,73 @@
     data-src='https://wow.zamimg.com/widgets/power.js'></script>
   <!-- chart.js -->
   <script src="/assets/js/plugins/chartjs.min.js"></script>
-  <script src="/assets/js/plugins/chartjs-plugin-datalabels.min.js"></script>
+  <script src="/assets/js/plugins/hammer.min.js"></script>
+  <script src="/assets/js/plugins/chartjs-plugin-zoom.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      Chart.register(ChartDataLabels);
-      const ctx = document.getElementById('runsBarChart').getContext('2d');
+      const canvas = document.getElementById('runsBarChart');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
 
-      const raw = [
-        
-    22478
-      , 
-    
-    86101
-      , 
-    
-    74275
-      , 
-    
-    18465
-      
-    
-];
-    const total = 201319;
-    const pcts = raw.map(c => c / total * 100);
-    const baseColors = ['#FF0000', '#1eff00', '#a335ee', '#ff8000'];
+      // Use per-key-level stacked counts for this spec
+      var levelData = [{"depleted": 148, "keystone_level": 2, "total_runs": 5696, "upgrade_1": 587, "upgrade_2": 2822, "upgrade_3": 2139}, {"depleted": 46, "keystone_level": 3, "total_runs": 954, "upgrade_1": 166, "upgrade_2": 508, "upgrade_3": 234}, {"depleted": 92, "keystone_level": 4, "total_runs": 2757, "upgrade_1": 464, "upgrade_2": 1619, "upgrade_3": 582}, {"depleted": 83, "keystone_level": 5, "total_runs": 2959, "upgrade_1": 397, "upgrade_2": 1581, "upgrade_3": 898}, {"depleted": 181, "keystone_level": 6, "total_runs": 5136, "upgrade_1": 762, "upgrade_2": 2901, "upgrade_3": 1292}, {"depleted": 481, "keystone_level": 7, "total_runs": 4174, "upgrade_1": 1284, "upgrade_2": 2116, "upgrade_3": 293}, {"depleted": 529, "keystone_level": 8, "total_runs": 5271, "upgrade_1": 1642, "upgrade_2": 2616, "upgrade_3": 484}, {"depleted": 695, "keystone_level": 9, "total_runs": 5336, "upgrade_1": 1971, "upgrade_2": 2477, "upgrade_3": 193}, {"depleted": 2673, "keystone_level": 10, "total_runs": 48113, "upgrade_1": 9700, "upgrade_2": 26199, "upgrade_3": 9541}, {"depleted": 1921, "keystone_level": 11, "total_runs": 15748, "upgrade_1": 5716, "upgrade_2": 7329, "upgrade_3": 782}, {"depleted": 3682, "keystone_level": 12, "total_runs": 33016, "upgrade_1": 11804, "upgrade_2": 15557, "upgrade_3": 1973}, {"depleted": 3007, "keystone_level": 13, "total_runs": 16516, "upgrade_1": 9414, "upgrade_2": 4045, "upgrade_3": 50}, {"depleted": 2405, "keystone_level": 14, "total_runs": 14868, "upgrade_1": 9878, "upgrade_2": 2582, "upgrade_3": 3}, {"depleted": 2000, "keystone_level": 15, "total_runs": 13507, "upgrade_1": 10202, "upgrade_2": 1304, "upgrade_3": 1}, {"depleted": 1807, "keystone_level": 16, "total_runs": 11338, "upgrade_1": 9061, "upgrade_2": 470, "upgrade_3": 0}, {"depleted": 1270, "keystone_level": 17, "total_runs": 7848, "upgrade_1": 6455, "upgrade_2": 123, "upgrade_3": 0}, {"depleted": 850, "keystone_level": 18, "total_runs": 4871, "upgrade_1": 4001, "upgrade_2": 20, "upgrade_3": 0}, {"depleted": 417, "keystone_level": 19, "total_runs": 2344, "upgrade_1": 1925, "upgrade_2": 2, "upgrade_3": 0}, {"depleted": 145, "keystone_level": 20, "total_runs": 705, "upgrade_1": 557, "upgrade_2": 3, "upgrade_3": 0}, {"depleted": 40, "keystone_level": 21, "total_runs": 151, "upgrade_1": 110, "upgrade_2": 1, "upgrade_3": 0}, {"depleted": 6, "keystone_level": 22, "total_runs": 11, "upgrade_1": 5, "upgrade_2": 0, "upgrade_3": 0}];
+      levelData.sort((a,b) => a.keystone_level - b.keystone_level);
+      var labels = levelData.map(d => '+' + d.keystone_level);
+      var up3 = levelData.map(d => d.upgrade_3);
+      var up2 = levelData.map(d => d.upgrade_2);
+      var up1 = levelData.map(d => d.upgrade_1);
+      var depleted = levelData.map(d => d.depleted);
 
-    // create one gradient per color
-    const gradients = baseColors.map(hex => {
-      const grad = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
-      // use the same hex at 80% and 50% opacity stops
-      grad.addColorStop(0, hex.replace(/,?\s*1\)$/, ', 0.8)')    // top
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.8)`));
-      grad.addColorStop(1, hex.replace(/,?\s*1\)$/, ', 0.5)')    // bottom
-        .replace(/^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i,
-          (_, r, g, b) => `rgba(${parseInt(r, 16)},${parseInt(g, 16)},${parseInt(b, 16)},0.5)`));
-      return grad;
-    });
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        // single “category” so all segments live in one bar
-        labels: [''],
-        datasets: [
-          {
-            label: 'Depleted',
-            data: [pcts[0]],
-            backgroundColor: gradients[0],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +1',
-            data: [pcts[1]],
-            backgroundColor: gradients[1],
-            stack: 'Stack 0',
-            datalabels: {
-              color: 'black'
+      // Make canvas width proportional to number of labels so bars are readable in small card
+      const container = canvas.parentElement;
+      const perLabel = 36; // px per keystone label
+      const desiredWidth = Math.max(container.clientWidth, labels.length * perLabel);
+      canvas.width = desiredWidth;
+      canvas.style.width = desiredWidth + 'px';
+
+      var keyLevelChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [
+            { label: 'Depleted', data: depleted, backgroundColor: '#FF0000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+1', data: up1, backgroundColor: '#1eff00', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+2', data: up2, backgroundColor: '#a335ee', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 },
+            { label: '+3', data: up3, backgroundColor: '#ff8000', maxBarThickness: 20, barPercentage: 0.85, categoryPercentage: 0.9 }            
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              ticks: { color: '#fff', autoSkip: true, maxRotation: 0, minRotation: 0, maxTicksLimit: 12, font: { size: 11 } },
+              grid: { display: false }
+            },
+            y: {
+              stacked: true,
+              ticks: { color: '#fff', beginAtZero: true, font: { size: 11 } },
+              grid: { color: '#333' }
             }
           },
-          {
-            label: 'Keys played +2',
-            data: [pcts[2]],
-            backgroundColor: gradients[2],
-            stack: 'Stack 0'
-          },
-          {
-            label: 'Keys played +3',
-            data: [pcts[3]],
-            backgroundColor: gradients[3],
-            stack: 'Stack 0'
-          }
-        ]
-      },
-      plugins: [ChartDataLabels],
-      options: {
-        indexAxis: 'y',            // horizontal orientation
-        maintainAspectRatio: false,
-        layout: {
-          padding: { left: 8, right: 8, top: 8, bottom: 8 }
-        },
-        scales: {
-          x: {
-            stacked: true,         // enable stacking on x‑axis
-            beginAtZero: true,
-            max: 100,
-            ticks: {
-              display: false
-            },
-            grid: { display: false }
-          },
-          y: {
-            stacked: true,         // required for horizontal stack
-            grid: { display: false },
-            ticks: { display: false }  // hide the empty category label
-
-          }
-        },
-        elements: {
-          bar: {
-            borderRadius: 4,
-            borderSkipped: false
-          }
-        },
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}%`
+          plugins: {
+            legend: { labels: { color: '#fff' } },
+            tooltip: { mode: 'index', intersect: false },
+            datalabels: { display: false },
+            zoom: {
+              pan: { enabled: true, mode: 'x', onPan: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } },
+              zoom: { wheel: { enabled: true }, pinch: { enabled: true }, mode: 'x', onZoom: function({chart}) { document.getElementById('resetZoomBtnSpec').style.display = 'block'; } }
             }
-          },
-          datalabels: {
-            color: 'white',
-            anchor: 'center',
-            align: 'center',
-            font: {
-              weight: 'bold',
-              size: 12
-            },
-            formatter: value => `${value.toFixed(1)}%`
           }
         }
-      }
-    });
-});
+      });
 
+      document.getElementById('resetZoomBtnSpec').addEventListener('click', function() {
+        keyLevelChart.resetZoom();
+        this.style.display = 'none';
+      });
+    });
   </script>
 
 
